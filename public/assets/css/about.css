@@ -1,0 +1,54 @@
+html{
+    overflow-x: hidden;
+}
+.img{
+    width: 90%;
+}
+
+.row-two{
+    padding-top: 3em;
+}
+
+.row-two{
+    background-color: #ebedf2;
+    overflow: hidden;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    top: 5em;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    padding-right: 37%;
+    padding-left: 37%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+
+.header-text,
+.header-subtitle,
+.paragraph{
+    color: #231773;
+}
+
+.headers{
+    padding-bottom: 3em;
+}
+
+.img-holder{
+    padding-bottom: 3em;
+}
+.header-text{
+    font-weight: 700;
+    font-size: 2vw;
+}
+
+.header-subtitle{
+    font-weight: 400;
+    font-size: 1.3vw;
+}
+
+.paragraph{
+    font-size: 1vw;
+}

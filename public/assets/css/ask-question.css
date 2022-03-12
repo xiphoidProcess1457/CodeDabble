@@ -1,0 +1,72 @@
+.create-question-container{
+    padding-top: 3%;
+  }
+
+  .forum-header{
+    color: #231773;
+  }
+  .form-control{
+    background-color: #222f3e;
+    color: #fff;
+    border-radius: 8px;
+    outline: none;
+  }
+
+  /* do not group these rules */
+  .input-title::-webkit-input-placeholder {
+  color: #cccccc;
+}
+  .input-title:-moz-placeholder {
+      /* FF 4-18 */
+      color: #cccccc;
+      opacity: 1;
+  }
+  .input-title::-moz-placeholder {
+      /* FF 19+ */
+      color: #cccccc;
+      opacity: 1;
+  }
+  .input-title:-ms-input-placeholder {
+      /* IE 10+ */
+      color: #cccccc;
+  }
+  .input-title::-ms-input-placeholder {
+      /* Microsoft Edge */
+      color: #cccccc;
+  }
+  .input-title::placeholder {
+      /* modern browser */
+      color: #cccccc;
+  }
+  .form-control:focus {
+    outline-style: none;
+    box-shadow: none;
+    border-color: transparent;
+    background-color: black;
+    color: white;
+  }
+
+
+  .post-button{
+    color: #231773;
+    background-color: #231773;
+    font-weight: bold;
+    border: none;
+    padding: 10px;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-size: 1.5em;
+    border-radius: 5px;
+    color: #EBEDF2;
+    transition: background-color 0.2s ease;
+  }
+  .post-button:hover{
+      color: #EBEDF2;
+      background-color: #ACAff2;
+      color: #231773;
+  }
+
+
+  
+  
+  

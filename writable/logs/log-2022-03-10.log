@@ -1,0 +1,226 @@
+CRITICAL - 2022-03-10 00:38:54 --> Class 'App\Model\ForumModel' not found
+#0 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\Home->addquestion()
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-10 00:40:12 --> Undefined property: App\Controllers\Home::$load
+#0 C:\xampp\htdocs\codedabble\app\Controllers\Home.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 16, Array)
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-10 00:49:44 --> Class 'App\Controllers\forum' not found
+#0 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\Home->createForumPost()
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-10 00:50:16 --> Class 'App\Controllers\forum' not found
+#0 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\Home->createForumPost()
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-10 00:51:04 --> Class 'App\Controllers\forum' not found
+#0 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\Home->createForumPost()
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-10 00:51:16 --> Class 'App\Controllers\forum' not found
+#0 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\Home->createForumPost()
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-10 00:51:18 --> Class 'App\Controllers\forum' not found
+#0 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\Home->createForumPost()
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-10 00:51:33 --> Class 'App\Controllers\forum' not found
+#0 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\Home->createForumPost()
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-10 00:51:36 --> Class 'App\Controllers\forum' not found
+#0 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\Home->createForumPost()
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-10 00:51:56 --> Class 'App\Controllers\forum' not found
+#0 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\Home->createForumPost()
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-10 00:52:23 --> Class 'App\Controllers\forum' not found
+#0 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\Home->createForumPost()
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-10 00:52:23 --> Class 'App\Controllers\forum' not found
+#0 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\Home->createForumPost()
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-10 00:52:23 --> Class 'App\Controllers\forum' not found
+#0 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\Home->createForumPost()
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-10 00:52:24 --> Class 'App\Controllers\forum' not found
+#0 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\Home->createForumPost()
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-10 00:52:24 --> Class 'App\Controllers\forum' not found
+#0 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\Home->createForumPost()
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-10 00:52:24 --> Class 'App\Controllers\forum' not found
+#0 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\Home->createForumPost()
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-10 00:52:24 --> Class 'App\Controllers\forum' not found
+#0 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\Home->createForumPost()
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-10 00:52:24 --> Class 'App\Controllers\forum' not found
+#0 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\Home->createForumPost()
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-10 00:52:25 --> Class 'App\Controllers\forum' not found
+#0 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\Home->createForumPost()
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-10 00:52:25 --> Class 'App\Controllers\forum' not found
+#0 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\Home->createForumPost()
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-10 00:52:26 --> Class 'App\Controllers\forum' not found
+#0 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\Home->createForumPost()
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-10 01:00:56 --> Class 'App\Controllers\forum' not found
+#0 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\Home->createForumPost()
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-10 01:01:11 --> Class 'App\Controllers\forum' not found
+#0 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\Home->createForumPost()
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-10 01:02:16 --> Class 'App\Controllers\forum' not found
+#0 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\Home->forum()
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-10 01:02:29 --> Class 'App\Controllers\forum' not found
+#0 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\Home->forum()
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-10 01:03:08 --> Class 'App\Controllers\forum' not found
+#0 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\Home->forum()
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-10 01:03:48 --> Class 'App\Model\ForumModel' not found
+#0 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\Home->addquestion()
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-10 01:25:17 --> Class 'App\Model\ForumModel' not found
+#0 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\Home->addquestion()
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-10 06:42:04 --> Class 'App\Model\ForumModel' not found
+#0 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-10 06:42:07 --> Class 'App\Model\ForumModel' not found
+#0 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-10 06:42:12 --> Class 'App\Model\ForumModel' not found
+#0 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-10 06:42:26 --> Class 'App\Model\ForumModel' not found
+#0 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-10 06:42:30 --> Class 'App\Model\ForumModel' not found
+#0 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-10 06:43:17 --> Class 'App\Model\ForumModel' not found
+#0 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-10 06:45:36 --> Undefined property: App\Controllers\Home::$load
+#0 C:\xampp\htdocs\codedabble\app\Controllers\Home.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 50, Array)
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-10 06:45:41 --> Undefined property: App\Controllers\Home::$load
+#0 C:\xampp\htdocs\codedabble\app\Controllers\Home.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 50, Array)
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-10 21:33:32 --> Undefined property: App\Controllers\Home::$load
+#0 C:\xampp\htdocs\codedabble\app\Controllers\Home.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 50, Array)
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

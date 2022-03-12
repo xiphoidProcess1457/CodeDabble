@@ -1,0 +1,18 @@
+footer{
+    height: 60px;
+    padding: 10px;
+    padding-left: 2%;
+    background-color: #1d1f21;
+}
+button{
+    height: 100%;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-size: 1em;
+    font-weight: 700;
+    outline: none;
+    background-color: #6e30f2;
+    color: #ebedf2;
+    background-repeat: no-repeat;
+    border: none;
+}

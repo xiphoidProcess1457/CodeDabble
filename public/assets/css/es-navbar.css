@@ -1,0 +1,22 @@
+.navbar{
+    background-color: #1d1f21;
+    height: 80px;
+    margin:0 !important;
+	padding: 0px !important;
+    border-bottom: 0.01em solid #4f4f4f;
+    }
+
+.navbar-brand{
+    padding-left: 2%;
+}    
+.logo
+  {
+    width:150px;
+    height: 65px
+  }
+
+  .nav-item{
+      font-size: 15px;
+      font-weight: 600;
+      font-family: 'Montserrat', sans-serif;
+  }

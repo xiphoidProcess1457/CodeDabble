@@ -1,0 +1,44 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    color: #231773;
+    }
+
+    html{
+        overflow: hidden;
+    }
+
+    .container-fluid{
+        box-sizing: border-box;
+        padding: 10%;
+        overflow: hidden;
+    }
+
+   
+    .registration-header{
+        font-weight: 800
+    }
+
+    .form-control{
+        border-radius: 50px;
+        width: 100%;
+        padding: 1.5em;
+    }
+
+    .registration-button{
+        background-color: #acb0f2;
+        font-weight: 700;
+        font-size: 1vw;
+        border-radius: 25px;
+        padding: 2%;
+        padding-right: 7%;
+        padding-left: 7%;
+        color: #231773;
+        border: none;
+    }
+
+    .need-account{
+        text-align: center;
+    }
+    .signin-link{
+        color: #231773;
+    }

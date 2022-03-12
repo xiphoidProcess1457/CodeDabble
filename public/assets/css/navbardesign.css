@@ -1,0 +1,70 @@
+*{
+    font-family: "metropolis";
+}  
+.navbar{
+    padding-right: 20em;
+    padding-left: 20em; 
+}
+.nav-link {
+padding: 500px;  
+font-weight: bold;
+font-size: 14px;
+text-transform: uppercase;
+text-decoration: none;
+color: #231773;
+padding: 12px 0px;
+margin: 0px 20px;
+display: inline-block;
+position: relative;
+opacity: 0.75;
+}
+.nav-link:hover {
+opacity: 1;
+transition: 300ms;
+animation: ease-in-out;
+letter-spacing: .5px;
+
+}
+.nav-link::before {
+transition: 300ms;
+animation: ease-in-out;
+height: 3px;
+content: "";
+position: absolute;
+background-color: #231773;
+}
+.nav-link-ltr::before {
+width: 0%;
+bottom: 10px;
+}
+.nav-link-ltr:hover::before {
+width: 100%;
+}
+#SIGNIN {
+  color: #231773;
+  background-color: #ACAff2;
+  font-weight: bold;
+  border-radius: 50px;
+}
+#SIGNIN:hover{
+    color: #EBEDF2;
+    background-color: #231773;
+}
+.navbar-scroll {
+background: #ffffff;
+padding-right: 10em;
+padding-left: 10em; 
+padding-top: 0;
+padding-bottom: 0;
+top: -2.3em;
+height: 165px;
+box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+transition-duration: 0.6s;
+transition: 300ms;
+animation: ease-in-out;
+}
+.nav-dropdown-scroll {
+  background: #e7eaea;
+  box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.4);
+}
+

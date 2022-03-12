@@ -1,0 +1,1009 @@
+CRITICAL - 2022-03-11 18:54:37 --> Undefined property: App\Controllers\AskQuestion::$GetForumModel
+#0 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 48, Array)
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->index()
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#3 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-11 18:55:14 --> Undefined property: App\Controllers\AskQuestion::$GetForumModel
+#0 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->index()
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#3 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-11 18:55:53 --> Undefined property: App\Controllers\AskQuestion::$GetForumModel
+#0 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 49, Array)
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->index()
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#3 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-11 18:55:55 --> Undefined property: App\Controllers\AskQuestion::$GetForumModel
+#0 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 49, Array)
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->index()
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#3 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-11 18:56:05 --> Undefined property: App\Controllers\AskQuestion::$GetForumModel
+#0 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 49, Array)
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->index()
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#3 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-11 18:56:23 --> Cannot redeclare App\Controllers\AskQuestion::index()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-11 18:56:33 --> Undefined property: App\Controllers\AskQuestion::$GetForumModel
+#0 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 10, Array)
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->index()
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#3 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-11 18:56:52 --> Undefined property: App\Controllers\AskQuestion::$GetForumModel
+#0 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 10, Array)
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->index()
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#3 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-11 18:56:54 --> Undefined property: App\Controllers\AskQuestion::$GetForumModel
+#0 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 10, Array)
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->index()
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#3 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-11 18:56:56 --> Undefined property: App\Controllers\AskQuestion::$GetForumModel
+#0 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 10, Array)
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->index()
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#3 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-03-11 19:04:34 --> Unknown column 'id' in 'where clause'
+CRITICAL - 2022-03-11 19:04:34 --> Unknown column 'id' in 'where clause'
+#0 C:\xampp\htdocs\codedabble\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\codedabble\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\codedabble\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\codedabble\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\codedabble\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codedabble\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(63): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->index()
+#8 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#9 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-03-11 19:05:04 --> Unknown column 'id' in 'where clause'
+CRITICAL - 2022-03-11 19:05:04 --> Unknown column 'id' in 'where clause'
+#0 C:\xampp\htdocs\codedabble\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\codedabble\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\codedabble\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\codedabble\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\codedabble\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codedabble\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(63): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->index()
+#8 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#9 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-03-11 19:05:31 --> Undefined variable: user
+#0 C:\xampp\htdocs\codedabble\app\Views\list.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 11, Array)
+#1 C:\xampp\htdocs\codedabble\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codedabble\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codedabble\system\Common.php(1089): CodeIgniter\View\View->render('list', Array, true)
+#4 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(15): view('list', Array)
+#5 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->index()
+#6 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#7 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-11 19:05:56 --> Undefined variable: user
+#0 C:\xampp\htdocs\codedabble\app\Views\list.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 11, Array)
+#1 C:\xampp\htdocs\codedabble\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codedabble\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codedabble\system\Common.php(1089): CodeIgniter\View\View->render('list', Array, true)
+#4 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(15): view('list', Array)
+#5 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->index()
+#6 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#7 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-11 19:23:04 --> Undefined variable: user
+#0 C:\xampp\htdocs\codedabble\app\Views\list.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 11, Array)
+#1 C:\xampp\htdocs\codedabble\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codedabble\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codedabble\system\Common.php(1089): CodeIgniter\View\View->render('list', Array, true)
+#4 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(15): view('list', Array)
+#5 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->index()
+#6 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#7 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-11 19:23:05 --> Undefined variable: user
+#0 C:\xampp\htdocs\codedabble\app\Views\list.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 11, Array)
+#1 C:\xampp\htdocs\codedabble\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codedabble\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codedabble\system\Common.php(1089): CodeIgniter\View\View->render('list', Array, true)
+#4 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(15): view('list', Array)
+#5 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->index()
+#6 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#7 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-11 19:30:45 --> Invalid file: /AskQuestion.php
+#0 C:\xampp\htdocs\codedabble\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/AskQuestion.ph...')
+#1 C:\xampp\htdocs\codedabble\system\Common.php(1089): CodeIgniter\View\View->render('/AskQuestion', Array, true)
+#2 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(30): view('/AskQuestion', Array)
+#3 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->save()
+#4 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#5 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2022-03-11 19:39:49 --> Unknown column 'body' in 'field list'
+CRITICAL - 2022-03-11 19:39:49 --> Unknown column 'body' in 'field list'
+#0 C:\xampp\htdocs\codedabble\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `fo...', 0)
+#1 C:\xampp\htdocs\codedabble\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fo...')
+#2 C:\xampp\htdocs\codedabble\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fo...')
+#3 C:\xampp\htdocs\codedabble\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fo...', Array, false)
+#4 C:\xampp\htdocs\codedabble\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\codedabble\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\codedabble\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\codedabble\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(38): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->save()
+#10 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#11 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-03-11 19:41:09 --> There is no data to insert.
+#0 C:\xampp\htdocs\codedabble\system\BaseModel.php(718): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 C:\xampp\htdocs\codedabble\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#2 C:\xampp\htdocs\codedabble\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#3 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(31): CodeIgniter\BaseModel->save(Array)
+#4 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->save()
+#5 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#6 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-03-11 20:16:50 --> Undefined index: title
+#0 C:\xampp\htdocs\codedabble\app\Views\list.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\codedabble\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codedabble\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codedabble\system\Common.php(1089): CodeIgniter\View\View->render('list', Array, true)
+#4 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(14): view('list', Array)
+#5 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->index()
+#6 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#7 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-11 20:17:36 --> Undefined index: title
+#0 C:\xampp\htdocs\codedabble\app\Views\list.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\codedabble\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codedabble\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codedabble\system\Common.php(1089): CodeIgniter\View\View->render('list', Array, true)
+#4 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(18): view('list', Array)
+#5 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->index()
+#6 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#7 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-11 20:23:21 --> Undefined index: title
+#0 C:\xampp\htdocs\codedabble\app\Views\list.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\codedabble\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codedabble\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codedabble\system\Common.php(1089): CodeIgniter\View\View->render('list', Array, true)
+#4 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(53): view('list', Array)
+#5 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->forumview()
+#6 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#7 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-11 20:28:17 --> Undefined index: forum_title
+#0 C:\xampp\htdocs\codedabble\app\Views\list.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 17, Array)
+#1 C:\xampp\htdocs\codedabble\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codedabble\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codedabble\system\Common.php(1089): CodeIgniter\View\View->render('list', Array, true)
+#4 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(53): view('list', Array)
+#5 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->forumview()
+#6 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#7 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-11 20:28:23 --> Undefined index: title
+#0 C:\xampp\htdocs\codedabble\app\Views\list.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 17, Array)
+#1 C:\xampp\htdocs\codedabble\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codedabble\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codedabble\system\Common.php(1089): CodeIgniter\View\View->render('list', Array, true)
+#4 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(53): view('list', Array)
+#5 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->forumview()
+#6 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#7 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-11 20:28:27 --> Undefined index: body
+#0 C:\xampp\htdocs\codedabble\app\Views\list.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 17, Array)
+#1 C:\xampp\htdocs\codedabble\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codedabble\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codedabble\system\Common.php(1089): CodeIgniter\View\View->render('list', Array, true)
+#4 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(53): view('list', Array)
+#5 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->forumview()
+#6 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#7 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-11 20:28:33 --> Undefined index: slug
+#0 C:\xampp\htdocs\codedabble\app\Views\list.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 17, Array)
+#1 C:\xampp\htdocs\codedabble\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codedabble\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codedabble\system\Common.php(1089): CodeIgniter\View\View->render('list', Array, true)
+#4 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(53): view('list', Array)
+#5 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->forumview()
+#6 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#7 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-11 20:28:57 --> Undefined index: forum_title
+#0 C:\xampp\htdocs\codedabble\app\Views\list.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 17, Array)
+#1 C:\xampp\htdocs\codedabble\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codedabble\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codedabble\system\Common.php(1089): CodeIgniter\View\View->render('list', Array, true)
+#4 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(53): view('list', Array)
+#5 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->forumview()
+#6 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#7 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-11 20:32:15 --> Undefined index: forumquestion
+#0 C:\xampp\htdocs\codedabble\app\Views\list.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\codedabble\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codedabble\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codedabble\system\Common.php(1089): CodeIgniter\View\View->render('list', Array, true)
+#4 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(53): view('list', Array)
+#5 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->forumview()
+#6 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#7 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-11 22:07:09 --> Undefined variable: slug
+#0 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 23, Array)
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->viewforum()
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#3 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-11 22:07:11 --> Undefined variable: slug
+#0 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 23, Array)
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->viewforum()
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#3 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-11 22:07:12 --> Undefined variable: slug
+#0 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 23, Array)
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->viewforum()
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#3 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-11 22:08:51 --> Undefined variable: slug
+#0 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 23, Array)
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->viewforum()
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#3 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-11 22:10:22 --> Too few arguments to function App\Controllers\AskQuestion::viewforum(), 0 passed in C:\xampp\htdocs\codedabble\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->viewforum()
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-11 22:11:37 --> Too few arguments to function App\Controllers\AskQuestion::index(), 0 passed in C:\xampp\htdocs\codedabble\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->index()
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-11 22:11:39 --> Too few arguments to function App\Controllers\AskQuestion::index(), 0 passed in C:\xampp\htdocs\codedabble\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->index()
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-11 22:12:00 --> Too few arguments to function App\Controllers\AskQuestion::index(), 0 passed in C:\xampp\htdocs\codedabble\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->index()
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-11 22:12:01 --> Too few arguments to function App\Controllers\AskQuestion::index(), 0 passed in C:\xampp\htdocs\codedabble\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->index()
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-11 22:12:02 --> Too few arguments to function App\Controllers\AskQuestion::index(), 0 passed in C:\xampp\htdocs\codedabble\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->index()
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-11 22:12:06 --> Too few arguments to function App\Controllers\AskQuestion::index(), 0 passed in C:\xampp\htdocs\codedabble\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->index()
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-11 22:12:07 --> Too few arguments to function App\Controllers\AskQuestion::index(), 0 passed in C:\xampp\htdocs\codedabble\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->index()
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-11 22:12:08 --> Too few arguments to function App\Controllers\AskQuestion::index(), 0 passed in C:\xampp\htdocs\codedabble\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->index()
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-11 22:12:19 --> Too few arguments to function App\Controllers\AskQuestion::index(), 0 passed in C:\xampp\htdocs\codedabble\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->index()
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-11 22:12:23 --> Undefined variable: data
+#0 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 22, Array)
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->index()
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#3 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-11 22:12:24 --> Undefined variable: data
+#0 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 22, Array)
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->index()
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#3 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-11 22:12:25 --> Undefined variable: data
+#0 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 22, Array)
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->index()
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#3 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-11 22:12:46 --> Too few arguments to function App\Controllers\AskQuestion::index(), 0 passed in C:\xampp\htdocs\codedabble\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->index()
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-11 22:15:04 --> Undefined variable: slug
+#0 C:\xampp\htdocs\codedabble\app\Views\list.php(19): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 19, Array)
+#1 C:\xampp\htdocs\codedabble\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codedabble\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codedabble\system\Common.php(1089): CodeIgniter\View\View->render('list', Array, true)
+#4 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(61): view('list', Array)
+#5 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->forumview()
+#6 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#7 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-11 22:15:31 --> Undefined index: $news
+#0 C:\xampp\htdocs\codedabble\app\Views\list.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 11, Array)
+#1 C:\xampp\htdocs\codedabble\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codedabble\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codedabble\system\Common.php(1089): CodeIgniter\View\View->render('list', Array, true)
+#4 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(61): view('list', Array)
+#5 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->forumview()
+#6 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#7 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-11 22:15:40 --> Undefined index: $news
+#0 C:\xampp\htdocs\codedabble\app\Views\list.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 11, Array)
+#1 C:\xampp\htdocs\codedabble\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codedabble\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codedabble\system\Common.php(1089): CodeIgniter\View\View->render('list', Array, true)
+#4 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(61): view('list', Array)
+#5 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->forumview()
+#6 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#7 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-11 22:15:45 --> Undefined variable: slug
+#0 C:\xampp\htdocs\codedabble\app\Views\list.php(19): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 19, Array)
+#1 C:\xampp\htdocs\codedabble\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codedabble\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codedabble\system\Common.php(1089): CodeIgniter\View\View->render('list', Array, true)
+#4 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(61): view('list', Array)
+#5 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->forumview()
+#6 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#7 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-11 22:23:06 --> Too few arguments to function App\Controllers\AskQuestion::viewforum(), 0 passed in C:\xampp\htdocs\codedabble\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->viewforum()
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-11 22:23:17 --> Undefined variable: post
+#0 C:\xampp\htdocs\codedabble\app\Views\viewforum.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 2, Array)
+#1 C:\xampp\htdocs\codedabble\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codedabble\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codedabble\system\Common.php(1089): CodeIgniter\View\View->render('viewforum', Array, true)
+#4 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(22): view('viewforum')
+#5 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->viewforum()
+#6 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#7 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-11 22:23:36 --> Undefined variable: post
+#0 C:\xampp\htdocs\codedabble\app\Views\viewforum.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\codedabble\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codedabble\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codedabble\system\Common.php(1089): CodeIgniter\View\View->render('viewforum', Array, true)
+#4 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(22): view('viewforum')
+#5 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->viewforum()
+#6 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#7 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-11 22:24:47 --> Undefined variable: viewforum
+#0 C:\xampp\htdocs\codedabble\app\Views\viewforum.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\codedabble\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codedabble\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codedabble\system\Common.php(1089): CodeIgniter\View\View->render('viewforum', Array, true)
+#4 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(22): view('viewforum')
+#5 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->viewforum()
+#6 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#7 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-11 22:24:53 --> Undefined variable: slug
+#0 C:\xampp\htdocs\codedabble\app\Views\viewforum.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\codedabble\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codedabble\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codedabble\system\Common.php(1089): CodeIgniter\View\View->render('viewforum', Array, true)
+#4 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(22): view('viewforum')
+#5 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->viewforum()
+#6 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#7 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-11 22:24:57 --> Undefined variable: news
+#0 C:\xampp\htdocs\codedabble\app\Views\viewforum.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\codedabble\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codedabble\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codedabble\system\Common.php(1089): CodeIgniter\View\View->render('viewforum', Array, true)
+#4 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(22): view('viewforum')
+#5 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->viewforum()
+#6 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#7 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-11 22:25:41 --> Undefined variable: slug
+#0 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 23, Array)
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->viewforum()
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#3 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-11 22:25:43 --> Undefined variable: slug
+#0 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 23, Array)
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->viewforum()
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#3 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-11 22:25:56 --> Undefined variable: slug
+#0 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 23, Array)
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->viewforum()
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#3 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-11 22:26:12 --> Undefined variable: slug
+#0 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 23, Array)
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->viewforum()
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#3 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-11 22:28:25 --> Undefined variable: slug
+#0 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 23, Array)
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->viewforum()
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#3 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-11 22:28:26 --> Undefined variable: slug
+#0 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 23, Array)
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->viewforum()
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#3 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-11 22:30:41 --> Undefined variable: slug
+#0 C:\xampp\htdocs\codedabble\app\Views\list.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 10, Array)
+#1 C:\xampp\htdocs\codedabble\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codedabble\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codedabble\system\Common.php(1089): CodeIgniter\View\View->render('list', Array, true)
+#4 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(61): view('list', Array)
+#5 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->forumview()
+#6 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#7 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-11 22:35:09 --> Undefined variable: news
+#0 C:\xampp\htdocs\codedabble\app\Views\viewforum.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\codedabble\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codedabble\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codedabble\system\Common.php(1089): CodeIgniter\View\View->render('viewforum', Array, true)
+#4 C:\xampp\htdocs\codedabble\app\Controllers\ViewForum.php(14): view('viewforum')
+#5 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\ViewForum->index()
+#6 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ViewForum))
+#7 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-11 22:35:15 --> Undefined variable: news
+#0 C:\xampp\htdocs\codedabble\app\Views\viewforum.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\codedabble\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codedabble\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codedabble\system\Common.php(1089): CodeIgniter\View\View->render('viewforum', Array, true)
+#4 C:\xampp\htdocs\codedabble\app\Controllers\ViewForum.php(13): view('viewforum')
+#5 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\ViewForum->index()
+#6 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ViewForum))
+#7 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-11 22:35:52 --> Too few arguments to function App\Controllers\ViewForum::index(), 0 passed in C:\xampp\htdocs\codedabble\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\ViewForum->index()
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ViewForum))
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-11 22:35:56 --> Undefined variable: news
+#0 C:\xampp\htdocs\codedabble\app\Views\viewforum.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\codedabble\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codedabble\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codedabble\system\Common.php(1089): CodeIgniter\View\View->render('viewforum', Array, true)
+#4 C:\xampp\htdocs\codedabble\app\Controllers\ViewForum.php(11): view('viewforum')
+#5 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\ViewForum->index()
+#6 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ViewForum))
+#7 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-11 22:35:59 --> Too few arguments to function App\Controllers\ViewForum::index(), 0 passed in C:\xampp\htdocs\codedabble\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\ViewForum->index()
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ViewForum))
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-11 22:37:28 --> Too few arguments to function App\Controllers\ViewForum::index(), 0 passed in C:\xampp\htdocs\codedabble\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\ViewForum->index()
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ViewForum))
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-11 22:37:31 --> Too few arguments to function App\Controllers\ViewForum::index(), 0 passed in C:\xampp\htdocs\codedabble\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\ViewForum->index()
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ViewForum))
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-11 22:45:38 --> Undefined variable: news
+#0 C:\xampp\htdocs\codedabble\app\Views\viewforum.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\codedabble\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codedabble\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codedabble\system\Common.php(1089): CodeIgniter\View\View->render('viewforum', Array, true)
+#4 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(29): view('viewforum')
+#5 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->test()
+#6 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#7 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-11 22:45:47 --> Too few arguments to function App\Controllers\AskQuestion::test(), 0 passed in C:\xampp\htdocs\codedabble\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->test()
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-11 22:45:59 --> Undefined variable: slug
+#0 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(30): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 30, Array)
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->test()
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#3 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-11 22:46:00 --> Undefined variable: slug
+#0 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(30): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 30, Array)
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->test()
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#3 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-11 22:46:32 --> Too few arguments to function App\Controllers\AskQuestion::test(), 0 passed in C:\xampp\htdocs\codedabble\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->test()
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-11 23:03:20 --> Undefined variable: news
+#0 C:\xampp\htdocs\codedabble\app\Views\viewforum.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\codedabble\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codedabble\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codedabble\system\Common.php(1089): CodeIgniter\View\View->render('viewforum', Array, true)
+#4 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(25): view('viewforum', Array)
+#5 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->post('test')
+#6 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#7 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-11 23:03:23 --> Undefined variable: news
+#0 C:\xampp\htdocs\codedabble\app\Views\viewforum.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\codedabble\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codedabble\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codedabble\system\Common.php(1089): CodeIgniter\View\View->render('viewforum', Array, true)
+#4 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(25): view('viewforum', Array)
+#5 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->post('forumview')
+#6 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#7 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-11 23:03:28 --> Undefined variable: news
+#0 C:\xampp\htdocs\codedabble\app\Views\viewforum.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\codedabble\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codedabble\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codedabble\system\Common.php(1089): CodeIgniter\View\View->render('viewforum', Array, true)
+#4 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(25): view('viewforum', Array)
+#5 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->post('forumview')
+#6 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#7 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-11 23:03:47 --> Undefined variable: news
+#0 C:\xampp\htdocs\codedabble\app\Views\viewforum.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\codedabble\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codedabble\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codedabble\system\Common.php(1089): CodeIgniter\View\View->render('viewforum', Array, true)
+#4 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(25): view('viewforum', Array)
+#5 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->post('forumview')
+#6 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#7 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-11 23:03:50 --> Undefined variable: news
+#0 C:\xampp\htdocs\codedabble\app\Views\viewforum.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\codedabble\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codedabble\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codedabble\system\Common.php(1089): CodeIgniter\View\View->render('viewforum', Array, true)
+#4 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(25): view('viewforum', Array)
+#5 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->post('forumview')
+#6 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#7 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-11 23:04:18 --> Undefined variable: slug
+#0 C:\xampp\htdocs\codedabble\app\Views\viewforum.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\codedabble\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codedabble\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codedabble\system\Common.php(1089): CodeIgniter\View\View->render('viewforum', Array, true)
+#4 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(25): view('viewforum', Array)
+#5 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->post('forumview')
+#6 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#7 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-11 23:06:03 --> Undefined variable: slug
+#0 C:\xampp\htdocs\codedabble\app\Views\viewforum.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\codedabble\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codedabble\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codedabble\system\Common.php(1089): CodeIgniter\View\View->render('viewforum', Array, true)
+#4 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(25): view('viewforum', Array)
+#5 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->post('forum')
+#6 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#7 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-11 23:06:15 --> Undefined variable: slug
+#0 C:\xampp\htdocs\codedabble\app\Views\viewforum.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\codedabble\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codedabble\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codedabble\system\Common.php(1089): CodeIgniter\View\View->render('viewforum', Array, true)
+#4 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(25): view('viewforum', Array)
+#5 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->post('forum')
+#6 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#7 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-11 23:06:28 --> Undefined variable: slug
+#0 C:\xampp\htdocs\codedabble\app\Views\viewforum.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\codedabble\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codedabble\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codedabble\system\Common.php(1089): CodeIgniter\View\View->render('viewforum', Array, true)
+#4 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(25): view('viewforum', Array)
+#5 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->post('forum')
+#6 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#7 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-11 23:06:30 --> Undefined variable: slug
+#0 C:\xampp\htdocs\codedabble\app\Views\viewforum.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\codedabble\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codedabble\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codedabble\system\Common.php(1089): CodeIgniter\View\View->render('viewforum', Array, true)
+#4 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(25): view('viewforum', Array)
+#5 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->post('forum')
+#6 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#7 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-11 23:06:47 --> Undefined variable: slug
+#0 C:\xampp\htdocs\codedabble\app\Views\viewforum.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\codedabble\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codedabble\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codedabble\system\Common.php(1089): CodeIgniter\View\View->render('viewforum', Array, true)
+#4 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(25): view('viewforum', Array)
+#5 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->post('forum')
+#6 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#7 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-11 23:06:52 --> Undefined variable: slug
+#0 C:\xampp\htdocs\codedabble\app\Views\viewforum.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\codedabble\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codedabble\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codedabble\system\Common.php(1089): CodeIgniter\View\View->render('viewforum', Array, true)
+#4 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(25): view('viewforum', Array)
+#5 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->post('forum')
+#6 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#7 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-11 23:14:39 --> Undefined variable: slug
+#0 C:\xampp\htdocs\codedabble\app\Views\viewforum.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\codedabble\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codedabble\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codedabble\system\Common.php(1089): CodeIgniter\View\View->render('viewforum', Array, true)
+#4 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(25): view('viewforum', Array)
+#5 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->post('post')
+#6 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#7 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-11 23:18:16 --> Undefined variable: slug
+#0 C:\xampp\htdocs\codedabble\app\Views\viewforum.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\codedabble\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codedabble\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codedabble\system\Common.php(1089): CodeIgniter\View\View->render('viewforum', Array, true)
+#4 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(25): view('viewforum', Array)
+#5 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->post('post')
+#6 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#7 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-11 23:18:17 --> Undefined variable: slug
+#0 C:\xampp\htdocs\codedabble\app\Views\viewforum.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\codedabble\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codedabble\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codedabble\system\Common.php(1089): CodeIgniter\View\View->render('viewforum', Array, true)
+#4 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(25): view('viewforum', Array)
+#5 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->post('post')
+#6 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#7 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-11 23:18:18 --> Undefined variable: slug
+#0 C:\xampp\htdocs\codedabble\app\Views\viewforum.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\codedabble\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codedabble\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codedabble\system\Common.php(1089): CodeIgniter\View\View->render('viewforum', Array, true)
+#4 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(25): view('viewforum', Array)
+#5 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->post('post')
+#6 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#7 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-11 23:19:45 --> Undefined variable: slug
+#0 C:\xampp\htdocs\codedabble\app\Views\viewforum.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\codedabble\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codedabble\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codedabble\system\Common.php(1089): CodeIgniter\View\View->render('viewforum', Array, true)
+#4 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(25): view('viewforum', Array)
+#5 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->post('post')
+#6 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#7 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-11 23:19:52 --> Undefined variable: slug
+#0 C:\xampp\htdocs\codedabble\app\Views\viewforum.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\codedabble\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codedabble\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codedabble\system\Common.php(1089): CodeIgniter\View\View->render('viewforum', Array, true)
+#4 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(25): view('viewforum', Array)
+#5 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->post('post')
+#6 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#7 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-11 23:20:29 --> Undefined variable: news
+#0 C:\xampp\htdocs\codedabble\app\Views\viewforum.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\codedabble\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codedabble\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codedabble\system\Common.php(1089): CodeIgniter\View\View->render('viewforum', Array, true)
+#4 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(25): view('viewforum', Array)
+#5 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->post('post')
+#6 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#7 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-11 23:20:35 --> Undefined variable: news
+#0 C:\xampp\htdocs\codedabble\app\Views\viewforum.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\codedabble\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codedabble\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codedabble\system\Common.php(1089): CodeIgniter\View\View->render('viewforum', Array, true)
+#4 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(25): view('viewforum', Array)
+#5 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->post('post')
+#6 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#7 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-11 23:20:37 --> Undefined variable: news
+#0 C:\xampp\htdocs\codedabble\app\Views\viewforum.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\codedabble\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codedabble\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codedabble\system\Common.php(1089): CodeIgniter\View\View->render('viewforum', Array, true)
+#4 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(25): view('viewforum', Array)
+#5 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->post('post')
+#6 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#7 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-11 23:23:03 --> Undefined variable: slug
+#0 C:\xampp\htdocs\codedabble\app\Views\viewforum.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\codedabble\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codedabble\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codedabble\system\Common.php(1089): CodeIgniter\View\View->render('viewforum', Array, true)
+#4 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(26): view('viewforum', Array)
+#5 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->post('post')
+#6 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#7 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-11 23:23:11 --> Undefined variable: slug
+#0 C:\xampp\htdocs\codedabble\app\Views\viewforum.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 13, Array)
+#1 C:\xampp\htdocs\codedabble\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codedabble\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codedabble\system\Common.php(1089): CodeIgniter\View\View->render('viewforum', Array, true)
+#4 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(26): view('viewforum', Array)
+#5 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->post('post')
+#6 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#7 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-11 23:23:33 --> Undefined variable: slug
+#0 C:\xampp\htdocs\codedabble\app\Views\viewforum.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\codedabble\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codedabble\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codedabble\system\Common.php(1089): CodeIgniter\View\View->render('viewforum', Array, true)
+#4 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(26): view('viewforum', Array)
+#5 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->post('post')
+#6 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#7 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-11 23:24:11 --> Undefined variable: slug
+#0 C:\xampp\htdocs\codedabble\app\Views\viewforum.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\codedabble\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codedabble\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codedabble\system\Common.php(1089): CodeIgniter\View\View->render('viewforum', Array, true)
+#4 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(26): view('viewforum', Array)
+#5 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->post('post')
+#6 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#7 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-11 23:24:54 --> Undefined variable: slug
+#0 C:\xampp\htdocs\codedabble\app\Views\viewforum.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\codedabble\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codedabble\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codedabble\system\Common.php(1089): CodeIgniter\View\View->render('viewforum', Array, true)
+#4 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(26): view('viewforum', Array)
+#5 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->post('post')
+#6 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#7 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-11 23:37:23 --> Undefined variable: slug
+#0 C:\xampp\htdocs\codedabble\app\Views\viewforum.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\codedabble\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codedabble\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codedabble\system\Common.php(1089): CodeIgniter\View\View->render('viewforum', Array, true)
+#4 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(25): view('viewforum', Array)
+#5 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->post('post')
+#6 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#7 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-11 23:39:35 --> Undefined variable: data
+#0 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 24, Array)
+#1 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->post('post')
+#2 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#3 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-11 23:39:41 --> Undefined variable: slug
+#0 C:\xampp\htdocs\codedabble\app\Views\viewforum.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\codedabble\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codedabble\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codedabble\system\Common.php(1089): CodeIgniter\View\View->render('viewforum', Array, true)
+#4 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(24): view('viewforum')
+#5 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->post('post')
+#6 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#7 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-11 23:39:46 --> Undefined variable: slug
+#0 C:\xampp\htdocs\codedabble\app\Views\viewforum.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\codedabble\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codedabble\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codedabble\system\Common.php(1089): CodeIgniter\View\View->render('viewforum', Array, true)
+#4 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(23): view('viewforum')
+#5 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->post('post')
+#6 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#7 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-11 23:39:50 --> Undefined variable: slug
+#0 C:\xampp\htdocs\codedabble\app\Views\viewforum.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\codedabble\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codedabble\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codedabble\system\Common.php(1089): CodeIgniter\View\View->render('viewforum', Array, true)
+#4 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(23): view('viewforum')
+#5 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->post('post')
+#6 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#7 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-11 23:40:02 --> Undefined variable: slug
+#0 C:\xampp\htdocs\codedabble\app\Views\viewforum.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\codedabble\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codedabble\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codedabble\system\Common.php(1089): CodeIgniter\View\View->render('viewforum', Array, true)
+#4 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(26): view('viewforum', Array)
+#5 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->post('post')
+#6 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#7 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-11 23:40:16 --> Undefined variable: slug
+#0 C:\xampp\htdocs\codedabble\app\Views\viewforum.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\codedabble\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codedabble\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codedabble\system\Common.php(1089): CodeIgniter\View\View->render('viewforum', Array, true)
+#4 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(25): view('viewforum', Array)
+#5 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->post('post')
+#6 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#7 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-11 23:40:22 --> Undefined variable: slug
+#0 C:\xampp\htdocs\codedabble\app\Views\viewforum.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\codedabble\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\codedabble\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\codedabble\system\Common.php(1089): CodeIgniter\View\View->render('viewforum', Array, true)
+#4 C:\xampp\htdocs\codedabble\app\Controllers\AskQuestion.php(25): view('viewforum', Array)
+#5 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(832): App\Controllers\AskQuestion->post('post')
+#6 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AskQuestion))
+#7 C:\xampp\htdocs\codedabble\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codedabble\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

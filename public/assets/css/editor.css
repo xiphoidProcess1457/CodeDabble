@@ -1,0 +1,129 @@
+body{
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: medium;
+  
+}
+
+.split {
+    height: 20%;
+  }
+.column{
+    height: 85.5vh;
+    width: 100%;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+#split-1,
+#split-2{
+    overflow: hidden;
+}
+.split {
+    display: flex;
+    flex-direction: row;
+}
+
+.gutter {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.gutter.gutter-horizontal {
+    cursor: ew-resize;
+}
+    .header{
+    background-color: #ebedf2;
+    color: #949494;
+    font-weight: 600;
+    font-size: 1.2em;
+    padding: 15px;
+    padding-left: 4%;
+}
+
+.header_img{
+    width: 27px;
+}
+
+.content{
+    padding-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 3%;
+}
+
+.course-title{
+    color: #a6a6a6;
+    font-weight: 700;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.lesson-title{
+    font-weight: 600;
+    color: #231773; 
+}
+
+.content{
+    color: #231773;
+}
+#editor {
+width: 100%;
+height: 95%;
+position: relative;
+overflow: auto;
+}
+
+.editor-footer{
+background-color: #1d1f21;
+width: 100%;
+height: 5%;
+}
+
+.iframe-header{
+height:6%;
+width: 100%;
+background-color: #fff;
+ }
+    
+#iframe {
+top: 13%;
+height:95%;
+width: 100%;
+overflow: auto;
+}
+
+
+#refresh{
+padding: 15px;
+padding-left: 1%;
+}
+
+#reset,
+#refresh,
+.refresh-img{
+background-color: transparent;
+background-repeat: no-repeat;
+border: none;
+cursor: pointer;
+overflow: hidden;
+outline: none;
+}
+
+.refresh-img{
+    width: 27px;
+}
+
+.editor__btn{
+height: 100%;
+padding-left: 4%;
+padding-right: 4%;
+font-size: 1em;
+font-weight: 700;
+outline: none;
+background-color: #6e30f2;
+color: #ebedf2;
+background-repeat: no-repeat;
+border: none;
+}    
