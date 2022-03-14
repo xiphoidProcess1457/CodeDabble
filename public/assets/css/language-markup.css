@@ -1,9 +1,12 @@
-.language-markup{
-    font-size: .8em;
-    font-family: monospace;
-    background-color: #ebedf2;
-    border-radius: 10px;
-    overflow-y: auto;
-    padding:2%;
-    padding-left:5%;
+code[class*="language-"],
+pre[class*="language-"] {
+    font-family: Menlo, Monaco, "Courier New", monospace;
+    font-size: 14px;
+    color: black;
+    border-radius: 5px;
+}
+
+pre[class*="language-"],
+:not(pre)>code[class*="language-"] {
+    background: #ebedf2;
 }

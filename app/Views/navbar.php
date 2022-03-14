@@ -5,11 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="<?= base_url('assets/js/test1.js');?>"> </script>
-	  <link  rel="stylesheet" type="text/css" href="<?= base_url('assets/css/navbardesign.css');?>">
-
-    
-	  
-    
+	  <link  rel="stylesheet" type="text/css" href="<?= base_url('assets/css/navbardesign.css');?>">   
 </head>
 <body>
     <nav class="navbar sticky-top navbar-light">

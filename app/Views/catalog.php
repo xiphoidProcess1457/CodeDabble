@@ -4,111 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>HOME</title>
- 
+    <link rel="stylesheet" href="<?= base_url('assets/css/catalog.css');?>">
+    <title>CATALOG</title>
     </head>
-
-    <style>
-        body{
-            font-family: 'Montserrat', sans-serif;
-             
-        }
-        .container-fluid{
-            box-sizing: border-box;
-            padding: 2%;
-            padding-right: 15%;
-            padding-left: 15%;
-            padding-bottom: 18%;
-            overflow: hidden;
-        }
-
-        .course-header{
-            color: #231773;
-            font-weight: 700;
-        }
-
-
-        .course-catalog{
-            padding-bottom: 10%;
-        }
-
-        .course-img-header{
-            width: 120px;
-        }
-
-        .card{
-            height: 17em;
-            background-color: #231773;
-            color: #ebedf2;
-            border-radius: 5px;
-            box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
-            transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
-            cursor: pointer;
-        }
-
-        .icon {
-            width: 50px;
-            height: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding-right: 2%;
-        }
-
-
-        .card-title{
-            font-weight: 800;
-        }
-
-        .card-subtitle{
-            color: #acb0f2;
-            font-weight: 500;
-        }
-
-        .card-text{
-            color: #fff;
-            padding-top: 8%;
-            font-weight: 600;
-        }
-
-
-        .card:hover{
-            transform: scale(1.05);
-            box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
-        }
-
-
-        .btn-primary{
-            border-radius: 5px;
-        }
-        .btn-primary:hover{
-            background-color: #acb0f2;
-            border: none;
-        }
-
-        .card-container{
-            padding-left: -10em;
-        }
-        .row > div[class*='column-'] {
-            padding-left: -10em;
-            display: flex;
-            flex:1 0 auto;
-        }
-
-        .column-spacing{
-            padding-bottom: 3%;
-        }
-        
-        .collapse-button{
-            background-color: #231773;
-            border: none;
-        }
-    </style>
 <body>
     <div class="container-fluid">
-
-       
-
 <div class="course-catalog">
     <div class="row">
         <img src="<?= base_url('assets/assets/html.svg');?>" class="course-img-header" alt="">

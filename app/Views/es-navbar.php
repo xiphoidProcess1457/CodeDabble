@@ -3,9 +3,8 @@
 <head>
 <meta charset="UTF-8">
 	      <link  rel="stylesheet" type="text/css" href="<?= base_url('assets/css/es-navbar.css');?>">
-    
 </head>
-<body ng-app>
+<body>
 <nav class="navbar navbar-expand-lg navbar-dark ">
   <a class="navbar-brand" href="<?= base_url('Home/index');?>">
   <img src="<?= base_url('assets/assets/white-logo.svg');?>"  class="d-inline-block align-top logo" alt="">

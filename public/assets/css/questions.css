@@ -1,37 +1,42 @@
-.container{
-    float: left;
-    padding-left: 10%;
-}
+
+html{
+    all: unset;
+}      
+
 
 .post-summary{
     padding-bottom: 10px;
-    
 }
 
 .post-tags{
-    padding-bottom: 30px;
+    padding-bottom: 10px;
+}
+
+.post-title,
+.post-summary-link{
+    color: #231773;
+    padding:0;
+    padding-bottom: -50px;
+    text-decoration: none;
 }
 
 .post-summary-link{
-    color: #231773;
+    text-decoration: none;
 }
 
-.post-tags{
-    padding-left: 10px;
+
+.create-question{
+    padding: 10px;
+    padding-right: 3%;
+    padding-left: 3%;
+    border-radius: 50px;
+    font-size: 1.5em;
+    margin-bottom: 4em;
 }
 
-.tags{
-    padding: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin: 5px;
-    background-color: #acb0f2;
-    color: #231773;
-    border: none;
-    font-weight: 500;
-}
-
-.tags:hover{
-    background-color: #231773;
-    color: #ebedf2;
+.post-body-summary{
+  color: #231773;
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: 1.1em;
 }

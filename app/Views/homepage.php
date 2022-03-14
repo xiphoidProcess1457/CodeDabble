@@ -7,13 +7,8 @@
     <title>HOME</title>
     <link  rel="stylesheet" type="text/css" href="<?= base_url('assets/css/index.css');?>">
     <link  rel="stylesheet" type="text/css" href="<?= base_url('assets/css/navbardesign.css');?>">
-    <link  rel="stylesheet" type="text/css" href="<?= base_url('assets/css/scrollbar.css');?>">
 </head>
-<style>
-
-
-</style>
-<body ng-app>
+<body>
 <div class="container-fluid">
 
         <div class="row mx-auto">

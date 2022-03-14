@@ -6,9 +6,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link  rel="stylesheet" type="text/css" href="<?= base_url('assets/css/es-footer.css');?>">
     </head>
-<style>
-
-    </style>
 <body>
     <footer>
         <button>Back</button>

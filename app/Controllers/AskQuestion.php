@@ -6,6 +6,12 @@ use App\Models\ForumReplyModel;
   
 class AskQuestion extends Controller
 {
+
+
+
+
+
+    
     public function index()
     {
         //include helper form
@@ -76,15 +82,23 @@ class AskQuestion extends Controller
 
 
     public function forum(){
+        $model = new \App\Models\ForumModel();
         
-        //view all data
-        $model = new ForumModel();
-        $data['news'] = $model->getPosts();
+        
+        helper('text');
+        
+        $news['news'] = $model->getPosts();
+        
+        $data = [
+            'news' => $model->paginate(10),
+            'pager' => $model->pager,
+        ];
         
         echo view('header-tags');
         echo view('navbar');
         echo view('questions', $data);
         echo view('footer');
+        
     }
 
 
@@ -106,24 +120,25 @@ class AskQuestion extends Controller
         $data['news'] = $model->getPosts();
         
         if(! $this->validate([
-            'answer' => 'required|min_length[3]|max_length[65535]'
+            'reply' => 'min_length[3]|max_length[65535]'
             
         ])){
-            return view('/AskQuestion', $data);
+            return view('/AskQuestion/viewforum', $data);
             
         }
         else{
             $model->save(
                 [
-                'forum_reply' =>$this->request->getVar('title')
+                'forum_reply'  =>$this->request->getVar('reply'),
+                'slug'        => url_title($this->request->getVar('reply')),
+                
                 ]
             );
 
             
             $session = \Config\Services::session();
-            return view('/AskQuestion');
+            return redirect()->to('/AskQuestion');
         }
-        
     }
 
 

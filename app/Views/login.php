@@ -6,11 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>LOGIN</title>
     <link rel="stylesheet" href="<?= base_url('assets/css/login.css');?>">
-
 </head>
-<style>
-   
-</style>
 <body>
   
     <div class="container-fluid">

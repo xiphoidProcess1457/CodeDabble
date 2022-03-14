@@ -4,57 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> <?= $post['forum_title'] ?></title>
+    <link  rel="stylesheet" type="text/css" href="<?= base_url('assets/css/viewforum.css');?>">
+    <link  rel="stylesheet" type="text/css" href="<?= base_url('assets/css/prism.css');?>">
+    <link  rel="stylesheet" type="text/css" href="<?= base_url('assets/js/prism.js');?>">
+    
 </head>
-<style>
-
-.forum-title,
-.forum-body,
-.answer-header{
-    color: #231773;
-}
-
-.answer-header{
-    padding-left: 10px;
-}
-
-
-.answer-button{
-    padding: 7px;
-    padding-right: 2%;
-    padding-left: 2%;
-    border-radius: 50px;
-    font-size: 1.5em;
-    margin-bottom: 2em;
-    margin-top: 1em;
-    background-color: #ACAff2;
-    font-size: 1.5em;
-    font-weight: 500;
-}
-
-.answer-button:hover{
-    color: #EBEDF2;
-    background-color: #231773;
-}
-
-
-.create-question{
-    padding: 10px;
-    padding-right: 3%;
-    padding-left: 3%;
-    border-radius: 50px;
-    font-size: 1.5em;
-    margin-bottom: 1em;
-}
-
-
-.create-question:hover{
-    color: #EBEDF2;
-    background-color: #231773;
-}
-
-
-    </style>
 <body>
     
 
@@ -96,10 +51,9 @@
       <div class="col">
       <form  action="/AskQuestion/savereply" method="POST">
       <h3 class="answer-header">Your Answer</h3>
-            <textarea class="text-editor" id="text-editor" name="body"></textarea>
-            <button class="btn btn-signin answer-button
-        " type="submit">POST ANSWER</button>
-</form>
+            <textarea class="text-editor" id="text-editor" name="reply"></textarea>
+            <button class="btn btn-signin answer-button" type="submit">POST ANSWER</button>
+    </form>
       </div>
     </div>
     </div>

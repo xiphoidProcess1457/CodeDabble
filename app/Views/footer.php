@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link  rel="stylesheet" type="text/css" href="<?= base_url('assets/css/footer.css');?>">
+	  <link  rel="stylesheet" type="text/css" href="<?= base_url('assets/css/footerdesign.css');?>">
     </head>
+  
 <body>
     <footer>
         <div class="row">
@@ -27,22 +28,22 @@
               LEARN
               </li>
               <li class="list-group-item borderless">
-              <a class="footer-brand" href="#">
+              <a class="footer-brand" href="<?= base_url('Home/catalog');?>">
                   JAVA
               </a>
               </li>
               <li class="list-group-item borderless">
-              <a class="footer-brand" href="#">
+              <a class="footer-brand" href="<?= base_url('Home/catalog');?>">
                   CSS
               </a>
               </li>
               <li class="list-group-item borderless">
-              <a class="footer-brand" href="#">
+              <a class="footer-brand" href="<?= base_url('Home/catalog');?>">
                   HTML
               </a>
               </li>
               <li class="list-group-item borderless">
-              <a class="footer-brand" href="#">
+              <a class="footer-brand" href="<?= base_url('Home/catalog');?>">
                   JAVASCRIPT
               </a>
               </li>
@@ -58,7 +59,7 @@
               ABOUT
               </li>
               <li class="list-group-item borderless">
-              <a class="footer-brand" href="Home/about">
+              <a class="footer-brand" href="<?= base_url('Home/about');?>">
                   CODEDABBLE
               </a>
               </li>

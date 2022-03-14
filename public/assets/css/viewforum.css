@@ -1,0 +1,44 @@
+.forum-title,
+.forum-body,
+.answer-header{
+    color: #231773;
+}
+
+.answer-header{
+    padding-left: 10px;
+}
+
+
+.answer-button{
+    padding: 7px;
+    padding-right: 2%;
+    padding-left: 2%;
+    border-radius: 50px;
+    font-size: 1.5em;
+    margin-bottom: 2em;
+    margin-top: 1em;
+    background-color: #ACAff2;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.answer-button:hover{
+    color: #EBEDF2;
+    background-color: #231773;
+}
+
+
+.create-question{
+    padding: 10px;
+    padding-right: 3%;
+    padding-left: 3%;
+    border-radius: 50px;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+
+.create-question:hover{
+    color: #EBEDF2;
+    background-color: #231773;
+}
