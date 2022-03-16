@@ -1,0 +1,14 @@
+.fa-eye-slash{
+    border:none;
+    cursor: pointer;
+  }
+  .password-span{
+    background-color: transparent;
+    border-left: none;
+    border-radius: 25px;
+  }
+
+  .password{
+    border-right: none;
+  }
+ 

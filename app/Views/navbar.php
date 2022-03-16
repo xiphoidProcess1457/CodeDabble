@@ -16,8 +16,28 @@
         <a class="nav-link nav-link-ltr" href="<?= base_url('/AskQuestion/forum');?>">FORUM</a>
         <a class="nav-link nav-link-ltr" href="<?= base_url('Home/about');?>">ABOUT</a>
         <a class="nav-link nav-link-ltr" href="#">SEARCH</a>
-        <a id="SIGNIN"class="btn btn-signin" href="<?= base_url('/register');?>" role="button">SIGNIN</a>
+      
+      
+        <?php if (session()->get('logged_in')):?>
+
+       <div class="dropdown">
+       <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<img src="<?= base_url('assets/assets/profile.svg');?>" width="40" height="40" class="d-inline-block align-top" alt="">
+        </a>
+
+  <div class="dropdown-menu menu" aria-labelledby="dropdownMenuLink">
+    <a class="dropdown-item item" href="<?= base_url('/login/logout');?>">Log Out</a>
+  </div>
+</div>
+			  
+			<?php else:?>
+        <a id="SIGNIN"class="btn btn-signin" href="<?= base_url('/login');?>" role="button">SIGNIN</a>
+			<?php endif; ?>
+      
 </nav>
+
+
+
 
 </body>
 

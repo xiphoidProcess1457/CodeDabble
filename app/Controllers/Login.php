@@ -19,6 +19,7 @@ class Login extends Controller
         $email = $this->request->getVar('email');
         $password = $this->request->getVar('password');
         $data = $model->where('user_email', $email)->first();
+      
         if($data){
             $pass = $data['user_password'];
             $verify_pass = password_verify($password, $pass);
@@ -40,11 +41,15 @@ class Login extends Controller
             return redirect()->to('/login');
         }
     }
+
+
+
+  
   
     public function logout()
     {
         $session = session();
         $session->destroy();
-        return redirect()->to('/login');
+        return redirect()->to('/Home');
     }
 } 

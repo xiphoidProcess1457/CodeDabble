@@ -8,12 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>REGISTER</title>
     <link rel="stylesheet" href="<?= base_url('assets/css/register.css');?>">
+    
+ 
+
 
 </head>
-<style>
-  
-</style>
-<body ng-app='myapp'>
+<body>
     <div class="container-fluid">
         
         <div class="row mx-auto">
@@ -36,9 +36,17 @@
                     <input type="text" name="name" class="form-control" placeholder="Username" id="InputForName" value="<?= set_value('name') ?>">
                       </div>
 
-                    <div class="mb-3">
-                    <input type="password" name="password" placeholder="password" class="form-control" id="InputForPassword">
+                    <div class="input-group mb-3">
+                    <input type="password" name="password" placeholder="password" class="form-control password" id="InputForPassword">
+                    <div class="input-group-append">
+                    <span class="input-group-text password-span">
+                    <i class="fa fa-eye-slash" aria-hidden="true" onclick="myFunction()"></i>
+                      </span>
                     </div>
+                  </div>
+
+
+              
 
                     <div class="mb-3 ">
                         
@@ -69,4 +77,14 @@
       </div>
 
 </body>
+<script>
+function myFunction() {
+  var x = document.getElementById("InputForPassword");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
 </html>

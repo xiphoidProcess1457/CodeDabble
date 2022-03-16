@@ -32,10 +32,14 @@
                       <input type="email" name="email" class="form-control" id="InputEmail1" placeholder="Email" value="<?= set_value('email') ?>">
                       </div>
 
-                    <div class="mb-3">
-                  
-                      <input type="password" name="password" class="form-control"  placeholder="Password" id="InputPassword1">
+                      <div class="input-group mb-3">
+                    <input type="password" name="password" placeholder="password" class="form-control password" id="InputForPassword">
+                    <div class="input-group-append">
+                    <span class="input-group-text password-span">
+                    <i class="fa fa-eye-slash" aria-hidden="true" onclick="myFunction()"></i>
+                      </span>
                     </div>
+                  </div>
 
                       <div class="mb-3 need-account">
                       DONT HAVE AN ACCOUNT?   <a href="/register" class="link-primary signin-link">REGISTER</a>
@@ -54,4 +58,14 @@
        
       </div>
 </body>
+<script>
+function myFunction() {
+  var x = document.getElementById("InputForPassword");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
 </html>
