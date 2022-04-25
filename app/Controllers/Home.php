@@ -10,7 +10,7 @@ class Home extends BaseController
 
 
     public function index()
-    {
+    { 
         echo view('header-tags');
         echo view('navbar');
         echo view('homepage');
