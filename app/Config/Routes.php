@@ -52,6 +52,7 @@ $routes->get('/', 'AskQuestion::index');
 $routes->get('/', 'Profile::index/$1');
 $routes->post('update', 'Profile::update');
 $routes->get('Profile/editprofile/(:num)', 'Profile::editprofile/$1');
+$routes->get('compiler', 'Compiler::index');
 /*
  * --------------------------------------------------------------------
  * Additional Routing
