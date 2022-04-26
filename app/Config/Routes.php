@@ -32,7 +32,7 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 //$routes->get('/', 'Home::index');
-$routes->get('/', 'Home::index');
+$routes->get('/', 'Home::index/$1');
 $routes->get('/', 'AskQuestion::index/$1');
 $routes->get('/home', 'Home::index',['filter' => 'auth']);
 $routes->get('/home', 'Home::index',['filter' => 'auth']);
@@ -48,6 +48,10 @@ $routes->get('/askquestion/post', 'AskQuestion::post/$1');
 $routes->get('/forumreply', 'AskQuestion::forumreply');
 $routes->get('/post', 'AskQuestion::forumreply');
 $routes->get('/', 'AskQuestion::index');
+//$routes->get('/Profile/post', 'AskQuestion::post/$1');
+$routes->get('/', 'Profile::index/$1');
+$routes->post('update', 'Profile::update');
+$routes->get('Profile/editprofile/(:num)', 'Profile::editprofile/$1');
 /*
  * --------------------------------------------------------------------
  * Additional Routing

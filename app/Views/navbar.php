@@ -17,22 +17,23 @@
         <a class="nav-link nav-link-ltr" href="<?= base_url('Home/about');?>">ABOUT</a>
         <a class="nav-link nav-link-ltr" href="<?= base_url('/Search');?>">SEARCH</a>
       
-      
-        <?php if (session()->get('logged_in')):?>
 
-       <div class="dropdown">
-       <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <img src="<?= base_url('assets/assets/profile.svg');?>" width="40" height="40" class="d-inline-block align-top" alt="">
-        </a>
+      <?php if (session()->get('logged_in')):?>
 
-  <div class="dropdown-menu menu" aria-labelledby="dropdownMenuLink">
-    <a class="dropdown-item item" href="<?= base_url('/login/logout');?>">Log Out</a>
-  </div>
-</div>
-			  
-			<?php else:?>
+      <div class="dropdown">
+      <img class="dropdown-image" src="/uploads/user/<?= (session()->get('uploaded_flleinfo'));?>" height="30" width="30" class="d-inline-block align-top" alt="">
+					<a href="<?= base_url('/Profile');?>" class="name"><?= (session()->get('user_name'));?></a>
+					
+					<!-- more menu -->
+					<ul class="dropdown-menu">
+						<li><a href="<?= base_url('/Profile');?>">Profile</a></li>
+						<li><a href="<?= base_url('/login/logout');?>">Log out</a></li>
+					</ul>
+				</div>
+        <?php else:?>
         <a id="SIGNIN"class="btn btn-signin" href="<?= base_url('/login');?>" role="button">SIGNIN</a>
 			<?php endif; ?>
+
       
 </nav>
 
@@ -40,6 +41,14 @@
 
 
 </body>
-
+<script>
+	$(document).ready(function () {
+$('.navbar .dropdown').hover(function () {
+        $(this).find('.dropdown-menu').first().stop(true, true).slideDown(150);
+    }, function () {
+        $(this).find('.dropdown-menu').first().stop(true, true).slideUp(105)
+    });
+});
+</script>
 </html>
 

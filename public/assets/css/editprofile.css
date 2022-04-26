@@ -1,0 +1,51 @@
+html{
+    overflow: visible;
+}
+.container{
+    padding-left: 1em;
+}
+
+.profile-image{
+    border-radius: 100%;
+}
+
+
+.user-info{
+    padding-top: 2em;
+}
+
+
+.info{
+    color: #1E0D8C;
+    font-size:1.1em;
+    font-weight: 400;
+}
+
+.bio-wrapper{
+    width: 100%;
+    margin-top: 4em;
+}
+
+.bio-header{
+    color: #2C0AA6;
+    font-size:4em;
+    font-weight: 400;
+}
+
+.bio{
+    font-size:1.2em;
+    font-weight: 400;
+    padding-left: 5%;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.user-info-header{
+    color: #2C0AA6;
+    font-size:1.4em;
+    font-weight: 500;
+}
+
+.file-input{
+    font-size: 1em;
+}

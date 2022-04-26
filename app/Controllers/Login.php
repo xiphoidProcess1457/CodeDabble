@@ -19,7 +19,7 @@ class Login extends Controller
         $email = $this->request->getVar('email');
         $password = $this->request->getVar('password');
         $data = $model->where('user_email', $email)->first();
-      
+        $data['user']=$model->where("users.id", session("id"))->first();
         if($data){
             $pass = $data['user_password'];
             $verify_pass = password_verify($password, $pass);
@@ -28,8 +28,10 @@ class Login extends Controller
                     'id'       => $data['id'],
                     'user_name'     => $data['user_name'],
                     'user_email'    => $data['user_email'],
+                    'uploaded_flleinfo'    => $data['uploaded_flleinfo'],
                     'logged_in'     => TRUE
                 ];
+              
                 $session->set($ses_data);
                 return redirect()->to('/Home');
             }else{

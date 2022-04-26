@@ -10,29 +10,13 @@
     <link  rel="stylesheet" type="text/css" href="<?= base_url('assets/js/prism.js');?>">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.js"></script>
+	  <link  rel="stylesheet" type="text/css" href="<?= base_url('assets/css/navbardesign.css');?>"> 
     
 </head>
 <style>
-
-    .forum-body{
-        font-weight: 400;
-        font-size: 1em;
-    }
-    .post-info{
-        padding-left:20px;
-        cursor:default;
-    }
-
-    td{
-        display: block;
-    }
-
-    .forum-reply{
-        padding-top:3em;
-        width: 80%;
-        color: #231773;
-    }
-
+.post-info{
+    display: flex;
+}
     </style>
 <body>
     
@@ -83,7 +67,8 @@
            </td>
             <td>
             <p class="text-muted post-info">    
-            <img src="<?= base_url('assets/assets/profile.svg');?>" width="40" height="40" class="d-inline-block align-top" alt=""> <?php echo $replyItem['user_name']; ?><?=  date("   F d,Y g:i A", strtotime($replyItem['created_at']))?>
+           
+            <img src="/uploads/user/<?= $replyItem['uploaded_flleinfo']?>" height="30" width="30" class="profile-image"  alt=""> <?php echo $replyItem['user_name']; ?><?=  date("   F d,Y g:i A", strtotime($replyItem['created_at']))?>
         </p>
         </td>
             <hr>

@@ -107,6 +107,8 @@ class AskQuestion extends Controller
         //JOIN CODE->join('forumreply', 'users.id = forumreply.user_id', 'left')
         //$data ['reply'] = $reply;
         $data ['reply'] = $comment;
+        //$user = $model->where("users.id", session("id"))->first();
+        $user=$userModel->where("users.id", session("id"))->first();
         //$data['reply'] =$model->find();
         //$reply['forumreply'] = $model->getPosts();
         //$reply['forumreply'] =$model->findAll();
@@ -125,7 +127,7 @@ class AskQuestion extends Controller
         echo view('navbar');
         //echo 'pota';
         // echo '<pre>';
-        // print_r($comment);
+        // print_r($user);
         // echo '<pre>';
         //$tangina = $dd->find($id);
         //print_r($tangina);
