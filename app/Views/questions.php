@@ -13,7 +13,7 @@
 <body>
 <div class="container">
         <div class="row">
-        <a id="SIGNIN"class="btn btn-signin create-question" href="<?= base_url('/AskQuestion');?>" role="button">CREATE A QUESTION</a>      
+        <a id="SIGNIN"class="btn btn-signin create-question" href="<?= base_url('/AskQuestion/question');?>" role="button">CREATE A QUESTION</a>      
        
         </div>
 
@@ -22,7 +22,7 @@
         <?php if ($news): ?>
             <?php foreach ($news as $newsItem):?>
 
-            <h3 class="hehe"><a class="post-summary-link" href="/AskQuestion/<?= $newsItem['slug']?>">
+            <h3 class="hehe"><a class="post-summary-link" href="<?php echo base_url('AskQuestion/post/'. $newsItem['id']);?>">
                     <?= $newsItem['forum_title'] ?>
             </a></h3>
 
