@@ -173,6 +173,7 @@ class Admin extends Controller
         
         $result = json_decode($response,true);
         $data['codeBody']=$result['codeBody'];
+
         $db = db_connect();
         
         $model = new CourseModel($db);

@@ -206,4 +206,10 @@ font-family: 'Inconsolata', monospace;
 
 
 
+<script type="text/javascript" src="<?= base_url('assets/js/ace_editor.js');?>">
+</script>
+<script type="text/javascript" src="<?= base_url('assets/js/split.js');?>"></script>
+<script>
+
+</script>
 </html>
