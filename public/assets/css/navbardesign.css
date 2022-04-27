@@ -124,7 +124,7 @@ justify-content: center
 
 }
 .dropdown:hover {
- display:block;
+ display:flex;
 cursor:pointer;
 background:#C4C1D9;
 }

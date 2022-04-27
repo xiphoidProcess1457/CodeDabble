@@ -88,11 +88,6 @@
   }
   
   
-  .container{
-      height: 85.5vh;
-      padding-top:0 ! important;
-      padding:1em ! important;
-  }
   
   /*pagination*/
   .pagination>li:hover {
@@ -127,3 +122,17 @@
       font-weight: 400;
   }
   
+  .post-body-summary{
+    color: #231773;
+    font-weight: 400;
+    line-height: 1.6;
+    font-size: 1.1em;
+    padding-bottom: 2.5em;
+  }
+  
+  .post-summary-link{
+      color: #231773;
+      padding:0;
+      padding-bottom: -50px;
+      text-decoration: none;
+  }

@@ -19,19 +19,32 @@
         <h1>
             Add Lesson
         </h1>
-    <form  action="" method="POST">
+        <form  action="/Admin/save" method="POST">
     <div class="form-group">
         <input type="Title" class="form-control input-title" id="title-input" name="title" placeholder="Title">
     </div>
     
     <div class="form-group">
-        <input type="Title" class="form-control input-title" id="title-input" name="" placeholder="Course">
+        <input type="Title" class="form-control input-title" id="title-input" name="course" placeholder="topic">
     </div>
 
+    <div class="form-group">
+        <input type="Title" class="form-control input-title" id="title-input" name="description" placeholder="Description">
+    </div>
     
     <div class="form-group">
     <textarea id="text-editor" name="body"></textarea>
     </div>
+
+
+
+    <div class="form-group">
+        <h1>ADD CODE SNIPPET</h1>
+    <textarea id="text-editor" name="code-snippet"></textarea>
+    </div>
+
+
+
 
     <div class="form-group">
     <button class="post-button" type="submit">POST</button>
