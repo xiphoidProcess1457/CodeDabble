@@ -164,16 +164,27 @@ class Admin extends Controller
 
     public function editor($id)
     {
-
+        $url = "http://localhost:8080/fetchCode?fileName=Solution";
+        
+        $client = curl_init($url);
+        curl_setopt($client,CURLOPT_POST,1);
+        curl_setopt($client, CURLOPT_RETURNTRANSFER, true);
+        $response = curl_exec($client);
+        
+        $result = json_decode($response,true);
+        $data['codeBody']=$result['codeBody'];
         $db = db_connect();
         
         $model = new CourseModel($db);
 
         $data['lessons'] =$model->find($id);
+        $data['TOKEN']="1234";
         echo view('header-tags');
         echo view('es-navbar');
         echo view('editor', $data);
         echo view('es-footer');
     }
+
+
 
 }

@@ -1,5 +1,6 @@
 
          let editor = ace.edit("editor");
+         
          document.querySelector("#run").addEventListener("click", function(){
              let editorCode = editor.getValue();
              let idoc = document.querySelector("#iframe").contentWindow.document;
@@ -10,9 +11,7 @@
  
  
  
-         document.querySelector("#reset").addEventListener("click", function(){
-             editor.setValue('');
-         })
+      
   
          
          document.querySelector("#refresh").addEventListener("click", function(){
