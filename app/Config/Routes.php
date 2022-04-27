@@ -53,6 +53,9 @@ $routes->get('/', 'Profile::index/$1');
 $routes->post('update', 'Profile::update');
 $routes->get('Profile/editprofile/(:num)', 'Profile::editprofile/$1');
 $routes->get('compiler', 'Compiler::index');
+$routes->match(['get','post'], 'Search/search', 'Search::search_method');
+
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing

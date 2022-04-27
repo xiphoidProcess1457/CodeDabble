@@ -15,7 +15,7 @@
         <a class="nav-link nav-link-ltr" href="<?= base_url('Home/catalog');?>">CATALOG</a>
         <a class="nav-link nav-link-ltr" href="<?= base_url('/AskQuestion/forum');?>">FORUM</a>
         <a class="nav-link nav-link-ltr" href="<?= base_url('Home/about');?>">ABOUT</a>
-        <a class="nav-link nav-link-ltr" href="<?= base_url('/Search');?>">SEARCH</a>
+        <a class="nav-link nav-link-ltr" href="<?= base_url('search');?>">SEARCH</a>
       
 
       <?php if (session()->get('logged_in')):?>
