@@ -9,53 +9,41 @@
     </head>
 <body>
     <div class="container-fluid">
+
+
+
+
 <div class="course-catalog">
+
     <div class="row">
-        <h2 class="align-self-end course-header"> LEARN HTML</h2>
+        <h2 class="align-self-end course-header"> LEARN JAVA</h2>
     </div>
     
+    
     <div class="row no-gutters">
-
+    <?php foreach($lessons as  $item) : ?>
         <div class="column-md-3 column-spacing">
+
             <div class="card" style="width: 18rem;">
                 <div class="card-body d-flex flex-column">
                     <div class="d-flex flex-row align-items-center">
-                        <div class="icon"> <img src="<?= base_url('assets/assets/html.svg');?>" alt=""></i> </div>
+                        <div class="icon"> <img src="<?= base_url('assets/assets/java.svg');?>" alt=""></i> </div>
                         <div class="ms-2 c-details">
-                            <h6 class="mb-0 card-title">Intro to Html</h6> <span class="card-subtitle">Lecture 1</span>
+                            <h6 class="mb-0 card-title"><?= $item['title']?></h6> <span class="card-subtitle"><?= $item['course']?></span>
                         </div>
                     </div>
-                  <p class="card-text">HTML is the standard markup language for creating Web pages</p>
-                  <a href="<?= base_url('Home/editor');?>" type="button" class="align-self-end btn btn-lg btn-block btn-primary" style="margin-top: auto;">Learn Now</a>
+                  <p class="card-text">
+                  <?= $item['description']?>
+                </p>
+                  <a href="<?php echo base_url('Admin/editor/'. $item['id']);?>" type="button" class="align-self-end btn btn-lg btn-block btn-primary" style="margin-top: auto;">Learn Now</a>
                 </div>
                 </div>
+
             </div>
-            
+            <?php endforeach; ?>
       
       </div>
-      <div class="collapse" id="collapse-html">
-        <div class="row no-gutters">
-
-            <div class="column-md-3 column-spacing">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body d-flex flex-column">
-                        <div class="d-flex flex-row align-items-center">
-                            <div class="icon"> <img src="<?= base_url('assets/assets/html.svg');?>" alt=""></i> </div>
-                            <div class="ms-2 c-details">
-                                <h6 class="mb-0 card-title">Intro to Html</h6> <span class="card-subtitle">Lecture 1</span>
-                            </div>
-                        </div>
-                      <p class="card-text">HTML is the standard markup language for creating Web pages</p>
-                      <a href="#" type="button" class="align-self-end btn btn-lg btn-block btn-primary" style="margin-top: auto;">Learn Now</a>
-                    </div>
-                    </div>
-                </div>
-           
-          </div>
-      </div>
-      <button class="btn btn-primary collapse-button" type="button" data-toggle="collapse" data-target="#collapse-html" aria-expanded="false" aria-controls="collapseExample">
-        SEE MORE
-      </button>
+   
 
 </div>
 
@@ -64,108 +52,6 @@
             
 
 
-
-<div class="course-catalog">
-    <div class="row">
-        <h2 class="align-self-end course-header">CSS</h2>
-    </div>
-    
-    <div class="row no-gutters">
-
-        <div class="column-md-3 column-spacing">
-            <div class="card" style="width: 18rem;">
-                <div class="card-body d-flex flex-column">
-                    <div class="d-flex flex-row align-items-center">
-                        <div class="icon"> <img src="<?= base_url('assets/assets/css.svg');?>" alt=""></i> </div>
-                        <div class="ms-2 c-details">
-                            <h6 class="mb-0 card-title">Intro to Html</h6> <span class="card-subtitle">Lecture 1</span>
-                        </div>
-                    </div>
-                  <p class="card-text">HTML is the standard markup language for creating Web pages</p>
-                  <a href="#" type="button" class="align-self-end btn btn-lg btn-block btn-primary" style="margin-top: auto;">Learn Now</a>
-                </div>
-                </div>
-            </div>
-      
-      </div>
-      <div class="collapse" id="collapse-css">
-        <div class="row no-gutters">
-
-            <div class="column-md-3 column-spacing">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body d-flex flex-column">
-                        <div class="d-flex flex-row align-items-center">
-                            <div class="icon"> <img src="<?= base_url('assets/assets/css.svg');?>" alt=""></i> </div>
-                            <div class="ms-2 c-details">
-                                <h6 class="mb-0 card-title">Intro to Html</h6> <span class="card-subtitle">Lecture 1</span>
-                            </div>
-                        </div>
-                      <p class="card-text">HTML is the standard markup language for creating Web pages</p>
-                      <a href="#" type="button" class="align-self-end btn btn-lg btn-block btn-primary" style="margin-top: auto;">Learn Now</a>
-                    </div>
-                    </div>
-                </div>
-           
-          </div>
-      </div>
-      <button class="btn btn-primary collapse-button" type="button" data-toggle="collapse" data-target="#collapse-css" aria-expanded="false" aria-controls="collapseExample">
-        SEE MORE
-      </button>
-
-</div>
-
-
-
-
-
-<div class="course-catalog">
-    <div class="row">
-        <h2 class="align-self-end course-header">JAVA</h2>
-    </div>
-    
-    <div class="row no-gutters">
-
-        <div class="column-md-3 column-spacing">
-            <div class="card" style="width: 18rem;">
-                <div class="card-body d-flex flex-column">
-                    <div class="d-flex flex-row align-items-center">
-                        <div class="icon"> <img src="<?= base_url('assets/assets/java.svg');?>" alt=""></i> </div>
-                        <div class="ms-2 c-details">
-                            <h6 class="mb-0 card-title">Intro to Html</h6> <span class="card-subtitle">Lecture 1</span>
-                        </div>
-                    </div>
-                  <p class="card-text">HTML is the standard markup language for creating Web pages</p>
-                  <a href="#" type="button" class="align-self-end btn btn-lg btn-block btn-primary" style="margin-top: auto;">Learn Now</a>
-                </div>
-                </div>
-            </div>
-      
-      </div>
-      <div class="collapse" id="collapse-java">
-        <div class="row no-gutters">
-
-            <div class="column-md-3 column-spacing">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body d-flex flex-column">
-                        <div class="d-flex flex-row align-items-center">
-                            <div class="icon"> <img src="<?= base_url('assets/assets/java.svg');?>" alt=""></i> </div>
-                            <div class="ms-2 c-details">
-                                <h6 class="mb-0 card-title">Intro to Html</h6> <span class="card-subtitle">Lecture 1</span>
-                            </div>
-                        </div>
-                      <p class="card-text">HTML is the standard markup language for creating Web pages</p>
-                      <a href="#" type="button" class="align-self-end btn btn-lg btn-block btn-primary" style="margin-top: auto;">Learn Now</a>
-                    </div>
-                    </div>
-                </div>
-           
-          </div>
-      </div>
-      <button class="btn btn-primary collapse-button" type="button" data-toggle="collapse" data-target="#collapse-java" aria-expanded="false" aria-controls="collapseExample">
-        SEE MORE
-      </button>
-
-</div>
           </div>
 
 </body>

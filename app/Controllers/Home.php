@@ -14,13 +14,7 @@ class Home extends BaseController
     }
 
 
-    public function catalog()
-    {
-        echo view('header-tags');
-        echo view('navbar');
-        echo view('catalog');
-        echo view('footer');
-    }
+    
 
     public function about()
     {
@@ -31,13 +25,7 @@ class Home extends BaseController
     }
 
 
-    public function editor()
-    {
-        echo view('header-tags');
-        echo view('es-navbar');
-        echo view('editor');
-        echo view('es-footer');
-    }
+  
 
     public function questions()
     {

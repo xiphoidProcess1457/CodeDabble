@@ -20,33 +20,31 @@
       <th scope="col">TITLE</th>
       <th scope="col">CONTENT</th>
       <th scope="col">COURSE</th>
+      <th scope="col">DESCRITION</th>
       <th scope="col">ACTIONS</th>
     </tr>
   </thead>
   <tbody>
+  <?php foreach($lessons as  $item) : ?>
     <tr>
-      <th scope="row">1</th>
-      <td>Intro to Java</td>
-      <td>Welcome to the world of Java programming!</td>
-      <td>Java</td>
-      <td> 
-        <a href="<?php echo base_url('Admin/edit/');?>" class="btn btn-success" role="button"><i class="fas fa-edit"></i></a>
-        <a href="<?php echo base_url('Admin/delete/');?>" class="btn btn-danger" role="button"><i class="far fa-trash-alt"></i></a>
-      </td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Variables</td>
-      <td>Let’s say we need a program that connects a user with new jobs. </td>
-      <td>Java</td>
+      <th scope="row"><?= $item['id']?></th>
+      <td><?= $item['title']?></td>
+      <td><?= $item['course']?></td>
+      <td><?= $item['body']?></td>
+      <td><?= $item['description']?></td>
       <td>
-      <a href="<?php echo base_url('Admin/edit/');?>" class="btn btn-success" role="button"><i class="fas fa-edit"></i></a>
-        <a href="<?php echo base_url('Admin/delete/');?>" class="btn btn-danger" role="button"><i class="far fa-trash-alt"></i></a>
+      <a class="btn btn-success" href="<?php echo base_url('Admin/edit/'. $item['id']);?>">EDIT</a>  
+      <a class="btn btn-danger" href="<?= base_url('Admin/delete/'.$item['id']);?>">DELETE</a> 
       </td>
     </tr>
+    <?php endforeach; ?>
+ 
+   
+
    
   </tbody>
 </table>
     </div>
 </body>
 </html>
+

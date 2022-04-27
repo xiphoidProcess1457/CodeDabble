@@ -7,7 +7,28 @@
     <link rel="stylesheet" href="<?= base_url('assets/css/search.css');?>">
     <title>Search</title>
 </head>
+<style>
+.post-body-summary{
+  color: #231773;
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: 1.1em;
+  padding-bottom: 2.5em;
+}
+
+.post-summary-link{
+    color: #231773;
+    padding:0;
+    padding-bottom: -50px;
+    text-decoration: none;
+}
+
+.container{
+  height: 100%;
+}
+</style>
 <body>
+
 <div class="container">
 
 
@@ -55,9 +76,13 @@
                     <?= $newsItem['forum_title'] ?>
             </a></h3>
 
-            <div class="post-summary">
-                     <div class="post-body-summary"><?=  substr($newsItem['forum_body'], 0, 200); ?></div>
-            </div>
+          <div class="post-body-summary">
+                            <?php 
+                    $html = new \Html2Text\Html2Text(substr($newsItem ['forum_body'], 0, 250));
+                    echo $html->getText();  // Hello, "WORLD"
+                ?>
+                     
+                     </div>
          
             <?php endforeach; ?>
             

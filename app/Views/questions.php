@@ -5,10 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link  rel="stylesheet" type="text/css" href="<?= base_url('assets/css/questions.css');?>">
-    
 	<link  rel="stylesheet" type="text/css" href="<?= base_url('assets/css/pagination.css');?>">
-    <title>FORUM</title>
-    
+  <title>FORUM</title>
 </head>
 <body>
 <div class="container">
@@ -27,7 +25,13 @@
             </a></h3>
 
             <div class="post-summary">
-                     <div class="post-body-summary"><?=  substr($newsItem ['forum_body'], 0, 200); ?></div>
+                     <div class="post-body-summary">
+                            <?php 
+                    $html = new \Html2Text\Html2Text(substr($newsItem ['forum_body'], 0, 250));
+                    echo $html->getText();  // Hello, "WORLD"
+                ?>
+                     
+                     </div>
             </div>
          
             <?php endforeach; ?>
@@ -35,6 +39,11 @@
         <?php else: ?>
           <p>no post</p>
         <?php endif; ?>
+        
+
+      
+        
+   
           </div>
         </div>
     </div>

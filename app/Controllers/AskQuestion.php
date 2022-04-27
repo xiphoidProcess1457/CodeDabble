@@ -109,6 +109,12 @@ class AskQuestion extends Controller
         $data ['reply'] = $comment;
         //$user = $model->where("users.id", session("id"))->first();
         $user=$userModel->where("users.id", session("id"))->first();
+ 	
+
+        $comment_num = json_decode(json_encode($model->where("forumreply.post_id",$id)->join('users', 'forumreply.user_id = users.id')
+        ->countAllResults()), true);	
+
+        $data ['num_row'] = $comment_num;
         //$data['reply'] =$model->find();
         //$reply['forumreply'] = $model->getPosts();
         //$reply['forumreply'] =$model->findAll();
@@ -126,8 +132,9 @@ class AskQuestion extends Controller
         echo view('header-tags');
         echo view('navbar');
         //echo 'pota';
+        // $s['user'] =$forumModel->find($id);
         // echo '<pre>';
-        // print_r($user);
+        // print_r($num);
         // echo '<pre>';
         //$tangina = $dd->find($id);
         //print_r($tangina);
@@ -208,31 +215,46 @@ class AskQuestion extends Controller
     public function store($id)
     {  
         $db = db_connect();
+        
         helper('form', 'url');
-        $userModel = new UserModel($db);
-        $forumModel = new ForumModel($db);
+        $usermodel = new UserModel($db);
+        $forummodel = new ForumModel($db);
         $model = new ForumReplyModel($db);
-        $comment = json_decode(json_encode($model->where("forumreply.post_id",$id)->join('users', 'forumreply.user_id = users.id')
-        ->get()->getResult()), true);		
-        // print_r($comment);
-        $reply ['reply'] = $comment;
+        $session = session();
+
+        $linkId=$forummodel->where("forumquestion.id", $id)->first();
+        
+        $link = $forummodel->where("/AskQuestion/post/",$id);
         $data = [
             'forum_reply' => $this->request->getVar('reply'),
             'post_id'     =>$this->request->getVar('custId'),
             'user_id'     =>session("id")
             ];
-        $save = $model->insert_data($data);
-        if($save != false)
-        {
+            $save = $model->insert_data($data);
             $data = $model->where('id', $save)->first();
-            echo json_encode(array("status" => true , 'data' => $data,$reply));
-        }   
-        else{
-            echo json_encode(array("status" => false , 'data' => $data));
-        }
+            
+            return redirect()->to('/AskQuestion/post/'.$linkId['id']);
+            
+            
     }
 
 
+    // $db = db_connect();
+        
+    // helper('form', 'url');
+    // $usermodel = new UserModel($db);
+    // $forummodel = new ForumModel($db);
+    // $usermodel = new ForumReplyModel($db);
+    // $session = session();
+    // $data['user'] =$forumModel->find($id);
+    // $data = [
+    //     'forum_reply' => $this->request->getVar('reply'),
+    //     'post_id'     =>$this->request->getVar('custId'),
+    //     'user_id'     =>session("id")
+    //     ];
+    // $session->set($data);
+    // $usermodel->update($id, $data);
+    // return redirect()->to('/AskQuestion/post');
 
 
 
