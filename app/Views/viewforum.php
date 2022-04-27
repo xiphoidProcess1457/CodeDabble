@@ -14,8 +14,45 @@
     
 </head>
 <style>
-.post-info{
+
+a:hover {
+  text-decoration: none;
+  color:#0088cc;
+  letter-spacing: .0em;
+  border: none;
+  transition: .2s;
+}
+
+.link:hover{
+    text-decoration: underline;
+}
+ 
+.comment-info{
+    display: block;
+    margin-bottom:2px;
+}
+
+.comment-info{
+    font-size: .9em;
+    margin-bottom:-5px;
+    padding-left: .3em;
+    width: 100%
+}
+.profile-comment{
     display: flex;
+    align-items:center;
+}
+
+.row{
+    
+    padding-left: 4%;
+    padding-bottom: 2%;
+
+}
+
+.forum-reply{
+    padding-left: 2em;
+    padding-bottom: 5em;
 }
     </style>
 <body>
@@ -37,8 +74,11 @@
 
 <figcaption class="figure-caption">
    <div class="row">
-   <p class="text-muted post-info">Creater by:<?= $forumquestion['user_name'] ?>
-   <p class="text-muted post-info">Published On:<?=  date("   F d,Y g:i A", strtotime($forumquestion['created_at']))?> </p>
+   <p class="text-muted post-info">Creater by:
+   <a href="<?= base_url('/Profile');?>" class="text-muted link">     
+   <?= $forumquestion['user_name'] ?>
+</a>
+   <p class="text-muted post-info">Published On:<?=  date("   F d,Y @ g:i A", strtotime($forumquestion['created_at']))?> </p>
    </div>
 </figcaption>
 
@@ -53,7 +93,7 @@
 
     <div class="forum-reply">
     <h2>
-        Answers
+    <?php echo $num_row;?> Answers
     </h2>
     <?php
         foreach($reply as $replyItem){
@@ -66,10 +106,21 @@
             <p class="reply"> <?php echo $replyItem['forum_reply'];?></p>    
            </td>
             <td>
-            <p class="text-muted post-info">    
-           
-            <img src="/uploads/user/<?= $replyItem['uploaded_flleinfo']?>" height="30" width="30" class="profile-image"  alt=""> <?php echo $replyItem['user_name']; ?><?=  date("   F d,Y g:i A", strtotime($replyItem['created_at']))?>
-        </p>
+          
+            <div class="profile-comment">
+            <img src="/uploads/user/<?= $replyItem['uploaded_flleinfo']?>" height="50" width="50" class="profile-image"  alt=""> 
+            <div class="row comment-info">
+   <p class="text-muted comment-info">
+   Creater by:
+   <a href="<?= base_url('/Profile');?>" class="text-muted link">    
+   <?= $replyItem['user_name'] ?>
+        </a>
+</p>
+   <p class="text-muted comment-info"><?=  date("F d,Y g:i A", strtotime($replyItem['created_at']))?> </p>
+   </div>
+            </div>
+         
+            
         </td>
             <hr>
 </table>
@@ -84,7 +135,7 @@
     <div class="row">
         
       <div class="col">
-      <form id="postreply" name="postreply" action="" method="post">
+      <?= form_open_multipart('AskQuestion/store/'.$forumquestion['id'] ) ?>
                     <div class="form-group">
                     <input type="hidden" id="custId" class="custId" name="custId" value="<?= $forumquestion['id'] ?>">
                     <textarea class="text-editor reply" id="text-editor" name="reply"></textarea>
@@ -125,41 +176,41 @@
 
 
 <script>
-          $(document).ready(function () {
-            //Add the Student  
-            $("#postreply").validate({
+        //   $(document).ready(function () {
+        //     //Add the Student  
+        //     $("#postreply").validate({
                 
           
-                 submitHandler: function(form) {
-                  var form_action = $("#postreply").attr("action");
-                  var data = {
-                      'reply' : $('.reply').val(),
-                      'custId' : $('.custId').val(),
+        //          submitHandler: function(form) {
+        //           var form_action = $("#postreply").attr("action");
+        //           var data = {
+        //               'reply' : $('.reply').val(),
+        //               'custId' : $('.custId').val(),
 
-                  }
+        //           }
 
 
-                  $.ajax({
-                      data: $('#postreply').serialize(), 
-                      url: '/askquestion/store',
-                      method: "POST",
-                      dataType: 'json',
-                      success: function (res) {
-                          var askquestion = '<tr id="'+res.data.id+'">';
-                          askquestion += '<td>' + res.data.forum_reply + '</td>';
-                          askquestion += '<td>' + res.data.user_name + '</td>';
-                          askquestion += '<hr>';
-                          $('#replyTable tbody').prepend(askquestion);
-                          $('#postreply')[0].reset();
-                          $('#addModal').modal('hide');
+        //           $.ajax({
+        //               data: $('#postreply').serialize(), 
+        //               url: '/askquestion/store',
+        //               method: "POST",
+        //               dataType: 'json',
+        //               success: function (res) {
+        //                   var askquestion = '<tr id="'+res.data.id+'">';
+        //                   askquestion += '<td>' + res.data.forum_reply + '</td>';
+        //                   askquestion += '<td>' + res.data.user_name + '</td>';
+        //                   askquestion += '<hr>';
+        //                   $('#replyTable tbody').prepend(askquestion);
+        //                   $('#postreply')[0].reset();
+        //                   $('#addModal').modal('hide');
                         
-                      },
-                      error: function (data) {
-                      }
-                  });
-                }
-            }); 
-        });   
+        //               },
+        //               error: function (data) {
+        //               }
+        //           });
+        //         }
+        //     }); 
+        // });   
     </script>
 
 <script type="text/javascript" src="<?= base_url('assets/js/text-editor-answer-forum.js');?>"> </script>
