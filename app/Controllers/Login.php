@@ -46,8 +46,7 @@ class Login extends Controller
 
 
 
-
-
+  
   
     public function logout()
     {

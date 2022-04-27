@@ -11,12 +11,6 @@
 <body>
 <div class="container-fluid">
 
-
-
-        
-
-
-
         <div class="row mx-auto">
           <div class="col-xl column-overflow" id="column-top1">
             <h1 class="headertext">
