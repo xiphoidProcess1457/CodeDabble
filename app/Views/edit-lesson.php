@@ -19,18 +19,26 @@
         <h1>
             Edit Lesson
         </h1>
-    <form  action="" method="POST">
+    <?= form_open_multipart('Admin/update/'.$lessons['id'] ) ?>
     <div class="form-group">
-        <input type="Title" class="form-control input-title" id="title-input" name="title" placeholder="Title">
+        <input type="Title" class="form-control input-title" id="title-input" name="title" placeholder="Title" value="<?= $lessons['title'] ?>">
     </div>
     
     <div class="form-group">
-        <input type="Title" class="form-control input-title" id="title-input" name="" placeholder="Course">
+        <input type="Title" class="form-control input-title" id="title-input" name="course" placeholder="Course" value="<?= $lessons['course'] ?>">
     </div>
 
-    
     <div class="form-group">
-    <textarea id="text-editor" name="body"></textarea>
+        <input type="Title" class="form-control input-title" id="title-input" name="description" placeholder="Description" value="<?= $lessons['description'] ?>">
+    </div>
+
+    <div class="form-group">
+    <textarea id="text-editor" name="body" ><?= $lessons['body'] ?></textarea>
+    </div>
+
+    <div class="form-group">
+        <h1>EDIT CODE SNIPPET</h1>
+    <textarea id="text-editor" name="code-snippet"><?= $lessons['code-snippet'] ?></textarea>
     </div>
 
     <div class="form-group">
