@@ -4,11 +4,6 @@ use App\Model\UserModel;
 use App\Model\ForumModel;
 class Home extends BaseController
 {
-
-
-
-
-
     public function index()
     { 
        

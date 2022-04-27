@@ -55,6 +55,9 @@ $routes->get('/', 'Forum::index/$1');
 $routes->post('update', 'Profile::update');
 $routes->get('Profile/editprofile/(:num)', 'Profile::editprofile/$1');
 $routes->get('compiler', 'Compiler::index');
+$routes->match(['get','post'], 'Search/search', 'Search::search_method');
+
+
 $routes->get('Admin/edit/(:num)', 'Admin::edit/$1');
 $routes->post('update', 'Admin::update');
 /*

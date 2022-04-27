@@ -37,7 +37,8 @@
 <!-- Tabs navs -->
 <ul class="nav nav-f">
 <div class="searchBar">
-    <input id="searchQueryInput" type="text" name="searchQueryInput" placeholder="Search . ." value="" />
+<form  method="post" action="<?php echo base_url('search/search_method');?>">
+    <input id="searchQueryInput" type="text" name="searchQueryInput" placeholder="search . ." value=""></form>
     <button id="searchQuerySubmit" type="submit" name="searchQuerySubmit">
       <svg style="width:24px;height:24px" viewBox="0 0 24 24"><path fill="#666666" d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" />
       </svg>
@@ -64,13 +65,12 @@
     id="ex1-tabs-1"
     role="tabpanel"
     aria-labelledby="ex1-tab-1">
-
-
-
+              
       <div class="row">
         <div class="post-summary">
-        <?php if ($news): ?>
-            <?php foreach ($news as $newsItem):?>
+        <?php if (isset($mod)): ?>
+        <?php if ($forumresult): ?>
+            <?php foreach ($forumresult as $newsItem):?>
 
             <h3 class="hehe"><a class="post-summary-link" href="<?php echo base_url('AskQuestion/post/'. $newsItem['id']);?>">
                     <?= $newsItem['forum_title'] ?>
@@ -89,11 +89,40 @@
         <?php else: ?>
           <p>no post</p>
         <?php endif; ?>
+        <?php endif; ?>
           </div>
         </div>
+
+          
+        <div class="row">
+        <div class="post-summary">
+        <?php if (!isset($mod)): ?>
+          
+        <?php if ($forumresult): ?>
+            <?php foreach ($forumresult as $newsItem):?>
+
+            <h3 class="hehe"><a class="post-summary-link" href="<?php echo base_url('AskQuestion/post/'. $newsItem->id);?>">
+                    <?= $newsItem->forum_title ?>
+            </a></h3>
+
+            <div class="post-summary">
+                     <div class="post-body-summary"><?=  substr($newsItem->forum_body, 0, 200); ?></div>
+            </div>
+         
+            <?php endforeach; ?>
+            
+        <?php else: ?>
+          <p>no post</p>
+        <?php endif; ?>
+        <?php endif; ?>
+          </div>
+        </div>
+
+
+
     </div>
     <div class="d-flex justify-content-center flex-nowrap">
-          <?= $pager->links() ?>
+        
   </div>
 
 
