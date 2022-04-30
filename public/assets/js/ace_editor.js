@@ -1,5 +1,6 @@
 
          let editor = ace.edit("editor");
+         
          document.querySelector("#run").addEventListener("click", function(){
              let editorCode = editor.getValue();
              let idoc = document.querySelector("#iframe").contentWindow.document;
@@ -10,9 +11,7 @@
  
  
  
-         document.querySelector("#reset").addEventListener("click", function(){
-             editor.setValue('');
-         })
+      
   
          
          document.querySelector("#refresh").addEventListener("click", function(){
@@ -23,7 +22,15 @@
              idoc.close();
          })
  
- 
+         var languageOption = document.getElementById("language");
+         var themeOption = document.getElementById("theme");
+         var codeEditor = document.getElementById("editor");
+         var theme = "tomorrow_night";
+         
+         // Ace Setup
+         editor.setTheme("ace/theme/tomorrow_night");
+         editor.getSession().setMode("ace/mode/java");
+         
          editor.setOptions({
        // editor options
             selectionStyle: 'line',// "line"|"text"
@@ -75,8 +82,7 @@
             wrap: true, // boolean | string | number: true/'free' means wrap instead of horizontal scroll, false/'off' means horizontal scroll instead of wrap, and number means number of column before wrap. -1 means wrap at print margin
             indentedSoftWrap: false, // boolean
             foldStyle: 'markbegin', // enum: 'manual'/'markbegin'/'markbeginend'.
-            mode: 'ace/mode/html', // string: path to language mode 
             fontFamily: 'consolas',
-            fontSize: "12pt"
+            fontSize: "13pt"
    });
          

@@ -32,14 +32,35 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 //$routes->get('/', 'Home::index');
-$routes->get('/', 'Home::index');
+$routes->get('/', 'Home::index/$1');
+$routes->get('/', 'AskQuestion::index/$1');
 $routes->get('/home', 'Home::index',['filter' => 'auth']);
 $routes->get('/home', 'Home::index',['filter' => 'auth']);
-$routes->get('/AskQuestion/forum', 'AskQuestion::forum');
+$routes->get('/AskQuestion', 'AskQuestion::index/$1',['filter' => 'auth']);
+$routes->get('/AskQuestion', 'AskQuestion::index/$1');
+$routes->get('/AskQuestion/forum', 'AskQuestion::forum/$1');
 $routes->match(['get', 'post'], '/AskQuestion/forum', 'AskQuestion::forum');
-$routes->get('/AskQuestion/(:any)', 'AskQuestion::post/$1');
+$routes->get('/Admin', 'Admin::index/$1');
+$routes->post('AskQuestion/savereply/(:num)', 'AskQuestion::savereply/$1');
+//$routes->post('AskQuestion/test/(:num)', 'AskQuestion::test/$1');
+//$routes->get('/askquestion/store', 'AskQuestion::store');
+$routes->match(['get', 'post'], '/askquestion/store', 'AskQuestion::store/$1');
+$routes->get('/askquestion/post', 'AskQuestion::post/$1');
+$routes->get('/askquestion/like', 'AskQuestion::like/$1');
+$routes->get('/forumreply', 'AskQuestion::forumreply');
+$routes->get('/post', 'AskQuestion::forumreply');
+$routes->get('/', 'AskQuestion::index');
+//$routes->get('/Profile/post', 'AskQuestion::post/$1');
+$routes->get('/', 'Profile::index/$1');
+$routes->get('/', 'Forum::index/$1');
+$routes->post('update', 'Profile::update');
+$routes->get('Profile/editprofile/(:num)', 'Profile::editprofile/$1');
+$routes->get('compiler', 'Compiler::index');
+$routes->match(['get','post'], 'Search/search', 'Search::search_method');
 
 
+$routes->get('Admin/edit/(:num)', 'Admin::edit/$1');
+$routes->post('update', 'Admin::update');
 /*
  * --------------------------------------------------------------------
  * Additional Routing

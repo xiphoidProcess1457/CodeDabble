@@ -13,7 +13,8 @@ body{
 
 .course-header{
     color: #231773;
-    font-weight: 700;
+    font-size: 3em;
+    font-weight: 300;
 }
 
 
@@ -22,15 +23,15 @@ body{
 }
 
 .course-img-header{
-    width: 120px;
+    width: 90px;
 }
 
 .card{
     height: 17em;
-    background-color: #231773;
-    color: #ebedf2;
-    border-radius: 5px;
-    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+    margin-top: 2%;
+    background-color: #F2F2F2;
+    color: #404040;
+    border: none;
     transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
     cursor: pointer;
 }
@@ -46,32 +47,36 @@ body{
 
 
 .card-title{
-    font-weight: 800;
+    font-size: 1.3em;
+    font-weight: 600;
 }
 
 .card-subtitle{
-    color: #acb0f2;
+    color: #8C8C8C;
     font-weight: 500;
 }
 
 .card-text{
-    color: #fff;
+    color: #404040;
     padding-top: 8%;
-    font-weight: 600;
+    padding-left: 2%;
+    padding-right: 1%;
+    font-weight: 400;
 }
 
 
 .card:hover{
-    transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+    transform: scale(1.02);
 }
 
 
 .btn-primary{
+    background-color: #8C8C8C;
+    border: none;
     border-radius: 5px;
 }
 .btn-primary:hover{
-    background-color: #acb0f2;
+    background-color: #231773;
     border: none;
 }
 
@@ -89,6 +94,12 @@ body{
 }
 
 .collapse-button{
+    background-color: transparent;
+    background-color: #8C8C8C;
+    font-size: 1.2em;
+    border-radius: 25px;
+}
+
+.collapse-button:hover{
     background-color: #231773;
-    border: none;
 }

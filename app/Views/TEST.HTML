@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.14/ace.js" integrity="sha512-6ts6Fu561/yzWvD6uwQp3XVYwiWNpWnZ0hdeQrETqtnQiGjTfOS06W76aUDnq51hl1SxXtJaqy7IsZ3oP/uZEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Document</title>
+</head>
+<style>
+/* .cm-comment {
+	color: blue !important;
+}
+.inline-comment {
+	color: green !important;
+}
+ */
+ .content {
+	width: 450px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 4px;
+}
+.CodeMirror {
+	height: fit-content !important;
+	border-radius: 5px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.CodeMirror-sizer {
+	padding-bottom: 10px !important;
+}
+
+.copy-code-wrap {
+	height: 34px;
+	width: 34px;
+	position: absolute;
+	bottom: -10px;
+	right: -10px;
+	z-index: 10;
+	cursor: pointer;
+}
+.copy-code {
+	height: 32px;
+	width: 32px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	background: #339af0;
+	border-radius: 50%;
+	z-index: 10;
+	transition: 0.2s;
+}
+.copy-code::after {
+	font-family: "Font Awesome 5 Free";
+	font-weight: 600;
+	font-size: 16px;
+	content: "\f328";
+	color: #fff;
+	position: absolute;
+	top: 3px;
+	left: 10px;
+}
+.copy-code-wrap:active .copy-code {
+	transform: translate(0, 0) scale(0.9);
+}
+.animate {
+	transform: translate(0, 0) scale(1.12);
+}
+
+.tooltip {
+	font-size: 15px;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+</style>
+<body>
+    <div class="content">
+        <!-- 	<p>Chromium blocked the <a href="https://goo.gl/EuHzyv">Clipboard API</a></p> -->
+    
+        <!-- button to copy the editor -->
+    <button class="copy-code-wrap copy-code" id="run">Run</button>
+    
+        <textarea class="editor" style="display: none;">// try clicking the "copy" button
+    var doSomething = function() {
+        console.log('Hello, World!');
+    }</textarea>
+    </div>
+</body>
+<script>
+  const $ = function (selector, bind) {
+	var bind = bind === undefined ? document : bind;
+	let nodes = bind.querySelectorAll.bind(bind)(selector);
+	return nodes.length == 1 ? nodes[0] : nodes;
+};
+var textarea = $(".editor");
+var editor = CodeMirror.fromTextArea(textarea, {
+	autoRefresh: true,
+	firstLineNumber: 1,
+	lineNumbers: true,
+	smartIndent: true,
+	lineWrapping: true,
+	indentWithTabs: true,
+	refresh: true
+});
+editor.removeTag = CodeMirror.removeTag;
+var cm = $(".CodeMirror");
+cm.editor = editor;
+editor.save();
+editor.setOption("mode", "htmlmixed");
+
+$(".copy-code-wrap").onclick = function (e) {
+	if (e.which == 1) {
+		// write the text to the clipboard
+		navigator.clipboard.writeText(editor.getValue());
+
+		// animate the button
+		var copy = $(".copy-code", this);
+		function quickadd() {
+			copy.classList.add("animate");
+			setTimeout(function () {
+				copy.classList.remove("animate");
+			}, 200);
+		}
+		quickadd();
+	}
+};
+
+</script>
+</html>

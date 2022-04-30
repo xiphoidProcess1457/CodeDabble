@@ -12,27 +12,56 @@
         <a class="navbar-brand" href="<?= base_url('Home/index');?>">
           <img src="<?= base_url('assets/assets/logo.svg');?>" width="200" height="200" class="d-inline-block align-top" alt="">
         </a>
-        <a class="nav-link nav-link-ltr" href="<?= base_url('Home/catalog');?>">CATALOG</a>
-        <a class="nav-link nav-link-ltr" href="<?= base_url('/AskQuestion/forum');?>">FORUM</a>
-        <a class="nav-link nav-link-ltr" href="<?= base_url('Home/about');?>">ABOUT</a>
-        <a class="nav-link nav-link-ltr" href="#">SEARCH</a>
-      
-      
         <?php if (session()->get('logged_in')):?>
+        <a class="nav-link nav-link-ltr" href="<?= base_url('Admin/catalog');?>">CATALOG</a>
+        <?php else:?>
+          <a class="nav-link nav-link-ltr" href="<?= base_url('/login');?>">CATALOG</a>
+		  	<?php endif; ?>
+      
+        <a class="nav-link nav-link-ltr" href="<?= base_url('/AskQuestion/forum');?>">FORUM</a>
+        
 
-       <div class="dropdown">
-       <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-<img src="<?= base_url('assets/assets/profile.svg');?>" width="40" height="40" class="d-inline-block align-top" alt="">
-        </a>
+        <a class="nav-link nav-link-ltr" href="<?= base_url('Home/about');?>">ABOUT</a>
+        <a class="nav-link nav-link-ltr" href="<?= base_url('search');?>">SEARCH</a>
+      
 
-  <div class="dropdown-menu menu" aria-labelledby="dropdownMenuLink">
-    <a class="dropdown-item item" href="<?= base_url('/login/logout');?>">Log Out</a>
-  </div>
-</div>
-			  
-			<?php else:?>
+
+
+
+       
+
+
+
+
+      <?php if (session()->get('logged_in')):?>
+
+      <div class="dropdown">
+
+      	<!--$user_img = !empty(session("uploaded_flleinfo")) ? session("uploaded_flleinfo") : 'empty';-->
+    	<!-- more menu -->
+    
+      <?php
+$user_img = !empty(session("uploaded_flleinfo")) ? session("uploaded_flleinfo") : 'default.jpg';
+?>
+<img class="dropdown-image" src="<?php echo base_url().'/uploads/user/'.$user_img; ?>" height="30" width="30" class="d-inline-block align-top" alt="">
+
+
+	<!-- more menu -->
+
+
+
+					<a href="<?= base_url('/Profile');?>" class="name"><?= (session()->get('user_name'));?></a>
+					
+					<!-- more menu -->
+					<ul class="dropdown-menu">
+						<li><a href="<?= base_url('/Profile');?>">Profile</a></li>
+						<li><a href="<?= base_url('/login/logout');?>">Log out</a></li>
+					</ul>
+				</div>
+        <?php else:?>
         <a id="SIGNIN"class="btn btn-signin" href="<?= base_url('/login');?>" role="button">SIGNIN</a>
 			<?php endif; ?>
+
       
 </nav>
 
@@ -40,6 +69,14 @@
 
 
 </body>
-
+<script>
+	$(document).ready(function () {
+$('.navbar .dropdown').hover(function () {
+        $(this).find('.dropdown-menu').first().stop(true, true).slideDown(150);
+    }, function () {
+        $(this).find('.dropdown-menu').first().stop(true, true).slideUp(105)
+    });
+});
+</script>
 </html>
 
