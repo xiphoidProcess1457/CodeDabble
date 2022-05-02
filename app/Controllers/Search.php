@@ -93,7 +93,12 @@ class Search extends BaseController
         $fmodel = new ForumModel();
 		$resfmodel = $fmodel->findAll();
 
-       $sql = "SELECT * from forumquestion where forum_title LIKE '%".$searchinput."%'";
+
+	
+		$newString = str_replace("'","",$searchinput);
+        $sql = "SELECT * from forumquestion where forum_title LIKE '%".$newString."%' OR forum_body LIKE '%".$newString."%'";
+		
+	//echo $sqlnew;
        $dbquery = $db->query($sql);
        $result = $dbquery->getResult();
 
