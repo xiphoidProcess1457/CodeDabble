@@ -3,9 +3,11 @@ html{
     all: unset;
 }      
 
+.container{
+}
 
 .post-summary{
-    padding-bottom: 10px;
+    padding-bottom: 3%;
 }
 
 .post-tags{

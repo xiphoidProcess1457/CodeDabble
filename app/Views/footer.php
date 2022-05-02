@@ -17,8 +17,10 @@
                   <img src="<?= base_url('assets/assets/logo.svg');?>" class="d-inline-block align-top footer-logo" alt="">
               </a>
               </li>
-              <li class="list-group-item borderless">
-              All rights reserved 2022 - CODEDABBLE INC.©
+              <li class="list-group-item borderless ">
+             <p class="footer-brand">
+             All rights reserved 2022 <br>CODEDABBLE INC.©
+             </p>
               </li>
             </ul>
             </div>

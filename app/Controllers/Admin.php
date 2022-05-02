@@ -83,6 +83,7 @@ class Admin extends Controller
         $data = $model->find($id);
         $data = [
             'title' =>$this->request->getVar('title'),
+            'language'  =>$this->request->getVar('language'),
             'course'  =>$this->request->getVar('course'),
             'description'  =>$this->request->getVar('description'),
             'code-snippet'  =>$this->request->getVar('code-snippet'),
@@ -121,10 +122,11 @@ class Admin extends Controller
             'code-snippet' => 'min_length[3]|max_length[65535]',
             'body' => 'min_length[3]|max_length[65535]'
         ];
-          
+        
         if($this->validate($rules)){
         $data = [
             'title' =>$this->request->getVar('title'),
+            'language'  =>$this->request->getVar('language'),
             'course'  =>$this->request->getVar('course'),
             'description'  =>$this->request->getVar('description'),
             'code-snippet'  =>$this->request->getVar('code-snippet'),
@@ -177,9 +179,21 @@ class Admin extends Controller
         $db = db_connect();
         
         $model = new CourseModel($db);
+        $usermodel = new UserModel($db);
+        $builder = $db->table('lessons');        // 'mytablename' is the name of your table
+
+        $builder->select('code-snippet', 'id');       // names of your columns
+        $builder->where('id', $id);                // where clause
+        $query = $builder->get()->getResult();
 
         $data['lessons'] =$model->find($id);
         $data['TOKEN']="1234";
+        //$gg['lessons'] =$model->find('code-snippet', $id);
+      
+
+        $data['CODE']=$query;
+
+        //print_r($ss);
         echo view('header-tags');
         echo view('es-navbar');
         echo view('editor', $data);

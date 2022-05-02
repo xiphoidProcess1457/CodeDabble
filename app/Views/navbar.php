@@ -12,8 +12,15 @@
         <a class="navbar-brand" href="<?= base_url('Home/index');?>">
           <img src="<?= base_url('assets/assets/logo.svg');?>" width="200" height="200" class="d-inline-block align-top" alt="">
         </a>
+        <?php if (session()->get('logged_in')):?>
         <a class="nav-link nav-link-ltr" href="<?= base_url('Admin/catalog');?>">CATALOG</a>
+        <?php else:?>
+          <a class="nav-link nav-link-ltr" href="<?= base_url('/login');?>">CATALOG</a>
+		  	<?php endif; ?>
+      
         <a class="nav-link nav-link-ltr" href="<?= base_url('/AskQuestion/forum');?>">FORUM</a>
+        
+
         <a class="nav-link nav-link-ltr" href="<?= base_url('Home/about');?>">ABOUT</a>
         <a class="nav-link nav-link-ltr" href="<?= base_url('search');?>">SEARCH</a>
       

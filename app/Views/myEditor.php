@@ -13,7 +13,49 @@
 	<script src="/mode/javascript/javascript.js"></script>
 
 </head>
+<style>
+	
+.copy-code-wrap {
+	height: 34px;
+	width: 34px;
+	bottom: -10px;
+	right: -10px;
+	z-index: 10;
+	cursor: pointer;
+}
+.copy-code {
+	height: 32px;
+	width: 32px;
+	bottom: 0;
+	right: 0;
+	background: #339af0;
+	border-radius: 50%;
+	z-index: 10;
+	transition: 0.2s;
+}
+.copy-code::after {
+	font-family: "Font Awesome 5 Free";
+	font-weight: 600;
+	font-size: 16px;
+	content: "\f328";
+	color: #fff;
+	position: absolute;
+	top: 3px;
+	left: 10px;
+}
+.copy-code-wrap:active .copy-code {
+	transform: translate(0, 0) scale(0.9);
+}
+.animate {
+	transform: translate(0, 0) scale(1.12);
+}
 
+.tooltip {
+	font-size: 15px;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+</style>
 <body>
 
 <script>
@@ -29,7 +71,11 @@
 	<textarea id="myTextarea" style="margin-left: 5%;" >
 
 	</textarea>
+
+	
+
 	<input type="hidden" value=<?php echo $TOKEN; ?>;>
+	<button  class="copy-code-wrap" type="button">Click Me!</button>
 	<button id="myButton" onclick="sendCode()">Run Code</button>
 	<button id="myButton" onclick="fetch()">Reset</button>
 
@@ -78,6 +124,24 @@
 		console.log(window.localStorage.getItem('codeBase')+" codeBase");
 
 	});
+
+	$(".copy-code-wrap").onclick = function (e) {
+		alert('sd');
+	if (e.which == 1) {
+		// write the text to the clipboard
+		navigator.clipboard.writeText(editor.getValue());
+
+		// animate the button
+		var copy = $(".copy-code", this);
+		function quickadd() {
+			copy.classList.add("animate");
+			setTimeout(function () {
+				copy.classList.remove("animate");
+			}, 200);
+		}
+		quickadd();
+	}
+};
 
 
 </script>
@@ -135,7 +199,7 @@
 		
 		 
 </script>
-
+<button class="copy-code-wrap" id="myButton">copy Code</button>
 
 </body>
 </html>

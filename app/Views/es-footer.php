@@ -8,7 +8,9 @@
     </head>
 <body>
     <footer>
-        <button>Back</button>
+        <button data-toggle="tooltip" data-placement="top" title="Go back to&#013;Catalog" onclick="location.href='<?= base_url('Admin/catalog');?>';">Back</button>
+       
     </footer>
 </body>
 </html>
+

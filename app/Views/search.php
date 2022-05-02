@@ -26,6 +26,10 @@
 .container{
   height: 100%;
 }
+
+.disabled{
+  pointer-events: none;
+}
 </style>
 <body>
 
@@ -48,7 +52,7 @@
             <a href="#ex1-tabs-1" class="nav-link active" role="tab" data-toggle="tab" onclick="show()">THREADS</a>
         </li>
         <li class="nav-item">
-            <a href="#ex1-tabs-2" class="nav-link" role="tab" data-toggle="tab" onclick="hide()">COURSES</a>
+            <a href="#ex1-tabs-2" class="nav-link disabled" role="tab" data-toggle="tab" onclick="hide()">COURSES</a>
         </li>
        
 
@@ -133,6 +137,9 @@
 </div>
 <!-- Tabs content -->
 </div>
+<div class="d-flex justify-content-center flex-nowrap">
+          <?= $pager->links() ?>
+        </div>
 </body>
 <script>
 function hide() {

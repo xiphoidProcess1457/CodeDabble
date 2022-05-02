@@ -25,6 +25,15 @@
     </div>
     
     <div class="form-group">
+
+<select class="form-control input-title" name="language" aria-label="Default select example">
+<option selected class="text-muted"><?= $lessons['language'] ?></option>
+<option value="java">java</option>
+<option value="html">html</option>
+<option value="css">css</option>
+</select>
+</div>
+    <div class="form-group">
         <input type="Title" class="form-control input-title" id="title-input" name="course" placeholder="Course" value="<?= $lessons['course'] ?>">
     </div>
 

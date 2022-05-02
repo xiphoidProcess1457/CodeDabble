@@ -10,147 +10,124 @@
     <title>Document</title>
 </head>
 <style>
-    @import url('https://fonts.googleapis.com/css?family=Gruppo');
-
-body {
-    margin: 0;
+/* .cm-comment {
+	color: blue !important;
+}
+.inline-comment {
+	color: green !important;
+}
+ */
+ .content {
+	width: 450px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 4px;
+}
+.CodeMirror {
+	height: fit-content !important;
+	border-radius: 5px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.CodeMirror-sizer {
+	padding-bottom: 10px !important;
 }
 
-#editor {
-    width: 80%;
-    height: 80vh;
-    margin: 20px auto 0 auto;
+.copy-code-wrap {
+	height: 34px;
+	width: 34px;
+	position: absolute;
+	bottom: -10px;
+	right: -10px;
+	z-index: 10;
+	cursor: pointer;
+}
+.copy-code {
+	height: 32px;
+	width: 32px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	background: #339af0;
+	border-radius: 50%;
+	z-index: 10;
+	transition: 0.2s;
+}
+.copy-code::after {
+	font-family: "Font Awesome 5 Free";
+	font-weight: 600;
+	font-size: 16px;
+	content: "\f328";
+	color: #fff;
+	position: absolute;
+	top: 3px;
+	left: 10px;
+}
+.copy-code-wrap:active .copy-code {
+	transform: translate(0, 0) scale(0.9);
+}
+.animate {
+	transform: translate(0, 0) scale(1.12);
 }
 
-.options {
-    text-align: center;
+.tooltip {
+	font-size: 15px;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-.options .options_selection {
-    padding: 10px;
-    border: none;
-    margin: 25px 0 10px 0;
-    text-align: center;
-    -webkit-appearance: none;
-    font-family: 'Gruppo', cursive;
-    font-size: 1em;
-    color: #333;
-    font-weight: bolder;
-    width: 30%;
-    background-color: #f2f2f2;
-}
-
-.options .options_selection:focus {
-    outline: none;
-}
-
-select::-ms-expand {
-    display: none;
-}
-
-@media (max-width: 767px) {
-    #editor {
-        width: 90%;
-    }
-}
 </style>
 <body>
-    <section class="options">
-
-        <select class="options_selection" name="select-language" id="language">
-            <option value="html">HTML</option>
-            <option value="css">CSS</option>
-            <option value="js">JS</option>
-            <option value="python">Python</option>
-            <option value="php">PHP</option>
-            <option value="ruby">Ruby</option>
-            <option value="java">Java</option>
-        </select>
-
-        <select class="options_selection" name="select-theme" id="theme">
-            <option value="monokai">Monokai</option>
-            <option value="dawn">Dawn</option>
-            <option value="github">GitHub</option>
-            <option value="solarizedlight">Solarized Light</option>
-            <option value="sql_server">SQL Server</option>
-            <option value="ambiance">Ambiance</option>
-            <option value="chaos">Chaos</option>
-            <option value="gruvbox">Gruvbox</option>
-            <option value="solarized_dark">Solarized Dark</option>
-            <option value="terminal">Terminal</option>
-        </select>
-
-
-    </section>
-
-    <div id="editor">
-     </div>
+    <div class="content">
+        <!-- 	<p>Chromium blocked the <a href="https://goo.gl/EuHzyv">Clipboard API</a></p> -->
+    
+        <!-- button to copy the editor -->
+    <button class="copy-code-wrap copy-code" id="run">Run</button>
+    
+        <textarea class="editor" style="display: none;">// try clicking the "copy" button
+    var doSomething = function() {
+        console.log('Hello, World!');
+    }</textarea>
+    </div>
 </body>
 <script>
-    onload = function() {
+  const $ = function (selector, bind) {
+	var bind = bind === undefined ? document : bind;
+	let nodes = bind.querySelectorAll.bind(bind)(selector);
+	return nodes.length == 1 ? nodes[0] : nodes;
+};
+var textarea = $(".editor");
+var editor = CodeMirror.fromTextArea(textarea, {
+	autoRefresh: true,
+	firstLineNumber: 1,
+	lineNumbers: true,
+	smartIndent: true,
+	lineWrapping: true,
+	indentWithTabs: true,
+	refresh: true
+});
+editor.removeTag = CodeMirror.removeTag;
+var cm = $(".CodeMirror");
+cm.editor = editor;
+editor.save();
+editor.setOption("mode", "htmlmixed");
 
-// Setup
-var languageOption = document.getElementById("language");
-var themeOption = document.getElementById("theme");
-var codeEditor = document.getElementById("editor");
-var theme = "monokai";
+$(".copy-code-wrap").onclick = function (e) {
+	if (e.which == 1) {
+		// write the text to the clipboard
+		navigator.clipboard.writeText(editor.getValue());
 
-// Ace Setup
-var editor = ace.edit("editor");
-editor.setTheme("ace/theme/monokai");
-editor.getSession().setMode("ace/mode/html");
+		// animate the button
+		var copy = $(".copy-code", this);
+		function quickadd() {
+			copy.classList.add("animate");
+			setTimeout(function () {
+				copy.classList.remove("animate");
+			}, 200);
+		}
+		quickadd();
+	}
+};
 
-// Change content dynamically
-languageOption.onchange = function() {
-    switch(this.value) {
-        case 'html':     changeContent('&lt!--\n\tDid you know?\n\tThe Sololearn CodePlayground\n\tis made with the Ace library\n\tused in this code!\n-->\n\n&lt;!DOCTYPE html>\n&lt;html lang="en">\n\t&lt;head>\n\t\t&lt;meta charset="UTF-8">\n\t&lt;/head>\n\t&lt;body>\n\t&lt;/body>\n&lt;/html>', "html"); break;
-        case 'js':         changeContent("// Just an arrow function... \n\nvar waifu = waifu => console.log('Your waifu is ' + waifu);\n\nwaifu('Rem');", "javascript"); break;
-        case 'css':     changeContent("/* Oh, let's write some CSS! */\n\nbody {\n\tmargin: 0;\n}\n\n.super_div {\n\tdisplay: inline-block;\n}", "css"); break;
-        case 'python':     changeContent("'''\nAlways wanted to learn something\nmore about Python,\nso simple and at the\nsame time so complex!\n'''\n\nprint('Have a nice day!')", "python"); break;
-        case 'php':     changeContent("&lt;?php\n\n// PHP and WordPress, nothing else! \n\nif( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ):\n\t wp_nonce_field( 'prefix_function', 'prefix_function_nonce' );\nendif;'", "php"); break;
-        case 'ruby':     changeContent("# Ruby, just Ruby!\n\nclass HelloTrema < Trema::Controller\n\tdef start(_args)\n\t\tlogger.info 'Trema started.'\n\tend\n\tdef switch_ready(datapath_id)\n\t\tlogger.info \"Hello #{datapath_id.to_hex}!\"\n\tend\nend", "ruby"); break;
-        case 'java':     changeContent("// Do you want some coffee?\n\npublic class HelloWorld\n{\n\tpublic static void main(String[] args) {\n\t\tSystem.out.println('Hello World!');\n\t}\n}", "java"); break;
-        default:         changeContent("&lt!-- Made by Maz -->", "html"); break;
-    }
-}
-
-// Change theme dynamically
-themeOption.onchange = function() {
-    switch(this.value) {
-        case 'monokai':         changeTheme("monokai");                break;
-        case 'dawn':             changeTheme("dawn");                 break;
-        case 'github':             changeTheme("github");                 break;
-        case 'plastic':         changeTheme("iplastic");             break;
-        case 'solarizedlight':     changeTheme("solarized_light");     break;
-        case 'sql_server':         changeTheme("sqlserver");             break;
-        case 'ambiance':         changeTheme("ambiance");             break;
-        case 'chaos':             changeTheme("chaos");                 break;
-        case 'gruvbox':         changeTheme("gruvbox");             break;
-        case 'solarized_dark':     changeTheme("solarized_dark");         break;
-        case 'terminal':         changeTheme("terminal");             break;
-        default:                 changeTheme("monokai");                break;
-    }
-}
-
-// Functions
-function changeContent(content, lang) {
-    var elementExists = document.getElementById("editor");
-    if( elementExists ) document.body.removeChild(elementExists);
-    var div = document.createElement("div");
-    div.innerHTML = content;
-    div.id = "editor";
-    document.body.appendChild(div);
-    var editor = ace.edit("editor");
-    editor.setTheme("ace/theme/" + theme);
-    editor.getSession().setMode("ace/mode/" + lang);
-}
-
-function changeTheme(type) {
-    theme = type;
-    var editor = ace.edit("editor");
-    editor.setTheme("ace/theme/" + theme);
-}
-
-}
 </script>
 </html>
