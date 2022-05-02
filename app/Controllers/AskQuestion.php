@@ -221,62 +221,12 @@ class AskQuestion extends Controller
 
 
 
-  
-
-
-
-
-
-
-    // public function store()
-    // {  
-    //     helper(['form', 'url']);
-    //     $db = db_connect();
-    //     $userModel = new UserModel($db);
-    //     $forumModel = new ForumModel($db); 
-    //     $model = new ForumReplyModel();
-         
-    //     $data = [
-    //         'forum_reply' => $this->request->getVar('reply'),
-    //         'post_id'     =>118,
-    //         'user_id'     =>session("id")
-    //         ];
-    //     $save = $model->insert_data($data);
-    //     if($save != false)
-    //     {
-    //         $data = $model->where('id', $save)->first();
-    //         echo json_encode(array("status" => true , 'data' => $data));
-    //     }
-    //     else{
-    //         echo json_encode(array("status" => false , 'data' => $data));
-    //     }
-    // }
-
-
-   
     public function like($id){
         $db = db_connect();
         
         helper('form', 'url');
         $usermodel = new UserModel($db);
         $forummodel = new ForumModel($db);
-        $model = new ForumReplyModel($db);
-        $session = session();
-
-        $linkId=$forummodel->where("forumquestion.id", $id)->first();
-        
-        $link = $forummodel->where("/AskQuestion/post/",$id);
-        $data = [
-            'forum_reply' => $this->request->getVar('reply'),
-            'post_id'     =>$this->request->getVar('custId'),
-            'user_id'     =>session("id")
-            ];
-            $save = $model->insert_data($data);
-            $data = $model->where('id', $save)->first();
-            
-            return redirect()->to('/AskQuestion/post/'.$linkId['id']);
-            
-            
         $model = new PostLikeModel($db);
         $session = session();
         
@@ -301,22 +251,7 @@ class AskQuestion extends Controller
     }
 
 
-    // $db = db_connect();
-        
-    // helper('form', 'url');
-    // $usermodel = new UserModel($db);
-    // $forummodel = new ForumModel($db);
-    // $usermodel = new ForumReplyModel($db);
-    // $session = session();
-    // $data['user'] =$forumModel->find($id);
-    // $data = [
-    //     'forum_reply' => $this->request->getVar('reply'),
-    //     'post_id'     =>$this->request->getVar('custId'),
-    //     'user_id'     =>session("id")
-    //     ];
-    // $session->set($data);
-    // $usermodel->update($id, $data);
-    // return redirect()->to('/AskQuestion/post');
+
 
 
     // $db = db_connect();
