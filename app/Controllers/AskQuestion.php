@@ -253,8 +253,7 @@ class AskQuestion extends Controller
     // }
 
 
-    public function store($id)
-    {  
+   
     public function like($id){
         $db = db_connect();
         
