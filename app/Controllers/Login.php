@@ -8,8 +8,11 @@ class Login extends Controller
     public function index()
     {
         helper(['form']);
+        
         echo view('header-tags');
+        
         echo view('login');
+        
     } 
   
     // public function auth()

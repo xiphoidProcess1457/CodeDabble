@@ -20,7 +20,7 @@
       
         <div class="row mx-auto">
             <div class="col-xl">
-                <img class="big-svg" src="<?= base_url('assets/assets/character.svg');?>" alt="">
+            <a href="/Home/index"><img class="big-svg" src="<?= base_url('assets/assets/character.svg');?>" alt=""></a>
               </div>
 
             <div class="col-xl column-overflow d-flex justify-content-center hehe">

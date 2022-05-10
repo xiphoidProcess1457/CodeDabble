@@ -11,12 +11,6 @@
 <body>
 <div class="container-fluid">
 
-
-
-        
-
-
-
         <div class="row mx-auto">
           <div class="col-xl column-overflow" id="column-top1">
             <h1 class="headertext">
@@ -31,7 +25,7 @@
             
           </div>
           <div class="col-xl" id="column-top2">
-            <img class="big-svg" src="<?= base_url('assets/assets/character.svg');?>" alt="">
+          <a href="/Home/index"><img class="big-svg" src="<?= base_url('assets/assets/character.svg');?>" alt=""></a>
           </div>
         </div>
 

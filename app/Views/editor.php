@@ -241,7 +241,6 @@ $(document).ready(function(){
 
 
 <script>
-
 	var token=<?php echo $TOKEN; ?>;
 	console.log(token);
 	function sendCode()
@@ -249,7 +248,6 @@ $(document).ready(function(){
 			var myData={
 				codeBody : editor.getValue(),
 				className : "Solution"
-
 			};
 			console.log(JSON.stringify(myData));
 		  $.ajax({
@@ -267,8 +265,7 @@ $(document).ready(function(){
 						   console.log(xhr);
 				console.log("Details: " + desc + "\nError:" + err);
 }
-			 })	
-             
+			 })	  
 		 }
 		
 

@@ -15,8 +15,7 @@ class Search extends BaseController
 	  }
 
       public function perform_http_request($method, $url, $data = false) {
-		
-
+	
 		//header
 		$headers = [
 			'X-TOKEN: 1234'
@@ -143,6 +142,75 @@ class Search extends BaseController
         echo view('search', $data);
         echo view('footer');
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	public function perform_http_request($method, $url, $data = false) {
+	
+		//header
+		$headers = [
+			'X-TOKEN: 1234'
+		];
+		// perform_http_request();
+		$curl = curl_init();
+
+	switch ($method) {
+		case "POST":
+			curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
+			curl_setopt($curl, CURLOPT_POST, 1);
+
+			if ($data) {
+				curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
+			}
+			
+			break;
+		case "PUT":
+			curl_setopt($curl, CURLOPT_PUT, 1);
+			
+			break;
+		default:
+			if ($data) {
+				$url = sprintf("%s?%s", $url, http_build_query($data));
+			}
+	}
+
+	curl_setopt($curl, CURLOPT_URL, $url);
+	curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+	curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false); //If SSL Certificate Not Available, for example, I am calling from http://localhost URL
+
+	$result = curl_exec($curl);
+
+	curl_close($curl);
+		
+	return $result;
+	}
+
+      public function simrateApi($entry1,$entry2){
+		$url = "http://localhost:8000/api/similarity?entry1=".rawurlencode($entry1)."&entry2=".rawurlencode($entry2);
+		
+		$test = json_decode($this->perform_http_request("POST",$url,false),true);
+		return $test;
+	}
+
+
+
 
    
 
