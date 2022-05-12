@@ -10,10 +10,12 @@
     .container{
         padding-top: 10em;
     }
+
+   
 </style>
 <body>
     <div class="container">
-    <table class="table table-hover table-dark">
+    <table class="table-responsive-xl table-hover table-borderless">
   <thead>
     <tr>
       <th scope="col">#</th>
@@ -30,7 +32,11 @@
       <th scope="row"><?= $item['id']?></th>
       <td><?= $item['title']?></td>
       <td><?= $item['course']?></td>
-      <td><?= $item['body']?></td>
+      <td><?php 
+                    $html = new \Html2Text\Html2Text(substr($item ['body'], 0, 150));
+                    echo $html->getText();  // Hello, "WORLD"
+                ?></td>
+
       <td><?= $item['description']?></td>
       <td>
       <a class="btn btn-success" href="<?php echo base_url('Admin/edit/'. $item['id']);?>">EDIT</a>  

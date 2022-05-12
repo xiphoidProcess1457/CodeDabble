@@ -31,6 +31,7 @@ class Register extends Controller
             $data = [
                 'user_name'     => $this->request->getVar('name'),
                 'user_email'    => $this->request->getVar('email'),
+                'status'    => "activated",
                 'user_password' => password_hash($this->request->getVar('password'), PASSWORD_DEFAULT)
             ];
             $model->save($data);

@@ -24,8 +24,27 @@
             <ul class="nav nav-pills flex-column mb-auto">
            
               </li>
+<<<<<<< Updated upstream
             
                 <a href="<?= base_url('Admin/index');?>" class="nav-link text-white sidebar-links">
+=======
+              <li>
+                <a href="<?= base_url('Admin/logout');?>" class="nav-link text-white sidebar-links">
+                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
+                  SIGN OUT
+                </a>
+              </li>
+        <?php else:?>
+         
+          <li>
+                <a href="<?= base_url('Admin/adduser');?>" class="nav-link text-white sidebar-links">
+                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
+                  ADD USER
+                </a>
+              </li>
+              <li>
+              <a href="<?= base_url('Admin/addlesson');?>" class="nav-link text-white sidebar-links">
+>>>>>>> Stashed changes
                   <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
                   Add Lesson
                 </a>
@@ -36,7 +55,24 @@
                   Lessons
                 </a>
               </li>
+<<<<<<< Updated upstream
             
+=======
+              <li>
+                <a href="<?= base_url('Admin/logout');?>" class="nav-link text-white sidebar-links">
+                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
+                  SIGN OUT
+                </a>
+              </li>
+		  	<?php endif; ?>
+
+
+
+
+
+
+
+>>>>>>> Stashed changes
             
               
             </ul>
