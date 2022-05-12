@@ -323,10 +323,11 @@ class Admin extends Controller
                  $session->setFlashdata("message", "Your Account Has been Deactivated");
                  return redirect()->to('/Admin');
                       }else{
-                 return redirect()->to('/Admin/adduser');
+                 return redirect()->to('/Admin/admins');
                      }
             }else{
                 $session->setFlashdata('msg', 'Password is incorrect.');
+                return redirect()->to('/Admin');
                 // $w = $data['password'];
                 // $q = $this->request->getVar('password');
                 // print_r($password);
@@ -337,6 +338,7 @@ class Admin extends Controller
             }
         }else{
             $session->setFlashdata('msg', 'Email does not exist.');
+            return redirect()->to('/Admin');
             echo 'wrong email';
         }
     }
@@ -493,6 +495,15 @@ class Admin extends Controller
             $session->destroy();
             return redirect()->to('/Admin');
         } 
+
+
+          
+    public function logout()
+    {
+        $session = session();
+        $session->destroy();
+        return redirect()->to('/Admin');
+    }
 
 }
 
