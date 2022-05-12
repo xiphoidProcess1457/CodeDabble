@@ -51,10 +51,10 @@
         <li class="nav-item">
             <a href="#ex1-tabs-1" class="nav-link active" role="tab" data-toggle="tab" onclick="show()">THREADS</a>
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
             <a href="#ex1-tabs-2" class="nav-link disabled" role="tab" data-toggle="tab" onclick="hide()">COURSES</a>
         </li>
-       
+        -->
 
        
         
@@ -138,7 +138,7 @@
 <!-- Tabs content -->
 </div>
 <div class="d-flex justify-content-center flex-nowrap">
-          <?= $pager->links() ?>
+          <!-- <= $pager->links() ?> -->
         </div>
 </body>
 <script>
