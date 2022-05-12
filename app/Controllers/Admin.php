@@ -494,5 +494,14 @@ class Admin extends Controller
             return redirect()->to('/Admin');
         } 
 
+
+
+        
+    public function logout()
+    {
+        $session = session();
+        $session->destroy();
+        return redirect()->to('/Admin');
+    }
 }
 

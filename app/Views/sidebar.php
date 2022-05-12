@@ -54,6 +54,14 @@
                   MANAGE USERS
                 </a>
               </li>
+              <li>
+                <a href="<?= base_url('Admin/logout');?>" class="nav-link text-white sidebar-links">
+                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
+                  SIGNOUT
+                </a>
+              </li>
+
+
             
         <?php else:?>
          
@@ -88,7 +96,12 @@
                   MANAGE USERS
                 </a>
               </li>
-            
+              <li>
+                <a href="<?= base_url('Admin/logout');?>" class="nav-link text-white sidebar-links">
+                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
+                  SIGNOUT
+                </a>
+              </li>
 		  	<?php endif; ?>
 
 
