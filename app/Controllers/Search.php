@@ -16,7 +16,7 @@ class Search extends BaseController
 
       public function perform_http_request($method, $url, $data = false) {
 		
-		
+
 		//header
 		$headers = [
 			'X-TOKEN: 1234'
@@ -60,7 +60,7 @@ class Search extends BaseController
 		
 		$test = json_decode($this->perform_http_request("POST",$url,false),true);
 		return $test;
-	}
+	}s
 
     public function index()
     {
