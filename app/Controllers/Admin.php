@@ -5,10 +5,18 @@ use App\Models\ForumModel;
 use App\Models\UserModel;
 use App\Models\ForumReplyModel;
 use App\Models\CourseModel;
+use App\Models\AdminModel;
   
 class Admin extends Controller
 {
     public function index()
+    {
+        helper(['form']);
+        echo view('header-tags');
+        echo view('admin-login');
+    } 
+
+    public function addlesson()
     { 
         helper(['form']);
         $data = [];
@@ -18,7 +26,7 @@ class Admin extends Controller
         echo view('add-lesson' , $data);
     }
   
-
+   
 
     public function lessonList()
     {
@@ -60,7 +68,7 @@ class Admin extends Controller
     public function delete($id = null){
         $model = new CourseModel($db);
         $data['lessons'] = $model->where('id', $id)->delete();
-        return redirect()->to('/Admin');
+        return redirect()->to('/Admin/addlesson');
         }
 
 
@@ -90,7 +98,7 @@ class Admin extends Controller
             'body'  =>$this->request->getVar('body'),
         ];
         $model->update($id, $data);
-        return redirect()->to('/Admin', $id);
+        return redirect()->to('/Admin/addlesson', $id);
         } 
     
 
@@ -134,11 +142,11 @@ class Admin extends Controller
         ];
         
         $usermodel->save($data);
-        return redirect()->to('/Admin');
+        return redirect()->to('/Admin/addlesson');
     }else{
         $data['validation'] = $this->validator;
         echo view('header-tags');
-        echo view('Admin', $data);
+        echo view('Admin/addlesson', $data);
     }
 
 
@@ -185,7 +193,7 @@ class Admin extends Controller
         $builder->select('code-snippet', 'id');       // names of your columns
         $builder->where('id', $id);                // where clause
         $query = $builder->get()->getResult();
-
+       
         $data['lessons'] =$model->find($id);
         $data['TOKEN']="1234";
         //$gg['lessons'] =$model->find('code-snippet', $id);
@@ -202,4 +210,289 @@ class Admin extends Controller
 
 
 
+    public function adduser(){
+        $model = new AdminModel();
+        helper('text');
+  
+        $data['users'] =$model->get()->getResultArray();
+
+        echo view('header-tags');;
+        echo view('sidebar');
+        echo view('add-user', $data);
+    }
+
+
+
+    public function saveuser()
+    {
+        //include helper form
+        helper(['form']);
+        // set rules validation form
+        $alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890';
+        $password = array(); 
+        $alpha_length = strlen($alphabet) - 1; 
+        for ($i = 0; $i < 8; $i++) 
+        {
+            $n = rand(0, $alpha_length);
+            $password[] = $alphabet[$n];
+        }
+        $newPassword = implode($password);
+        $rules = [
+            'username'          => 'required|min_length[3]|max_length[20]',
+            'name'          => 'required|min_length[3]|max_length[20]',
+            'email'         => 'required|min_length[6]|max_length[50]|valid_email|is_unique[admin-users.email]',
+            'role'          => 'required|min_length[3]|max_length[20]',
+        ];
+          
+        if($this->validate($rules)){
+            $model = new AdminModel();
+            $data = [
+                'username'     => $this->request->getVar('username'),
+                'name'     => $this->request->getVar('name'),
+                'email'     => $this->request->getVar('email'),
+                'role'    => $this->request->getVar('role'),
+                'status'    => 'activated',
+                'password' => password_hash($newPassword, PASSWORD_DEFAULT),
+            ];
+
+
+            
+            $model->save($data);
+           
+         
+            $email = \Config\Services::email();
+            $to =$data['email'];
+                    
+            $subject = 'Password Change';
+            $message = 'Hello &nbsp' . $data['role'].'&nbsp;&nbsp;    '. $data['name']. '&nbsp;&nbsp;Please Login using your credentials which is your email<br>'
+            . $data['email'].'<br>and your password<br>'
+             .$newPassword.'<br>and Change your password to a more secure one';
+            
+         
+            $email->setTo($to);
+            $email->setFrom('johndoe@gmail.com', 'CodeDabble.Inc');
+            
+            $email->setSubject($subject);
+            $email->setMessage($message);
+    
+            if($email->send()){
+                return redirect()->to('/Admin/adduser');
+            }
+
+           
+        }else{
+            $data['validation'] = $this->validator;
+            helper(['form']);
+            echo view('tags');
+            echo view('sidebar');
+            echo view('add-admin', $data);
+        }
+          
+    }
+
+
+
+
+
+
+    public function authAdmin()
+    {
+        $session = session();
+        $userModel = new AdminModel();
+        $email = $this->request->getVar('email');
+        $password = $this->request->getVar('password');
+        $data = $userModel->where('email', $email)->first();
+        //$admin = $userModel->where('email', $email)->first();
+        //$data['user']=$userModel->where("admin-users.id", session("id"))->first();
+        if($data){
+            $pass = $data['password'];
+            $authenticatePassword = password_verify($password, $pass);
+            if($authenticatePassword){
+                $ses_data = [
+                    'id' => $data['id'],
+                    'username' => $data['username'],
+                    'name' => $data['name'],
+                    'email' => $data['email'],
+                    'role' => $data['role'],
+                    'status' => $data['status'],
+                    'isLoggedIn' => TRUE
+                ];
+                $session->set($ses_data);
+                if ($data['status'] =='deactivated'){ 
+                 $session = session();
+                 $session->setFlashdata("message", "Your Account Has been Deactivated");
+                 return redirect()->to('/Admin');
+                      }else{
+                 return redirect()->to('/Admin/adduser');
+                     }
+            }else{
+                $session->setFlashdata('msg', 'Password is incorrect.');
+                // $w = $data['password'];
+                // $q = $this->request->getVar('password');
+                // print_r($password);
+                // echo '<br>';
+                // print_r($pass);
+                // echo '<br>';
+                // echo password_verify($q, $q);
+            }
+        }else{
+            $session->setFlashdata('msg', 'Email does not exist.');
+            echo 'wrong email';
+        }
+    }
+
+
+
+
+
+
+    public function users()
+    {
+
+        $model = new userModel();
+        helper('text');
+        $email = 'jbareta2@gmail.com';
+        $data['users'] =$model->get()->getResultArray();
+    
+        echo view('header-tags');;
+        echo view('sidebar');
+        echo view('user-list', $data);
+    }
+
+
+
+   
+    public function deleteuser($id = null){
+        $model = new UserModel();
+        helper('text');
+        $data['users'] = $model->where('id', $id)->delete();
+        return redirect()->to('/Admin/users');
+        }
+
+
+
+
+
+    public function userstatus($id){
+        $model = new UserModel();
+        $data = $model->find($id);
+        
+
+        if($data['status'] =='deactivated' ){
+            $status = 'activated';
+        }else{
+            $status = 'deactivated';
+            $session = session();
+            $session->destroy($data['user_email']);
+        }
+            $data = [
+                'status'     => $status,
+            ];
+            $model->update($id,$data);
+
+
+        return redirect()->to('/Admin/users');
+    }
+
+
+
+
+
+    public function admins()
+    {
+        $db = db_connect();
+        $model = new AdminModel($db);
+        helper('text');
+        
+
+
+        
+        $builder = $db->table('admin-users');
+        //$users = $builder->like('title', $this->request->getVar('search'))->get();
+        $builder->where('role', 'moderator');
+        $query = $builder->get()->getResultArray();
+        
+
+
+        // $he = ;
+        // echo '<pre>';
+        // print_r($he);
+        $data['admins'] =$query;
+    
+        echo view('header-tags');;
+        echo view('sidebar');
+        echo view('admin-list', $data);
+    }
+
+
+    public function deleteadmin($id = null){
+        $model = new AdminModel();
+        helper('text');
+        $data['admin'] = $model->where('id', $id)->delete();
+        return redirect()->to('/Admin/admins');
+        }
+
+
+
+
+        public function adminstatus($id){
+            $model = new AdminModel();
+            $data = $model->find($id);
+            
+    
+            if($data['status'] =='deactivated' ){
+                $status = 'activated';
+            }else{
+                $status = 'deactivated';
+                $session = session();
+                $session->destroy($data['email']);
+            }
+                $data = [
+                    'status'     => $status,
+                ];
+                $model->update($id,$data);
+    
+    
+            return redirect()->to('/Admin/admins');
+        }
+
+
+        public function dashboard(){
+
+            $db = db_connect();
+        
+            helper('form', 'url');
+            $usermodel = new AdminModel($db);
+            $coursemodel = new CourseModel($db);
+            $student = new UserModel($db);
+            
+
+            $data['lessons'] =$coursemodel->countAllResults();
+            $data['student'] =$student->countAllResults();
+            $data['user']=$usermodel->where("admin-users.id", session("id"))->first();
+            
+            // echo '<pre>';
+            // print_r($s);
+            echo view('header-tags');
+            echo view('sidebar');
+            echo view('dashboard', $data);
+        }
+
+
+        public function updateadminpassword($id){
+            $db = db_connect();
+            
+            helper('form', 'url');
+            $model = new AdminModel($db);
+            $data['user'] =$model->find($id);
+            $data = [
+                'password' => password_hash($this->request->getVar('password'), PASSWORD_DEFAULT),
+            ];
+            $model->update($id, $data);
+            $session = session();
+            $session->destroy();
+            return redirect()->to('/Admin');
+        } 
+
 }
+

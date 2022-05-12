@@ -22,21 +22,81 @@
             <hr>
             
             <ul class="nav nav-pills flex-column mb-auto">
-           
-              </li>
-            
-                <a href="<?= base_url('Admin/index');?>" class="nav-link text-white sidebar-links">
+
+
+            <li>
+              <a href="<?= base_url('Admin/dashboard');?>" class="nav-link text-white sidebar-links">
                   <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
-                  Add Lesson
+                  DASHBOARD
                 </a>
               </li>
+
+            <?php if (session()->get('role') =='moderator' ):?>
+       
+          
+              <li>
+              <a href="<?= base_url('Admin/addlesson');?>" class="nav-link text-white sidebar-links">
+                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
+                  ADD LESSON
+                </a>
+              </li>
+              
+            
               <li>
                 <a href="<?= base_url('Admin/lessonList');?>" class="nav-link text-white sidebar-links">
                   <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
-                  Lessons
+                  MANAGE LESSONS
+                </a>
+              </li>
+              <li>
+                <a href="<?= base_url('Admin/users');?>" class="nav-link text-white sidebar-links">
+                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
+                  MANAGE USERS
                 </a>
               </li>
             
+        <?php else:?>
+         
+          <li>
+                <a href="<?= base_url('Admin/adduser');?>" class="nav-link text-white sidebar-links">
+                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
+                  ADD USER
+                </a>
+              </li>
+              <li>
+              <a href="<?= base_url('Admin/addlesson');?>" class="nav-link text-white sidebar-links">
+                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
+                  ADD LESSON
+                </a>
+              </li>
+              <li>
+                <a href="<?= base_url('Admin/admins');?>" class="nav-link text-white sidebar-links">
+                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
+                  MANAGE ADMINS
+                </a>
+              </li>
+            
+              <li>
+                <a href="<?= base_url('Admin/lessonList');?>" class="nav-link text-white sidebar-links">
+                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
+                  MANAGE LESSONS
+                </a>
+              </li>
+              <li>
+                <a href="<?= base_url('Admin/users');?>" class="nav-link text-white sidebar-links">
+                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
+                  MANAGE USERS
+                </a>
+              </li>
+            
+		  	<?php endif; ?>
+
+
+
+
+
+
+
             
               
             </ul>
