@@ -5,10 +5,18 @@ use App\Models\ForumModel;
 use App\Models\UserModel;
 use App\Models\ForumReplyModel;
 use App\Models\CourseModel;
+use App\Models\AdminModel;
   
 class Admin extends Controller
 {
     public function index()
+    {
+        helper(['form']);
+        echo view('header-tags');
+        echo view('admin-login');
+    } 
+
+    public function addlesson()
     { 
         helper(['form']);
         $data = [];
@@ -18,7 +26,7 @@ class Admin extends Controller
         echo view('add-lesson' , $data);
     }
   
-
+   
 
     public function lessonList()
     {
@@ -60,7 +68,7 @@ class Admin extends Controller
     public function delete($id = null){
         $model = new CourseModel($db);
         $data['lessons'] = $model->where('id', $id)->delete();
-        return redirect()->to('/Admin');
+        return redirect()->to('/Admin/addlesson');
         }
 
 
@@ -83,13 +91,14 @@ class Admin extends Controller
         $data = $model->find($id);
         $data = [
             'title' =>$this->request->getVar('title'),
+            'language'  =>$this->request->getVar('language'),
             'course'  =>$this->request->getVar('course'),
             'description'  =>$this->request->getVar('description'),
             'code-snippet'  =>$this->request->getVar('code-snippet'),
             'body'  =>$this->request->getVar('body'),
         ];
         $model->update($id, $data);
-        return redirect()->to('/Admin', $id);
+        return redirect()->to('/Admin/addlesson', $id);
         } 
     
 
@@ -121,10 +130,11 @@ class Admin extends Controller
             'code-snippet' => 'min_length[3]|max_length[65535]',
             'body' => 'min_length[3]|max_length[65535]'
         ];
-          
+        
         if($this->validate($rules)){
         $data = [
             'title' =>$this->request->getVar('title'),
+            'language'  =>$this->request->getVar('language'),
             'course'  =>$this->request->getVar('course'),
             'description'  =>$this->request->getVar('description'),
             'code-snippet'  =>$this->request->getVar('code-snippet'),
@@ -132,11 +142,11 @@ class Admin extends Controller
         ];
         
         $usermodel->save($data);
-        return redirect()->to('/Admin');
+        return redirect()->to('/Admin/addlesson');
     }else{
         $data['validation'] = $this->validator;
         echo view('header-tags');
-        echo view('Admin', $data);
+        echo view('Admin/addlesson', $data);
     }
 
 
@@ -173,12 +183,25 @@ class Admin extends Controller
         
         $result = json_decode($response,true);
         $data['codeBody']=$result['codeBody'];
+
         $db = db_connect();
         
         $model = new CourseModel($db);
+        $usermodel = new UserModel($db);
+        $builder = $db->table('lessons');        // 'mytablename' is the name of your table
 
+        $builder->select('code-snippet', 'id');       // names of your columns
+        $builder->where('id', $id);                // where clause
+        $query = $builder->get()->getResult();
+       
         $data['lessons'] =$model->find($id);
         $data['TOKEN']="1234";
+        //$gg['lessons'] =$model->find('code-snippet', $id);
+      
+
+        $data['CODE']=$query;
+
+        //print_r($ss);
         echo view('header-tags');
         echo view('es-navbar');
         echo view('editor', $data);
@@ -187,9 +210,6 @@ class Admin extends Controller
 
 
 
-<<<<<<< Updated upstream
-}
-=======
     public function adduser(){
         $model = new AdminModel();
         helper('text');
@@ -255,9 +275,9 @@ class Admin extends Controller
             $email->setSubject($subject);
             $email->setMessage($message);
     
-           $email->send();
-                return redirect()->to('/Admin/admins');
-            
+            if($email->send()){
+                return redirect()->to('/Admin/adduser');
+            }
 
            
         }else{
@@ -303,11 +323,10 @@ class Admin extends Controller
                  $session->setFlashdata("message", "Your Account Has been Deactivated");
                  return redirect()->to('/Admin');
                       }else{
-                 return redirect()->to('/Admin/dashboard');
+                 return redirect()->to('/Admin/adduser');
                      }
             }else{
                 $session->setFlashdata('msg', 'Password is incorrect.');
-                return redirect()->to('/Admin');
                 // $w = $data['password'];
                 // $q = $this->request->getVar('password');
                 // print_r($password);
@@ -318,7 +337,7 @@ class Admin extends Controller
             }
         }else{
             $session->setFlashdata('msg', 'Email does not exist.');
-            return redirect()->to('/Admin');
+            echo 'wrong email';
         }
     }
 
@@ -475,15 +494,5 @@ class Admin extends Controller
             return redirect()->to('/Admin');
         } 
 
-
-
-        public function logout()
-        {
-            $session = session();
-            $session->destroy();
-            return redirect()->to('/Admin');
-        }
-
 }
 
->>>>>>> Stashed changes
