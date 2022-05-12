@@ -16,7 +16,7 @@ class Search extends BaseController
 
       public function perform_http_request($method, $url, $data = false) {
 		
-
+		
 		//header
 		$headers = [
 			'X-TOKEN: 1234'
