@@ -68,7 +68,7 @@ class Admin extends Controller
     public function delete($id = null){
         $model = new CourseModel($db);
         $data['lessons'] = $model->where('id', $id)->delete();
-        return redirect()->to('/Admin/addlesson');
+        return redirect()->to('/Admin/lessonlist');
         }
 
 
@@ -98,7 +98,7 @@ class Admin extends Controller
             'body'  =>$this->request->getVar('body'),
         ];
         $model->update($id, $data);
-        return redirect()->to('/Admin/addlesson', $id);
+        return redirect()->to('/Admin/lessonlist', $id);
         } 
     
 
@@ -111,48 +111,48 @@ class Admin extends Controller
 
 
 
-    public function save()
-    {
-
-        $db = db_connect();
-        
-        helper('form', 'url');
-        $usermodel = new UserModel($db);
-        $forummodel = new ForumModel($db);
-        $usermodel = new CourseModel($db);
-
-
-
-        $rules = [
-            'title' => 'required|min_length[3]|max_length[65535]',
-            'course' => 'min_length[3]|max_length[200]',
-            'description' => 'min_length[3]|max_length[65535]',
-            'code-snippet' => 'min_length[3]|max_length[65535]',
-            'body' => 'min_length[3]|max_length[65535]'
-        ];
-        
-        if($this->validate($rules)){
-        $data = [
-            'title' =>$this->request->getVar('title'),
-            'language'  =>$this->request->getVar('language'),
-            'course'  =>$this->request->getVar('course'),
-            'description'  =>$this->request->getVar('description'),
-            'code-snippet'  =>$this->request->getVar('code-snippet'),
-            'body'  =>$this->request->getVar('body'),
-        ];
-        
-        $usermodel->save($data);
-        return redirect()->to('/Admin/addlesson');
-    }else{
-        $data['validation'] = $this->validator;
-        echo view('header-tags');
-        echo view('Admin/addlesson', $data);
-    }
-
-
-
-
-    }
+        public function save()
+        {
+    
+            $db = db_connect();
+            
+            helper('form', 'url');
+            $usermodel = new UserModel($db);
+            $forummodel = new ForumModel($db);
+            $usermodel = new CourseModel($db);
+    
+    
+    
+            $rules = [
+                'title' => 'required|min_length[3]|max_length[65535]',
+                'course' => 'min_length[3]|max_length[200]',
+                'description' => 'min_length[3]|max_length[65535]',
+                'code-snippet' => 'min_length[3]|max_length[65535]',
+                'body' => 'min_length[3]|max_length[65535]'
+            ];
+            
+            if($this->validate($rules)){
+            $data = [
+                'title' =>$this->request->getVar('title'),
+                'language'  =>$this->request->getVar('language'),
+                'course'  =>$this->request->getVar('course'),
+                'description'  =>$this->request->getVar('description'),
+                'code-snippet'  =>$this->request->getVar('code-snippet'),
+                'body'  =>$this->request->getVar('body'),
+            ];
+            
+            $usermodel->save($data);
+            return redirect()->to('/Admin/lessonlist');
+        }else{
+            $data['validation'] = $this->validator;
+            echo view('header-tags');
+            echo view('Admin/addlesson', $data);
+        }
+    
+    
+    
+    
+        }
 
 
     public function catalog()
@@ -323,10 +323,11 @@ class Admin extends Controller
                  $session->setFlashdata("message", "Your Account Has been Deactivated");
                  return redirect()->to('/Admin');
                       }else{
-                 return redirect()->to('/Admin/adduser');
+                 return redirect()->to('/Admin/admins');
                      }
             }else{
                 $session->setFlashdata('msg', 'Password is incorrect.');
+                return redirect()->to('/Admin');
                 // $w = $data['password'];
                 // $q = $this->request->getVar('password');
                 // print_r($password);
@@ -337,7 +338,7 @@ class Admin extends Controller
             }
         }else{
             $session->setFlashdata('msg', 'Email does not exist.');
-            echo 'wrong email';
+            return redirect()->to('/Admin');
         }
     }
 

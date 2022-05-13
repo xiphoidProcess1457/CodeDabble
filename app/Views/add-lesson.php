@@ -23,7 +23,15 @@
     <div class="form-group">
         <input type="Title" class="form-control input-title" id="title-input" name="title" placeholder="Title">
     </div>
-    
+    <div class="form-group">
+
+<select class="form-control input-title" name="language" aria-label="Default select example">
+<option selected class="text-muted">SELECT LANGUAGE</option>
+<option value="java">java</option>
+<option value="html">html</option>
+<option value="css">css</option>
+</select>
+</div>
     <div class="form-group">
         <input type="Title" class="form-control input-title" id="title-input" name="course" placeholder="topic">
     </div>

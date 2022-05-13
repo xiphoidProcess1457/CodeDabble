@@ -12,7 +12,11 @@
         <a class="navbar-brand" href="<?= base_url('Home/index');?>">
           <img src="<?= base_url('assets/assets/logo.svg');?>" width="200" height="200" class="d-inline-block align-top" alt="">
         </a>
+        <?php if (session()->get('logged_in')):?>
         <a class="nav-link nav-link-ltr" href="<?= base_url('Admin/catalog');?>">CATALOG</a>
+        <?php else:?>
+        <a class="nav-link nav-link-ltr" href="<?= base_url('/login');?>">CATALOG</a>
+		  	<?php endif; ?>
         <a class="nav-link nav-link-ltr" href="<?= base_url('/AskQuestion/forum');?>">FORUM</a>
         <a class="nav-link nav-link-ltr" href="<?= base_url('Home/about');?>">ABOUT</a>
         <a class="nav-link nav-link-ltr" href="<?= base_url('search');?>">SEARCH</a>
@@ -21,7 +25,11 @@
       <?php if (session()->get('logged_in')):?>
 
       <div class="dropdown">
-      <img class="dropdown-image" src="/uploads/user/<?= (session()->get('uploaded_flleinfo'));?>" height="30" width="30" class="d-inline-block align-top" alt="">
+          <?php
+    $user_img = !empty(session("uploaded_flleinfo")) ? session("uploaded_flleinfo") : 'default.jpg';
+    ?>
+    <img class="dropdown-image" src="<?php echo base_url().'/uploads/user/'.$user_img; ?>" height="30" width="30" class="d-inline-block align-top" alt="">
+
 					<a href="<?= base_url('/Profile');?>" class="name"><?= (session()->get('user_name'));?></a>
 					
 					<!-- more menu -->

@@ -18,8 +18,11 @@
     <div class="row">
   <div class="col-sm-4">
  <div class="imageWrapper">
-
- <img src="/uploads/user/<?= $user['uploaded_flleinfo']?>" height="200" width="200" class="profile-image"  alt="">
+ <?php
+    $user_img = !empty(session("uploaded_flleinfo")) ? session("uploaded_flleinfo") : 'default.jpg';
+    ?>
+   
+ <img src="<?php echo base_url().'/uploads/user/'.$user_img; ?>" height="200" width="200" class="profile-image"  alt="">
 </div>
 
  <div class="user-info">

@@ -54,6 +54,10 @@ a:hover {
     padding-left: 2em;
     padding-bottom: 5em;
 }
+
+  .disable{
+    pointer-events: none;
+  }
     </style>
 <body>
     
@@ -62,7 +66,11 @@ a:hover {
 
 
 <div class="row">
-        <a id="SIGNIN"class="btn btn-signin create-question" href="<?= base_url('/AskQuestion/question');?>" role="button">CREATE A QUESTION</a>      
+<?php if (session()->get('logged_in')):?>
+          <a id="SIGNIN"class="btn btn-signin create-question" href="<?= base_url('/AskQuestion/question');?>" role="button">CREATE A QUESTION</a>      
+        <?php else:?>
+          <a id="SIGNIN"class="btn btn-signin create-question disable" href="<?= base_url('/AskQuestion/question');?>" role="button">CREATE A QUESTION</a>      
+		  	<?php endif; ?>
        
         </div>
 
@@ -74,10 +82,8 @@ a:hover {
 
 <figcaption class="figure-caption">
    <div class="row">
-   <p class="text-muted post-info">Creater by:
-   <a href="<?= base_url('/Profile');?>" class="text-muted link">     
+   <p class="text-muted post-info">Creater by:   
    <?= $forumquestion['user_name'] ?>
-</a>
    <p class="text-muted post-info">Published On:<?=  date("   F d,Y @ g:i A", strtotime($forumquestion['created_at']))?> </p>
    </div>
 </figcaption>
@@ -108,13 +114,15 @@ a:hover {
             <td>
           
             <div class="profile-comment">
-            <img src="/uploads/user/<?= $replyItem['uploaded_flleinfo']?>" height="50" width="50" class="profile-image"  alt=""> 
+            <?php
+    $user_img = !empty(session("uploaded_flleinfo")) ? session("uploaded_flleinfo") : 'default.jpg';
+    ?>
+    <img class="dropdown-image" src="<?php echo base_url().'/uploads/user/'.$user_img; ?>" height="50" width="50" class="d-inline-block align-top" alt="">
             <div class="row comment-info">
    <p class="text-muted comment-info">
    Creater by:
-   <a href="<?= base_url('/Profile');?>" class="text-muted link">    
+     
    <?= $replyItem['user_name'] ?>
-        </a>
 </p>
    <p class="text-muted comment-info"><?=  date("F d,Y g:i A", strtotime($replyItem['created_at']))?> </p>
    </div>
@@ -140,7 +148,17 @@ a:hover {
                     <input type="hidden" id="custId" class="custId" name="custId" value="<?= $forumquestion['id'] ?>">
                     <textarea class="text-editor reply" id="text-editor" name="reply"></textarea>
                     </div>
-                    <button class="btn btn-signin answer-button" type="submit">POST ANSWER</button>
+
+
+                    <?php if (session()->get('logged_in')):?>
+                        <button class="btn btn-signin answer-button" type="submit">POST ANSWER</button>
+        <?php else:?>
+            <button class="btn btn-signin answer-button disable" type="submit">POST ANSWER</button>
+          
+		  	<?php endif; ?>
+
+
+                  
                 </form>
       </div>
     </div>

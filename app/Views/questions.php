@@ -8,10 +8,20 @@
 	<link  rel="stylesheet" type="text/css" href="<?= base_url('assets/css/pagination.css');?>">
   <title>FORUM</title>
 </head>
+<style>
+  .disable{
+    pointer-events: none;
+  }
+</style>
 <body>
 <div class="container">
         <div class="row">
-        <a id="SIGNIN"class="btn btn-signin create-question" href="<?= base_url('/AskQuestion/question');?>" role="button">CREATE A QUESTION</a>      
+        <?php if (session()->get('logged_in')):?>
+          <a id="SIGNIN"class="btn btn-signin create-question" href="<?= base_url('/AskQuestion/question');?>" role="button">CREATE A QUESTION</a>      
+        <?php else:?>
+          <a id="SIGNIN"class="btn btn-signin create-question disable" href="<?= base_url('/AskQuestion/question');?>" role="button">CREATE A QUESTION</a>      
+		  	<?php endif; ?>
+       
        
         </div>
 

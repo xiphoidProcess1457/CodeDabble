@@ -4,5 +4,5 @@ use CodeIgniter\Model;
   
 class CourseModel extends Model{
     protected $table = 'lessons';
-    protected $allowedFields = ['title','course', 'body', 'code-snippet', 'description','created_at'];
+    protected $allowedFields = ['title','course', 'body', 'language','code-snippet', 'description','created_at'];
 }

@@ -80,7 +80,7 @@
               <li>
                 <a href="<?= base_url('Admin/admins');?>" class="nav-link text-white sidebar-links">
                   <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
-                  MANAGE ADMINS
+                  MANAGE MODS
                 </a>
               </li>
             
