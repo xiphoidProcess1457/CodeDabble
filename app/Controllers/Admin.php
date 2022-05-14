@@ -327,7 +327,7 @@ class Admin extends Controller
                  $session->setFlashdata("message", "Your Account Has been Deactivated");
                  return redirect()->to('/Admin');
                       }else{
-                 return redirect()->to('/Admin/adduser');
+                 return redirect()->to('/Admin/dashboard');
                      }
             }else{
                 $session->setFlashdata('msg', 'Password is incorrect.');
@@ -408,7 +408,6 @@ class Admin extends Controller
         $model = new AdminModel($db);
         helper('text');
         
-
 
         
         $builder = $db->table('admin-users');
