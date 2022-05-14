@@ -1,11 +1,11 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
+        'pretty_version' => 'dev-master',
+        'version' => 'dev-master',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => NULL,
+        'reference' => '07caea43776e5785ac86dbe675a62c123acb0f9a',
         'name' => 'codeigniter4/codeigniter4',
         'dev' => true,
     ),
@@ -20,12 +20,12 @@
             'dev_requirement' => true,
         ),
         'codeigniter4/codeigniter4' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => NULL,
+            'reference' => '07caea43776e5785ac86dbe675a62c123acb0f9a',
             'dev_requirement' => false,
         ),
         'composer/pcre' => array(
