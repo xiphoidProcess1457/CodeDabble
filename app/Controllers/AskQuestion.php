@@ -4,6 +4,7 @@ use CodeIgniter\Controller;
 use App\Models\ForumModel;
 use App\Models\UserModel;
 use App\Models\ForumReplyModel;
+use App\Models\PostLikeModel;
   
 class AskQuestion extends Controller
 {
@@ -96,6 +97,8 @@ class AskQuestion extends Controller
         $userModel = new UserModel($db);
         $forumModel = new ForumModel($db);
         $model = new ForumReplyModel($db);
+        $ss = new PostLikeModel($db);
+        $data['lessons'] =$model->find($id);
         //$reply['reply'] = $model->where("forumquestion.id",$id)->join('forumquestion', 'forumquestion.id = forumreply.post_id')->get()->getResult();
         $data['forumquestion'] = $userModel->where("forumquestion.id",$id)->join('forumquestion', 'users.id = forumquestion.user_id')->first();
         // $reply = json_decode(json_encode($model->where("forumquestion.id",$id)->join('forumquestion', 'forumquestion.id = forumreply.post_id', 'left')
@@ -115,6 +118,8 @@ class AskQuestion extends Controller
         ->countAllResults()), true);	
 
         $data ['num_row'] = $comment_num;
+
+        
         //$data['reply'] =$model->find();
         //$reply['forumreply'] = $model->getPosts();
         //$reply['forumreply'] =$model->findAll();
@@ -133,39 +138,169 @@ class AskQuestion extends Controller
         echo view('navbar');
         //echo 'pota';
         // $s['user'] =$forumModel->find($id);
-        // echo '<pre>';
-        // print_r($num);
-        // echo '<pre>';
+        $s['dislike'] = $userModel->where("users.id", session("id"))->join('post-likes', 'users.id = post-likes.user_id')->first();
+
         //$tangina = $dd->find($id);
-        //print_r($tangina);
+        // echo '<pre>';
+        // print_r($s);
+        $data['likes'] = json_decode(json_encode($ss->where("post-likes.post_id",$id)->countAllResults()), true);	
+        $unlike= json_decode(json_encode($ss->where("post-likes.post_id",$id)->get()->getResult()), true);
+        $data['unlike'] = $unlike;  
+        
+        // $builder = $db->table('users');
+        // $builder->select("users.id", session("id"));
+        // $builder->join('post-likes', 'post-likes.post_id = blogs.id');
+        // $query = $builder->get();
+       
+     
+        // if($user>=session("id")){
+        //     print_r(session("id"));
+        //     }else{
+        //         echo 'not user';
+        //         }
+        $multiClause = array('user_id' => session("id"), 'user_id' =>session("id"));
+    
         return view('viewforum' ,$data);
-        echo json_encode(array("status" => true , 'data' => $data));
+        
+        // echo json_encode(array("status" => true , 'data' => $data));
         echo view('footer');
         
     }
 
   
 
+    // public function forum(){
+    //     $model = new ForumModel();
+    //     // echo '<pre>';
+    //     // $gg = $model->join();
+    //     // print_r ($gg);
+
+    //     helper('text');
+  
+    //     $data = [
+    //       'news' => $model->paginate(10),
+    //       'pager' => $model->pager,
+    //   ];
+      
+
+    //     echo view('header-tags');
+    //     echo view('navbar');
+    //     //echo 'kingina';
+    //     echo view('questions', $data);
+    //     echo view('footer');   
+    // }
+
+
+
     public function forum(){
         $model = new ForumModel();
+        $userModel = new UserModel($db); 
+        $db = db_connect();
+        
         // echo '<pre>';
         // $gg = $model->join();
         // print_r ($gg);
 
         helper('text');
+        $builder = $db->table('forumquestion');
+        $builder->select('*');
+        $builder->join('users', 'forumquestion.user_id = users.id');
+        $query = $builder->get()->getResult();
   
+        
         $data = [
           'news' => $model->paginate(10),
           'pager' => $model->pager,
       ];
-      
 
+      $t = $model->get()->getResult();
+      
+        //info$data ['news']= json_decode(json_encode($query), true);
+     
+      
+       
         echo view('header-tags');
         echo view('navbar');
         //echo 'kingina';
         echo view('questions', $data);
         echo view('footer');   
     }
+
+    public function deletelike($id = null){
+        $model = new PostLikeModel($db);
+        $forummodel = new ForumModel($db);
+        $usermodel = new UserModel($db);
+        //$s['dislike'] = $usermodel->where("users.id", session("id"))->join('post-likes', 'users.id = post-likes.user_id')->first();
+        
+        $linkId=$forummodel->where("forumquestion.id", $id)->first();
+
+    
+            $multiClause = array('user_id' => session("id"), 'post_id' => $id);
+             $data['likes'] = $model->where($multiClause)->delete();
+             return redirect()->to('/AskQuestion/post/'.$linkId['id']);
+        }
+     
+  
+
+
+
+    public function like($id){
+        $db = db_connect();
+        
+        helper('form', 'url');
+        $usermodel = new UserModel($db);
+        $forummodel = new ForumModel($db);
+        $model = new PostLikeModel($db);
+        $session = session();
+        
+        $linkId=$forummodel->where("forumquestion.id", $id)->first();
+        
+        $link = $forummodel->where("/AskQuestion/post/",$id);
+        $j=$usermodel->where("users.id", session("id"))->countAllResults();
+        $checklike=$model->where("post-likes.user_id",session("id"))->where('post-likes.post_id',$id)->countAllResults();
+        if ($checklike>= 1) {
+         
+            return redirect()->to('/AskQuestion/post/'.$linkId['id']);
+        }else{
+            $data = [
+                'post_id'     =>$this->request->getVar('custId'),
+                'user_id'     =>session("id")
+                ];
+                $save = $model->save($data);
+                $data = $model->where('id', $save)->first();
+                return redirect()->to('/AskQuestion/post/'.$linkId['id']);
+              
+            }
+    }
+
+
+
+
+
+    // $db = db_connect();
+        
+    // helper('form', 'url');
+    // $usermodel = new UserModel($db);
+    // $forummodel = new ForumModel($db);
+    // $model = new ForumReplyModel($db);
+    // $PostLikeModel = new PostLikeModel($db);
+    // $session = session();
+
+    // $linkId=$forummodel->where("forumquestion.id", $id)->first();
+    
+    // //$link = $forummodel->where("/AskQuestion/post/",$id);
+    // $data = [
+    //     'post_id'     =>2,
+    //     'comment_id'     =>2,
+    //     'user_id'     =>2
+    //     ];
+    //     $save = $PostLikeModel->insert_data($data);
+    //     $data = $model->where('id', $save)->first();
+        
+    //     return redirect()->to('/AskQuestion/post/'.$linkId['id']);
+
+
+
 
 
 

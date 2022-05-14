@@ -2,8 +2,8 @@
     font-family: "metropolis";
 }  
 .navbar{
-    padding-right: 20em;
-    padding-left: 20em; 
+    padding-right: 18%;
+    padding-left: 18%; 
 }
 .nav-link {
 padding: 500px;  
@@ -52,12 +52,12 @@ width: 100%;
 }
 .navbar-scroll {
 background: #ffffff;
-padding-right: 10em;
-padding-left: 10em; 
+padding-right: 5%;
+padding-left: 5%; 
 padding-top: 0;
 padding-bottom: 0;
 top: -2.3em;
-height: 165px;
+height: 1%;
 box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
 transition-duration: 0.6s;
 transition: 300ms;

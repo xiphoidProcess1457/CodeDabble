@@ -8,7 +8,7 @@
     </head>
 <body>
     <footer>
-        <button>Back</button>
+        <button onclick="location.href='<?= base_url('Admin/catalog');?>';">Back</button>
     </footer>
 </body>
 </html>

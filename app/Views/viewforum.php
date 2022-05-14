@@ -35,7 +35,7 @@ a:hover {
 .comment-info{
     font-size: .9em;
     margin-bottom:-5px;
-    padding-left: .3em;
+    padding-left: 10%;
     width: 100%
 }
 .profile-comment{
@@ -55,45 +55,141 @@ a:hover {
     padding-bottom: 5em;
 }
 
-  .disable{
-    pointer-events: none;
-  }
+ul#redbutton li.newbutton {
+    display: block;
+    font-weight:bold; 
+    text-align:center;
+}
+.like{
+ background-color: transparent;
+ border: none;
+}
+
+.like:focus {
+    outline: 0 !important;
+}
+
+.body{
+    margin-right:-2%;
+    margin-left:-13%;
+}
+
+.disabled{
+  pointer-events: none;
+}
     </style>
 <body>
-    
+
+
+
+
 
 <div class="container">
 
 
 <div class="row">
-<?php if (session()->get('logged_in')):?>
+        <?php if (session()->get('logged_in')):?>
           <a id="SIGNIN"class="btn btn-signin create-question" href="<?= base_url('/AskQuestion/question');?>" role="button">CREATE A QUESTION</a>      
         <?php else:?>
-          <a id="SIGNIN"class="btn btn-signin create-question disable" href="<?= base_url('/AskQuestion/question');?>" role="button">CREATE A QUESTION</a>      
+          <a id="SIGNIN"class="btn btn-signin create-question disabled" href="<?= base_url('/AskQuestion/question');?>" role="button">CREATE A QUESTION</a>      
+
 		  	<?php endif; ?>
-       
         </div>
 
 
     <div class="forum-title">
     <h2>
-        <?= $forumquestion['forum_title'] ?>
+        <?= $forumquestion['forum_title'] ?> 
     </h2>
 
 <figcaption class="figure-caption">
    <div class="row">
-   <p class="text-muted post-info">Creater by:   
+   <p class="text-muted post-info">Creater by:
+   <a href="<?= base_url('/Profile');?>" class="text-muted link">     
    <?= $forumquestion['user_name'] ?>
+</a>
    <p class="text-muted post-info">Published On:<?=  date("   F d,Y @ g:i A", strtotime($forumquestion['created_at']))?> </p>
    </div>
 </figcaption>
 
-    </div>
-    <div class="forum-body">
+
+
+
+
+<div class="row body">
+  <div class="col-2">
+
+
+  <?php if (session()->get('logged_in')):?>
+       
+    
+       <?= form_open_multipart('AskQuestion/like/'.$forumquestion['id'] ) ?>
+         
+         <input type="hidden" id="custId" class="custId" name="custId" value="<?= $forumquestion['id'] ?>">
+        <div class="rate-button">
+        <ul id="redbutton">
+   <li class="newbutton">
+   <button class="like" type="submit">  <img src="<?= base_url('assets/assets/like.svg');?>" width="40" height="40" alt=""></button>
+   </li>
+   
+   
+   <li class="newbutton">
+   <?= $likes;?>
+   </li>
+   
+   
+   <li class="newbutton">
+   <a  href="<?php echo base_url('AskQuestion/deletelike/'. $forumquestion['id']);?>">
+         <img src="<?= base_url('assets/assets/dislike.svg');?>" width="40" height="40" alt="">
+             </a>
+   </li>
+   </ul>
+             </div>  
+     </form>
+   
+   
+     
+   
+   
+           <?php else:?>
+            <?= form_open_multipart('AskQuestion/like/'.$forumquestion['id'] ) ?>
+         
+         <input type="hidden" id="custId" class="custId" name="custId" value="<?= $forumquestion['id'] ?>">
+        <div class="rate-button">
+        <ul id="redbutton">
+   <li class="newbutton">
+   <button class="like disabled" type="submit">  <img src="<?= base_url('assets/assets/like.svg');?>" width="40" height="40" alt=""></button>
+   </li>
+   
+   
+   <li class="newbutton">
+   <?= $likes;?>
+   </li>
+   
+   
+   <li class="newbutton disabled">
+   <a  href="<?php echo base_url('AskQuestion/deletelike/'. $forumquestion['id']);?>">
+         <img src="<?= base_url('assets/assets/dislike.svg');?>" width="40" height="40" alt="">
+             </a>
+   </li>
+   </ul>
+             </div>  
+     </form>
+                 <?php endif; ?>
+
+ 
+  </div>
+  <div class="col-10">
+  <div class="forum-body">
         <h5 class="forum-body">
         <?= $forumquestion['forum_body'] ?>
         </h5>
     </div>
+  </div>
+</div>
+
+
+    
 
 
 
@@ -112,17 +208,17 @@ a:hover {
             <p class="reply"> <?php echo $replyItem['forum_reply'];?></p>    
            </td>
             <td>
-          
+            <p>
+            
+            </p>
             <div class="profile-comment">
-            <?php
-    $user_img = !empty(session("uploaded_flleinfo")) ? session("uploaded_flleinfo") : 'default.jpg';
-    ?>
-    <img class="dropdown-image" src="<?php echo base_url().'/uploads/user/'.$user_img; ?>" height="50" width="50" class="d-inline-block align-top" alt="">
+            <img src="/uploads/user/<?= $replyItem['uploaded_flleinfo']?>" height="50" width="50" class="profile-image"  alt=""> 
             <div class="row comment-info">
    <p class="text-muted comment-info">
    Creater by:
-     
+   <a href="<?= base_url('/Profile');?>" class="text-muted link">    
    <?= $replyItem['user_name'] ?>
+        </a>
 </p>
    <p class="text-muted comment-info"><?=  date("F d,Y g:i A", strtotime($replyItem['created_at']))?> </p>
    </div>
@@ -139,6 +235,10 @@ a:hover {
     </div>
 
 
+ 
+
+
+
     <div class="forum-reply-editor">
     <div class="row">
         
@@ -146,19 +246,19 @@ a:hover {
       <?= form_open_multipart('AskQuestion/store/'.$forumquestion['id'] ) ?>
                     <div class="form-group">
                     <input type="hidden" id="custId" class="custId" name="custId" value="<?= $forumquestion['id'] ?>">
+                    <?php if (session()->get('logged_in')):?>
                     <textarea class="text-editor reply" id="text-editor" name="reply"></textarea>
+                    <?php else:?>
+                        <textarea class="text-editor reply" id="text-editor" name="reply" disabled></textarea>
+                        <?php endif; ?>
                     </div>
 
 
                     <?php if (session()->get('logged_in')):?>
-                        <button class="btn btn-signin answer-button" type="submit">POST ANSWER</button>
+        <button class="btn btn-signin answer-button" type="submit">POST ANSWER</button>
         <?php else:?>
-            <button class="btn btn-signin answer-button disable" type="submit">POST ANSWER</button>
-          
+            <button class="btn btn-signin answer-button disabled" type="submit">POST ANSWER</button>
 		  	<?php endif; ?>
-
-
-                  
                 </form>
       </div>
     </div>

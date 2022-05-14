@@ -12,37 +12,65 @@ class Login extends Controller
         echo view('login');
     } 
   
-    public function auth()
-    {
+    public function auth(){
         $session = session();
         $model = new UserModel();
         $email = $this->request->getVar('email');
         $password = $this->request->getVar('password');
-        $data = $model->where('user_email', $email)->first();
-        $data['user']=$model->where("users.id", session("id"))->first();
-        if($data){
-            $pass = $data['user_password'];
-            $verify_pass = password_verify($password, $pass);
-            if($verify_pass){
-                $ses_data = [
-                    'id'       => $data['id'],
-                    'user_name'     => $data['user_name'],
-                    'user_email'    => $data['user_email'],
-                    'uploaded_flleinfo'    => $data['uploaded_flleinfo'],
-                    'logged_in'     => TRUE
-                ];
+       //include helper form
+        helper(['form']);
+		$data = [];
+		helper(['form']);
+
+		
+		if($this->request->getMethod()=='post'){
+            $rules = [
+        
+                'email'=>'required|min_length[3]|max_length[30]|valid_email',
+                'password'=>'required|min_length[3]|max_length[255]|validateUser[email,password]',
+            ];
+        
+            $errors = [
+                'password' => [
+                    'validateUser' => 'Email/Password Does not Match'
+                ]
+            ];
               
-                $session->set($ses_data);
-                return redirect()->to('/Home');
+            if($this->validate($rules,$errors)){
+                $data = $model->where('user_email', $email)->first();
+                $data['user']=$model->where("users.id", session("id"))->first();
+                if($data){
+                    $pass = $data['user_password'];
+                    $verify_pass = password_verify($password, $pass);
+                    if($verify_pass){
+                        $ses_data = [
+                            'id'       => $data['id'],
+                            'user_name'     => $data['user_name'],
+                            'user_email'    => $data['user_email'],
+                            'uploaded_flleinfo'    => $data['uploaded_flleinfo'],
+                            'logged_in'     => TRUE
+                        ];
+                      
+                        $session->set($ses_data);
+                        return redirect()->to('/Home');
+                    }else{
+                        $session->setFlashdata('msg', 'Wrong Password');
+                        return redirect()->to('/login');
+                    }
+                }else{
+                        $session->setFlashdata('msg', 'Email not Found');
+                        return redirect()->to('/login');
+                }
             }else{
-                $session->setFlashdata('msg', 'Wrong Password');
-                return redirect()->to('/login');
+                
+                echo view('header-tags');
+                echo view('login', $data);
             }
-        }else{
-            $session->setFlashdata('msg', 'Email not Found');
-            return redirect()->to('/login');
-        }
-    }
+		}
+
+		echo view('login', $data);
+
+	}
 
 
 

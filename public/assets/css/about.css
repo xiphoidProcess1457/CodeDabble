@@ -19,8 +19,8 @@ html{
     top: 5em;
     padding-top: 5em;
     padding-bottom: 5em;
-    padding-right: 37%;
-    padding-left: 37%;
+    padding-right:20%;
+    padding-left: 20%;
     margin-left: -50vw;
     margin-right: -50vw;
 }
@@ -41,14 +41,14 @@ html{
 }
 .header-text{
     font-weight: 700;
-    font-size: 2vw;
+    font-size: 400%;
 }
 
 .header-subtitle{
     font-weight: 400;
-    font-size: 1.3vw;
+    font-size: 200%;
 }
 
 .paragraph{
-    font-size: 1vw;
+    font-size: 100%;
 }

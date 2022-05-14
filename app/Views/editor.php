@@ -7,7 +7,12 @@
     <title><?= $lessons['title'] ?> | EDITOR</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.14/ace.js" integrity="sha512-6ts6Fu561/yzWvD6uwQp3XVYwiWNpWnZ0hdeQrETqtnQiGjTfOS06W76aUDnq51hl1SxXtJaqy7IsZ3oP/uZEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="http://pagecdn.io/lib/ace/1.4.12/ace.min.js"></script>
+    <script src="http://pagecdn.io/lib/ace/1.4.12/ext-language_tools.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
@@ -19,6 +24,7 @@
 top: 13%;
 height:100%;
 width: 100%;
+resize: none;
 background-color: #000000;
 overflow: auto;
 border: none;
@@ -35,12 +41,58 @@ font-family: 'Inconsolata', monospace;
 
 
 
+    #editor {
+height: 95%;
+position: relative;
+overflow-y: hidden; /* hide vertical scrollbar */
+overflow-x: scroll; /* show only horizontal scrollbar */
+}
+*:focus {
+    outline: 0 !important;
+}
+#image{
+    position: relative;
+    z-index: 999;
+    background-color: transparent;
+    transform: translateZ(-1px);
+}
+
+
+
+.rotated-image {
+		-webkit-animation: rotation 2s;
+        animation-duration: 950ms;
+}
+
+@-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
+}
+
+
+.clipboard{
+    background-color: transparent;
+}
+
+
+.clipboard-scale{
+	transform: translate(0, 0) scale(0.9);
+    transition: .1 ease-in;
+    transition-timing-function:cubic-bezier(.5,-.75,.7,2);
+}
+
 </style>
 <body>
+
+
 <script>
-	$( document ).ready(function() {
-	fetch()
-});
+// 	$( document ).ready(function() {
+// 	fetch()
+// });
 	</script>
     <div class="split">
         <div class="column" id="split-0">           
@@ -48,6 +100,12 @@ font-family: 'Inconsolata', monospace;
     <img src="<?= base_url('assets/assets/instruction.svg');?>"  class="d-inline-block align-top header_img" alt="">  
     Instructions
     </div>
+
+   
+
+    
+
+
 <div class="content">
     <h6 class="course-title"><?= $lessons['course'] ?></h6>
     <h3 class="lesson-title"><?= $lessons['title'] ?></h3>
@@ -63,33 +121,54 @@ font-family: 'Inconsolata', monospace;
       </div>
 </div>
         </div>
-        <div class="column" id="split-1">
-            <div id="editor"><?= $lessons['code-snippet'] ?></div>
+        <div class="column editor-container" id="split-1">
+
+
+
+            <div id="editor" class="edit-container"><?= $lessons['code-snippet'] ?></div>
+   
             <div class="editor-footer">
-            
-            <input type="hidden" value=<?php echo $TOKEN; ?>;> 
-                 <button class="editor__btn editor__run" id="run" onclick="sendCode()">Run</button>
-                <button id="reset" onclick="fetch()">
+        
+            <input type="hidden"  value=<?php echo $TOKEN; ?>;> 
+                 <button class="editor__btn editor__run" id="run" data-toggle="tooltip" data-placement="top" title="Run the Code" onclick="sendCode()">Run</button>
+                 <div class="tooltip" role="tooltip" title="Some tooltip text!"><div class="arrow">sds</div><div class="tooltip-inner"></div></div>
+
+                 <button class="dist button" id="image" data-toggle="tooltip" data-placement="top" title="Reset Workspace"  onclick="fetch()">
+                <img id="clip" src="<?= base_url('assets/assets/refresh.svg');?>" class="refresh-img clip">  
+                </button>
+                
+
+                 <button class="dist float-right clipboard animation" data-toggle="tooltip" data-placement="top" title="Copy to&#013;Clipboard" onclick="copyClipboard()"> <img id="image" src="<?= base_url('assets/assets/clipboard.svg');?>" class="refresh-img">  </button>
+                 <p>
+
+</p>
                     <img src="<?= base_url('assets/assets/reset.svg');?>" class="refresh-img">  
                 </button>
-
-
-
+                
             </div>
+      
         </div>
+
+
         <div class="column" id="split-2">
             <textarea id="output" disabled></textarea>
+            
         </div>
 
 
     </div>
+    
 </body>
 <script>
-     let editor = ace.edit("editor");
-         editor.setTheme("ace/theme/tomorrow_night");
-         editor.getSession().setMode("ace/mode/java");
-         editor.setOptions({
-       // editor options
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();
+});
+</script>
+<script>
+     let editor = ace.edit("editor", {
+        setAutoScrollEditorIntoView: true,
+        enableBasicAutocompletion: true,enableSnippets: true,
+            enableLiveAutocompletion: true,
             selectionStyle: 'line',// "line"|"text"
             highlightActiveLine: true, // boolean
             highlightSelectedWord: true, // boolean
@@ -140,8 +219,19 @@ font-family: 'Inconsolata', monospace;
             indentedSoftWrap: false, // boolean
             foldStyle: 'markbegin', // enum: 'manual'/'markbegin'/'markbeginend'.
             fontFamily: 'consolas',
-            fontSize: "13pt"
-   });
+            fontSize: "13pt",
+     });
+         editor.setTheme("ace/theme/tomorrow_night");
+         editor.getSession().setMode("ace/mode/java");
+         editor.resize();
+        editor.renderer.updateFull();
+        editor.setAutoScrollEditorIntoView(true);
+        editor.require("ace/ext/language_tools");
+      
+
+
+      
+   
 </script>
 <script type="text/javascript" src="<?= base_url('assets/js/ace_editor.js');?>">
 </script>
@@ -178,31 +268,68 @@ font-family: 'Inconsolata', monospace;
 				console.log("Details: " + desc + "\nError:" + err);
 }
 			 })	
+             
 		 }
-		 function fetch()
-		 {
-		  $.ajax({
-			   type: 'POST',
-			   url: "http://localhost:8080/fetchCode?fileName=Solution",
-			   headers: {
-			   'Content-Type':'application/json',
-			   },
-
-			   success: function(data){
-				editor.getDoc().setValue(data['codeBody']);
-
-				 }, error: function(xhr, desc, err){
-						   console.log(xhr);
-				console.log("Details: " + desc + "\nError:" + err);
-}
-			 })	
-		 }
-
-
-
 		
+
+
+
+ 
 		 
 </script>
+<script>
+  var copyText = String(editor.getValue());
+    function fetch() {
+        editor.setValue(copyText);
+      
+         
+}
+
+
+
+
+</script>
+<script>
+
+
+const dist = document.querySelector('.dist');
+
+document.querySelector('.button').addEventListener('click', () => {
+  dist.classList.remove('rotated-image');
+  window.requestAnimationFrame(function() {
+    dist.classList.add('rotated-image');
+  });
+});
+</script>
+
+
+<script>
+
+
+const dist = document.querySelector('.dist');
+
+document.querySelector('.animation').addEventListener('click', () => {
+  dist.classList.remove('clipboard-scale');
+  window.requestAnimationFrame(function() {
+    dist.classList.add('clipboard-scale');
+  });
+});
+</script>
+
+
+<script>
+function copyClipboard() {
+  var copyText = String(editor.getValue());
+  navigator.clipboard.writeText(copyText);
+}
+</script>
+
+<script>
+    
+</script>
+<script type="text/javascript" src="<?= base_url('assets/js/ace_editor.js');?>">
+</script>
+<script type="text/javascript" src="<?= base_url('assets/js/split.js');?>"></script>
 
 
 

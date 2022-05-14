@@ -58,27 +58,26 @@
       </div>
 </div>
         
-
-    <h1 class="bottom-headertext">
-        HOW IT WORKS?
-     </h1>
-<div class="row mx-auto bottom-column">
-    <div class="col-xl" id="column-top1">
-      
-          <P class="bottom-header-description">
-            The entire process will run on
+<div class="row mx-auto bottom-div">
+          <div class="col-xl column-overflow" id="column-top1">
+            <h1 class="headertext">
+            HOW IT WORKS?
+            </h1>
+                <P class="header-description">
+                The entire process will run on
             your browser no installation needed
             when you get here just sign in or
             create an account with us and
             choose through the catalog
             and enjoy!   
-          </P>
-    
-    </div>
-    <div class="col-xl" id="column-top2">
-      <img class="bottom-big-svg" src="<?= base_url('assets/assets/cycle.svg');?>" alt="">
-    </div>
-  </div>
+                </P>
+            
+          </div>
+          <div class="col-xl" id="column-top2">
+            <img class="big-svg" src="<?= base_url('assets/assets/cycle.svg');?>" alt="">
+          </div>
+        </div>
+
       </div>
       
 </body>
