@@ -40,6 +40,8 @@
       <td><?= $item['description']?></td>
       <td>
       <a class="btn btn-success" href="<?php echo base_url('Admin/edit/'. $item['id']);?>">EDIT</a>  
+  </td>
+  <td>
       <a class="btn btn-danger" href="<?= base_url('Admin/delete/'.$item['id']);?>">DELETE</a> 
       </td>
     </tr>
