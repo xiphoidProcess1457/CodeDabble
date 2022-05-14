@@ -304,9 +304,13 @@ class Admin extends Controller
         $data = $userModel->where('email', $email)->first();
         //$admin = $userModel->where('email', $email)->first();
         //$data['user']=$userModel->where("admin-users.id", session("id"))->first();
+        // print_r($data);
+        // echo $password;
         if($data){
             $pass = $data['password'];
+            
             $authenticatePassword = password_verify($password, $pass);
+            
             if($authenticatePassword){
                 $ses_data = [
                     'id' => $data['id'],
@@ -405,7 +409,6 @@ class Admin extends Controller
         $model = new AdminModel($db);
         helper('text');
         
-
 
         
         $builder = $db->table('admin-users');
