@@ -327,7 +327,7 @@ class Admin extends Controller
                  $session->setFlashdata("message", "Your Account Has been Deactivated");
                  return redirect()->to('/Admin');
                       }else{
-                 return redirect()->to('/Admin/admins');
+                 return redirect()->to('/Admin/dashboard');
                      }
             }else{
                 $session->setFlashdata('msg', 'Password is incorrect.');
@@ -371,7 +371,7 @@ class Admin extends Controller
         $model = new UserModel();
         helper('text');
         $data['users'] = $model->where('id', $id)->delete();
-        return redirect()->to('/Admin/dashboard');
+        return redirect()->to('/Admin/users');
         }
 
 
