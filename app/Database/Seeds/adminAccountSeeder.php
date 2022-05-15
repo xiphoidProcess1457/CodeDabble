@@ -23,5 +23,8 @@ class adminAccountSeeder extends Seeder
 
         // Using Query Builder
         $this->db->table('admin-users')->insert($data);
+
+
+        //php spark db:seed adminAccountSeeder
     }
 }

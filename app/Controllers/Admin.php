@@ -371,7 +371,7 @@ class Admin extends Controller
         $model = new UserModel();
         helper('text');
         $data['users'] = $model->where('id', $id)->delete();
-        return redirect()->to('/Admin/users');
+        return redirect()->to('/Admin/dashboard');
         }
 
 
