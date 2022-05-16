@@ -249,7 +249,7 @@ input[type="file"]::-ms-browse {
   <div class="col-sm-6">
     <div class="card">
       <div class="card-body">
-      <h3 class="card-title">NUMBER OF Moderators</h3>
+      <h3 class="card-title">NUMBER OF MODERATORS</h3>
      <h1>  <p class="card-text"><?= $admins ?></p></h1> 
         <a href="<?= base_url('Admin/admins');?>" class="btn btn-light">MANAGE MODERATOR</a>
       </div>
@@ -281,6 +281,7 @@ input[type="file"]::-ms-browse {
         <h3 class="card-title">NUMBER OF LESSONS</h3>
       <h1>  <p class="card-text"><?= $lessons ?></p></h1>
         <a href="<?= base_url('Admin/lessonList');?>" class="btn btn-light"> MANAGE LESSONS</a>
+        <a href="<?= base_url('Admin/addlesson');?>" class="btn btn-light"> ADD LESSONS</a>
       </div>
     </div>
   </div>
