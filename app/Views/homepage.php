@@ -8,8 +8,24 @@
     <link  rel="stylesheet" type="text/css" href="<?= base_url('assets/css/index.css');?>">
     <link  rel="stylesheet" type="text/css" href="<?= base_url('assets/css/navbardesign.css');?>">
 </head>
+<style>
+  .container-fluid{
+    box-sizing: border-box;
+    margin-top: 13%;
+    padding: 2%;
+    padding-right: 13%;
+    padding-left: 13%;
+    padding-bottom: 18%;
+    overflow: hidden;
+}
+
+
+.container{
+  padding-top: 10%;
+}
+</style>
 <body>
-<div class="container-fluid">
+<div class="container mx-auto">
 
         <div class="row mx-auto">
           <div class="col-xl column-overflow" id="column-top1">

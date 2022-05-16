@@ -12,6 +12,10 @@
   .disable{
     pointer-events: none;
   }
+
+  .container{
+    padding-top: 15%;
+}
 </style>
 <body>
 <div class="container">

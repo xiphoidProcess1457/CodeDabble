@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="<?= base_url('assets/css/catalog.css');?>">
     <title>CATALOG</title>
     </head>
+    <style>
+         .container-fluid{
+    padding-top: 15%;
+}
+    </style>
 <body>
     <div class="container-fluid">
 

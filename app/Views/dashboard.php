@@ -15,9 +15,30 @@
     overflow: visible;
 }
 .container{
-    padding-left: 1em;
+    padding-left: 4%;
     padding-top: 10em;
 }
+
+
+
+@media(max-width:1700px){
+
+
+  .container{
+    padding-left: 17%;
+    padding-top: 10em;
+}
+
+}
+
+
+@media(max-width:768px){
+  .container{
+    padding-left: 25%;
+    padding-top: 10em;
+}
+}
+
 
 .profile-image{
     border-radius: 100%;

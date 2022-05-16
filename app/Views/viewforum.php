@@ -77,6 +77,10 @@ ul#redbutton li.newbutton {
 .disabled{
   pointer-events: none;
 }
+
+.container{
+    padding-top: 15%;
+}
     </style>
 <body>
 

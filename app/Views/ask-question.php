@@ -10,7 +10,11 @@
     <script type="text/javascript" src="<?= base_url('assets/js/ng-tags-input.min.js');?>"> </script>
 </head>
 <style>
-    
+    .container{
+    padding-top: 20%;
+}
+
+.tox-tinymce-aux{z-index:99999999999 !important;}
 </style>
 <body>
     
@@ -37,7 +41,7 @@
 
     <div class="row">
       <div class="col">
-            <textarea id="text-editor" name="body"></textarea>
+            <textarea class="tinymce" id="text-editor" name="body"></textarea>
       </div>
     </div>
 

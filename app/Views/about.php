@@ -7,6 +7,11 @@
     <title>ABOUT</title>
     <link rel="stylesheet" href="<?= base_url('assets/css/about.css');?>">
 </head>
+<style>
+     .container{
+    padding-top: 15%;
+}
+</style>
 <body>
     <div class="container">
        <div class="row-one justify-content-center text-center div-holder">
