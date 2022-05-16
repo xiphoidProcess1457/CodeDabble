@@ -180,10 +180,21 @@ input[type="file"]::-ms-browse {
 	color: #fff;
 	border-radius: 0.2em;
 }
+
+.card {
+ 
+  margin: .5em;
+
+	padding: 1em 2em;
+
+	border-radius: 0.2em;
+}
+
+
 </style>
 <body>
     <div class="container">
-        <h1>Hello <?= $user['role'] ?>, <?= $user['username'] ?></h1>
+        <h1>Hello  <?= $user['username'] ?></h1>
     <div class="row">
   <div class="col-sm-4">
 
@@ -196,17 +207,31 @@ input[type="file"]::-ms-browse {
          <p class="info"><?= $user['username'] ?></p>
          
      </div>
-     <div class="info-wrapper">
-     <h5 class="user-info-header">
-         EMAIL
-         </h5>
-         <p class="info"> <?= $user['email'] ?></p>
-        
-     </div>
-
 
  </div>
 
+  </div>
+  
+  <div class="col-sm-4">
+    <div class="user-info">
+  <div class="info-wrapper">
+    <h5 class="user-info-header">
+        EMAIL
+        </h5>
+        <p class="info"> <?= $user['email'] ?></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-4">
+    <div class="user-info">
+  <div class="info-wrapper">
+    <h5 class="user-info-header">
+        STATUS
+        </h5>
+        <p class="info"><?= $user['role'] ?></p>
+      </div>
+    </div>
   </div>
 
 </div>
@@ -215,20 +240,25 @@ input[type="file"]::-ms-browse {
 <button id="SIGNIN"class="btn btn-light" data-toggle="modal" data-target="#exampleModal" href="<?php echo base_url('Profile/changepassword/'. $user['id']);?>" role="button">CHANGE PASSWORD</button>
     </div>
 
- 
 
+    <?php if (session()->get('role') =='admin' ):?>
 
 
     <div class="row">
+ 
   <div class="col-sm-6">
     <div class="card">
       <div class="card-body">
-        <h3 class="card-title">NUMBER OF LESSONS</h3>
-      <h1>  <p class="card-text"><?= $lessons ?></p></h1>
-        <a href="<?= base_url('Admin/lessonList');?>" class="btn btn-light"> MANAGE LESSONS</a>
+      <h3 class="card-title">NUMBER OF Moderators</h3>
+     <h1>  <p class="card-text"><?= $admins ?></p></h1> 
+        <a href="<?= base_url('Admin/admins');?>" class="btn btn-light">MANAGE MODERATOR</a>
       </div>
     </div>
   </div>
+
+
+
+
   <div class="col-sm-6">
     <div class="card">
       <div class="card-body">
@@ -238,7 +268,60 @@ input[type="file"]::-ms-browse {
       </div>
     </div>
   </div>
+
+
+
+
 </div>
+<div class="row">
+
+<div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title">NUMBER OF LESSONS</h3>
+      <h1>  <p class="card-text"><?= $lessons ?></p></h1>
+        <a href="<?= base_url('Admin/lessonList');?>" class="btn btn-light"> MANAGE LESSONS</a>
+      </div>
+    </div>
+  </div>
+
+
+
+</div>
+
+
+<?php else:?>
+
+<div class="row">
+ 
+
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+      <h3 class="card-title">NUMBER OF STUDENTS</h3>
+     <h1>  <p class="card-text"><?= $student ?></p></h1> 
+        <a href="<?= base_url('Admin/users');?>" class="btn btn-light">MANAGE STUDENT</a>
+      </div>
+    </div>
+  </div>
+
+
+
+<div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title">NUMBER OF LESSONS</h3>
+      <h1>  <p class="card-text"><?= $lessons ?></p></h1>
+        <a href="<?= base_url('Admin/lessonList');?>" class="btn btn-light"> MANAGE LESSONS</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<?php endif; ?>
+
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

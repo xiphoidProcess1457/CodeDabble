@@ -77,25 +77,10 @@
                   ADD LESSON
                 </a>
               </li>
-              <li>
-                <a href="<?= base_url('Admin/admins');?>" class="nav-link text-white sidebar-links">
-                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
-                  MANAGE MODS
-                </a>
-              </li>
             
-              <li>
-                <a href="<?= base_url('Admin/lessonList');?>" class="nav-link text-white sidebar-links">
-                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
-                  MANAGE LESSONS
-                </a>
-              </li>
-              <li>
-                <a href="<?= base_url('Admin/users');?>" class="nav-link text-white sidebar-links">
-                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
-                  MANAGE USERS
-                </a>
-              </li>
+            
+              
+             
               <li>
                 <a href="<?= base_url('Admin/logout');?>" class="nav-link text-white sidebar-links">
                   <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>

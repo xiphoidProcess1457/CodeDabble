@@ -474,7 +474,10 @@ class Admin extends Controller
             $data['lessons'] =$coursemodel->countAllResults();
             $data['student'] =$student->countAllResults();
             $data['user']=$usermodel->where("admin-users.id", session("id"))->first();
-            
+            $data['admins'] = $usermodel->where('role', 'moderator')->countAllResults();
+        
+
+
             // echo '<pre>';
             // print_r($s);
             echo view('header-tags');
