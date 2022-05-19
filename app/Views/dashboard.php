@@ -283,9 +283,9 @@ input[type="file"]::-ms-browse {
   <div class="col-sm-6">
     <div class="card">
       <div class="card-body">
-      <h3 class="card-title">NUMBER OF STUDENTS</h3>
+      <h3 class="card-title">NUMBER OF LEARNERS</h3>
      <h1>  <p class="card-text"><?= $student ?></p></h1> 
-        <a href="<?= base_url('Admin/users');?>" class="btn btn-light">MANAGE STUDENT</a>
+        <a href="<?= base_url('Admin/users');?>" class="btn btn-light">MANAGE LEARNERS</a>
       </div>
     </div>
   </div>
