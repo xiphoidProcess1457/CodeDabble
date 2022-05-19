@@ -32,21 +32,9 @@
                   JAVA
               </a>
               </li>
-              <li class="list-group-item borderless">
-              <a class="footer-brand" href="<?= base_url('Admin/catalog');?>">
-                  CSS
-              </a>
-              </li>
-              <li class="list-group-item borderless">
-              <a class="footer-brand" href="<?= base_url('Admin/catalog');?>">
-                  HTML
-              </a>
-              </li>
-              <li class="list-group-item borderless">
-              <a class="footer-brand" href="<?= base_url('Admin/catalog');?>">
-                  JAVASCRIPT
-              </a>
-              </li>
+             
+              
+           
             </ul>
             </div>
             <div class="col-sm">
