@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="<?= base_url('assets/css/editprofile.css');?>">
     <title>Edit <?= $user['user_name'] ?> | CodeDabble</title>
 </head>
+<style>
+     .container{
+   padding-top: 10%;
+ }
+</style>
 <body>
     <div class="container">
     <div class="row">

@@ -11,7 +11,9 @@
     <title><?= $user['user_name'] ?>    | CodeDabble</title>
 </head>
 <style>
- 
+ .container{
+   padding-top: 10%;
+ }
 </style>
 <body>
     <div class="container">
