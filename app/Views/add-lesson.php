@@ -15,6 +15,7 @@
     }
 </style>
 <body>
+<?php $validation = \Config\Services::validation(); ?>
     <div class="container"> 
         <h1>
             Add Lesson
@@ -23,6 +24,13 @@
     <div class="form-group">
         <input type="Title" class="form-control input-title" id="title-input" name="title" placeholder="Title">
     </div>
+    <figure>
+                    <?php if($validation->getError('title')) {?>
+                    <div class='d-flex justify-content-center align-items-center'>
+                      <?= $error = $validation->getError('title'); ?>
+                    </div>
+                <?php }?>
+                    </figure>
     <div class="form-group">
 
 <select class="form-control input-title" name="language" aria-label="Default select example">
@@ -32,14 +40,33 @@
 <option value="css">css</option>
 </select>
 </div>
+<figure>
+                    <?php if($validation->getError('language')) {?>
+                    <div class='d-flex justify-content-center align-items-center'>
+                      <?= $error = $validation->getError('language'); ?>
+                    </div>
+                <?php }?>
+                    </figure>
     <div class="form-group">
         <input type="Title" class="form-control input-title" id="title-input" name="course" placeholder="topic">
     </div>
-
+    <figure>
+                    <?php if($validation->getError('course')) {?>
+                    <div class='d-flex justify-content-center align-items-center'>
+                      <?= $error = $validation->getError('course'); ?>
+                    </div>
+                <?php }?>
+                    </figure>
     <div class="form-group">
         <input type="Title" class="form-control input-title" id="title-input" name="description" placeholder="Description">
     </div>
-    
+    <figure>
+                    <?php if($validation->getError('description')) {?>
+                    <div class='d-flex justify-content-center align-items-center'>
+                      <?= $error = $validation->getError('description'); ?>
+                    </div>
+                <?php }?>
+                    </figure>
     <div class="form-group">
     <textarea id="text-editor" name="body">
     <h3 class="lesson-title">SAMPLE</h3>
@@ -50,6 +77,16 @@
 }</code></pre>
     </textarea>
     </div>
+
+    <figure>
+                    <?php if($validation->getError('body')) {?>
+                    <div class='d-flex justify-content-center align-items-center'>
+                      <?= $error = $validation->getError('body'); ?>
+                    </div>
+                <?php }?>
+                    </figure>
+
+
 
 
 
@@ -64,6 +101,13 @@
     </textarea>
     </div>
 
+    <figure>
+                    <?php if($validation->getError('code-snippet')) {?>
+                    <div class='d-flex justify-content-center align-items-center'>
+                      <?= $error = $validation->getError('code-snippet'); ?>
+                    </div>
+                <?php }?>
+                    </figure>
 
 
 

@@ -125,10 +125,10 @@ class Admin extends Controller
     
             $rules = [
                 'title' => 'required|min_length[3]|max_length[65535]',
-                'course' => 'min_length[3]|max_length[200]',
-                'description' => 'min_length[3]|max_length[65535]',
-                'code-snippet' => 'min_length[3]|max_length[65535]',
-                'body' => 'min_length[3]|max_length[65535]'
+                'course' => 'required|min_length[3]|max_length[200]',
+                'description' => 'required|min_length[3]|max_length[65535]',
+                'code-snippet' => 'required|min_length[3]|max_length[65535]',
+                'body' => 'required|min_length[3]|max_length[65535]'
             ];
             
             if($this->validate($rules)){
@@ -146,7 +146,8 @@ class Admin extends Controller
         }else{
             $data['validation'] = $this->validator;
             echo view('header-tags');
-            echo view('Admin/addlesson', $data);
+            echo view('sidebar');
+            echo view('add-lesson' , $data);
         }
     
     
