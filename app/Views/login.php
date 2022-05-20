@@ -69,7 +69,7 @@
 
 
                       <div class="mb-3 need-account">
-                      DONT HAVE AN ACCOUNT?   <a href="/register" class="link-primary signin-link">REGISTER</a>
+                     Don't have an account?   <a href="/register" class="link-primary signin-link"><b>Register</b></a>
                       </div>
                       
                       <button type="submit" class="btn btn-primary registration-button">Login</button>

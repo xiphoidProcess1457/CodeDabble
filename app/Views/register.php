@@ -58,7 +58,7 @@
                     </div>
                 <?php }?>  
                     <div class="input-group mb-3">
-                    <input type="password" name="password" placeholder="password" class="form-control password" id="InputForPassword">
+                    <input type="password" name="password" placeholder="Password" class="form-control password" id="InputForPassword">
                     <div class="input-group-append">
                     <span class="input-group-text password-span">
                     <i class="fa fa-eye-slash" aria-hidden="true" onclick="myFunction()"></i>
@@ -92,7 +92,7 @@
 
 
                       <div class="mb-3 need-account">
-                        ALREADY HAVE AN ACCOUNT?   <a href="/login" class="link-primary signin-link">SIGNIN</a>
+                        Already have an account?   <a href="/login" class="link-primary signin-link"><b>Signin</b></a>
                       </div>
                       
                     

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <style>
@@ -324,6 +325,13 @@ float: right;
 }
 
 @media(max-width:768px){
+
+  
+.wrapper {
+  width: 70%;
+  margin:auto;
+  margin-bottom:3%;
+}
   .responsive-bar{
       display: block;
       width: 100%;
@@ -499,6 +507,39 @@ transform: rotate(-135deg);
 
 }
 
+.searchBar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#searchQueryInput {
+  width: 100%;
+  height: 2.8rem;
+  background: #f5f5f5;
+  outline: none;
+  border: none;
+  border-radius: 1.625rem;
+  padding: 0 3.5rem 0 1.5rem;
+  font-size: 1rem;
+}
+
+#searchQuerySubmit {
+  width: 3.5rem;
+  height: 2.8rem;
+  margin-left: -3.5rem;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+#searchQuerySubmit:hover {
+  cursor: pointer;
+}
+
+
+
 </style>
 <body>
 
@@ -529,9 +570,9 @@ transform: rotate(-135deg);
          <ul>
             <li>
             <?php if (session()->get('logged_in')):?>
-        <a class="nav-link nav-link-ltr" href="<?= base_url('Admin/catalog');?>">CATALOG</a>
+        <a class="nav-link nav-link-ltr" href="<?= base_url('Admin/catalog');?>">LESSONS</a>
         <?php else:?>
-          <a class="nav-link nav-link-ltr" href="<?= base_url('/login');?>">CATALOG</a>
+          <a class="nav-link nav-link-ltr" href="<?= base_url('/login');?>">LESSONS</a>
 		  	<?php endif; ?>
             </li>
              <li>
@@ -540,10 +581,22 @@ transform: rotate(-135deg);
              <li>
              <a class="nav-link nav-link-ltr" href="<?= base_url('Home/about');?>">ABOUT</a>
              </li>
+
              <li>
              <a class="nav-link nav-link-ltr" href="<?= base_url('search');?>">SEARCH</a>
              </li>
 
+
+             <!-- <li>
+             <div class="wrapper">
+  <div class="searchBar">
+    <input id="searchQueryInput" type="text" name="searchQueryInput" placeholder="Search" value="" />
+    <button id="searchQuerySubmit" type="submit" name="searchQuerySubmit">
+      <svg style="width:24px;height:24px" viewBox="0 0 24 24"><path fill="#666666" d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" />
+      </svg>
+    </button>
+  </div>
+ </li> -->
 
 
              

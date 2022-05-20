@@ -41,14 +41,27 @@
     </div>
     
     <div class="form-group">
-    <textarea id="text-editor" name="body"></textarea>
+    <textarea id="text-editor" name="body">
+    <h3 class="lesson-title">SAMPLE</h3>
+    <pre class="language-java"><code>public class Solution{
+  public static void main(String[] args) {
+    System.out.println("");
+  }
+}</code></pre>
+    </textarea>
     </div>
 
 
 
     <div class="form-group">
         <h1>ADD CODE SNIPPET</h1>
-    <textarea id="text-editor" name="code-snippet"></textarea>
+    <textarea id="text-editor" name="code-snippet" value="">
+    <pre class="language-java"><code>public class Solution{
+  public static void main(String[] args) {
+    System.out.println("");
+  }
+}</code></pre>
+    </textarea>
     </div>
 
 
