@@ -8,13 +8,18 @@
 </head>
 <style>
     .container{
-        padding-top: 10em;
+        padding-top: 5%;
+        padding-bottom: 5%;
     }
 
+    table{
+      width: 130%;
+    }
    
 </style>
 <body>
     <div class="container">
+    <h1 class="display-3 registration-header">LESSONS</h1>
     <table class="table-responsive-xl table-hover table-borderless">
   <thead>
     <tr>
@@ -27,13 +32,14 @@
     </tr>
   </thead>
   <tbody>
+  <?php $x = 1;?>
   <?php foreach($lessons as  $item) : ?>
     <tr>
-      <th scope="row"><?= $item['id']?></th>
+      <th scope="row"><?php echo $x++;?> </th>
       <td><?= $item['title']?></td>
       <td><?= $item['course']?></td>
       <td><?php 
-                    $html = new \Html2Text\Html2Text(substr($item ['body'], 0, 150));
+                    $html = new \Html2Text\Html2Text(substr($item ['body'], 0, 50));
                     echo $html->getText();  // Hello, "WORLD"
                 ?></td>
 

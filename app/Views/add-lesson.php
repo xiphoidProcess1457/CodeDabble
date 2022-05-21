@@ -22,7 +22,7 @@
         </h1>
         <form  action="/Admin/save" method="POST">
     <div class="form-group">
-        <input type="Title" class="form-control input-title" id="title-input" name="title" placeholder="Title">
+        <input type="Title" class="form-control input-title" id="title-input" name="title" placeholder="Lesson title">
     </div>
     <figure>
                     <?php if($validation->getError('title')) {?>
@@ -48,7 +48,7 @@
                 <?php }?>
                     </figure>
     <div class="form-group">
-        <input type="Title" class="form-control input-title" id="title-input" name="course" placeholder="topic">
+        <input type="Title" class="form-control input-title" id="title-input" name="course" placeholder="Title caption">
     </div>
     <figure>
                     <?php if($validation->getError('course')) {?>
@@ -58,7 +58,7 @@
                 <?php }?>
                     </figure>
     <div class="form-group">
-        <input type="Title" class="form-control input-title" id="title-input" name="description" placeholder="Description">
+        <input type="Title" class="form-control input-title" id="title-input" name="description" placeholder="Lesson description">
     </div>
     <figure>
                     <?php if($validation->getError('description')) {?>

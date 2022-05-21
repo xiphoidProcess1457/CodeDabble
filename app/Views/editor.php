@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $lessons['title'] ?> | EDITOR</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="stylesheet" type="text/css" href="<?= base_url('assets/css/viewforum.css');?>">
+    <link  rel="stylesheet" type="text/css" href="<?= base_url('assets/css/prism.css');?>">
+    <link  rel="stylesheet" type="text/css" href="<?= base_url('assets/js/prism.js');?>">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.14/ace.js" integrity="sha512-6ts6Fu561/yzWvD6uwQp3XVYwiWNpWnZ0hdeQrETqtnQiGjTfOS06W76aUDnq51hl1SxXtJaqy7IsZ3oP/uZEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="http://pagecdn.io/lib/ace/1.4.12/ace.min.js"></script>
     <script src="http://pagecdn.io/lib/ace/1.4.12/ext-language_tools.min.js"></script>
@@ -85,6 +88,11 @@ overflow-x: scroll; /* show only horizontal scrollbar */
     transition-timing-function:cubic-bezier(.5,-.75,.7,2);
 }
 
+
+img{
+    width: 100%;
+  height: auto;
+}
 </style>
 <body>
 
