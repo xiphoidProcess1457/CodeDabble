@@ -263,6 +263,7 @@ $(document).ready(function(){
 		  $.ajax({
 			   type: 'POST',
 			   url: "http://localhost:8080/runCode",
+               //url: "http://149.102.154.40:8080/runCode",
 			   headers: {
 			   'Content-Type':'application/json',
 			   'X-TOKEN': token,

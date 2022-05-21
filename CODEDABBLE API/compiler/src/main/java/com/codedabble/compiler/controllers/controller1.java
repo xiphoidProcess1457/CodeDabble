@@ -106,7 +106,9 @@ public class controller1 {
                 myWriter.close();
                 logger.info("Successfully wrote to the file.");
                 ProcessBuilder builder = new ProcessBuilder(
-                    "cmd.exe", "/c", "cd "+ path.toString()+"/src/main/resources/static/tmp/"+ " && "+"javac "+payload.getClassName()+ ".java && java "+payload.getClassName());
+                    //"/bin/sh","-c","cd "+ path.toString()+"/src/main/resources/static/tmp/"+ " && "+"javac "+"Solution"+ ".java && java "+"Solution");
+                     "cmd.exe", "/c", "cd "+ path.toString()+"/src/main/resources/static/tmp/"+ " && "+"javac "+payload.getClassName()+ ".java && java "+payload.getClassName());
+                    //"sh", "cd "+ path.toString()+"/src/main/resources/static/tmp/"+ " && "+"javac "+payload.getClassName()+ ".java && java "+payload.getClassName());
                     // "cmd.exe", "/c", "cd \"C:\\Program Files\\Microsoft SQL Server\" && dir");
 
                     builder.redirectErrorStream(true);
