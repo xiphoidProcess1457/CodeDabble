@@ -215,7 +215,7 @@ input[type="file"]::-ms-browse {
 </style>
 <body>
     <div class="container">
-        <h1>Hello  <?= $user['username'] ?></h1>
+        <h1>Hello  <?= $user['username'] ."," ?></h1>
     <div class="row">
   <div class="col-sm-4">
 
