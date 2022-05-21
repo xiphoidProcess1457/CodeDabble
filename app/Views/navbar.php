@@ -564,7 +564,7 @@ transform: rotate(-135deg);
 		<nav class="navigation">
             <div class="logo">
             <a  href="<?= base_url('Home/index');?>">
-          <img src="<?= base_url('assets/assets/logo.svg');?>" width="200" height="200" class="d-inline-block align-top" alt="">
+          <img http-equiv="Content-Type" content="image/svg+xml"; src="<?= base_url('assets/assets/logo.svg');?>" width="200" height="200" class="d-inline-block align-top" alt="">
         </a>
             </div>
          <ul>

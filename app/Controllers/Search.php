@@ -69,12 +69,14 @@ class Search extends BaseController
      
 		$modelforum = $model->findAll();
         $data = [
-        'forumresult' => $model->paginate(10),
+        'forumresult' => $model->paginate(10000),
           'pager' => $model->pager,
           'mod' => ""
         //   'forumresult' => $modelforum
           
       ];
+
+	  
       
       //print_r((new ForumModel)$model->paginate(10)[0]->id);
       //print_r($model->paginate(3));

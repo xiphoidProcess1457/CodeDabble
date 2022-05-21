@@ -35,7 +35,7 @@ a:hover {
 .comment-info{
     font-size: .9em;
     margin-bottom:-5px;
-    padding-left: 10%;
+    margin-left: 1%;
     width: 100%
 }
 .profile-comment{
@@ -80,6 +80,14 @@ ul#redbutton li.newbutton {
 
 .container{
     padding-top: 15%;
+}
+
+
+li.borderless { border: 0 none; }
+
+figure{
+    margin: 0 !important;
+    padding: 0 !important;
 }
     </style>
 <body>
@@ -216,19 +224,45 @@ ul#redbutton li.newbutton {
             
             </p>
             <div class="profile-comment">
-            <img src="/uploads/user/<?= $replyItem['uploaded_flleinfo']?>" height="50" width="50" class="profile-image"  alt=""> 
-            <div class="row comment-info">
+ 
+            <div class="comment-info">
    <p class="text-muted comment-info">
-   Creater by:
-   <a href="<?= base_url('/Profile');?>" class="text-muted link">    
-   <?= $replyItem['user_name'] ?>
-        </a>
-</p>
-   <p class="text-muted comment-info"><?=  date("F d,Y g:i A", strtotime($replyItem['created_at']))?> </p>
+  
    </div>
             </div>
          
             
+
+
+
+
+
+            <ul class="list-group list-group-horizontal borderless" style="border:0px">
+  <li class="list-group-item" style="border:0px">     
+  <?php
+$user_img = !empty($replyItem['uploaded_flleinfo']) ? $replyItem['uploaded_flleinfo'] : 'default.jpg';
+?>
+            <img src="<?php echo base_url().'/uploads/user/'.$user_img; ?>" height="50" width="50" class="profile-image"  alt=""> 
+  </li>
+  <li class="list-group-item" style="border:0px">
+
+
+  <figure>
+  Creater by:
+  </figure>
+  
+   <p class="text-muted comment-info">
+   <?= $replyItem['user_name'] ?><br>
+<?=  date("F d,Y g:i A", strtotime($replyItem['created_at']))?>
+
+ </p>
+ 
+  </li>
+</ul>
+
+
+
+
         </td>
             <hr>
 </table>
